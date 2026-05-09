@@ -1,0 +1,1154 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Bottega Marco Aurelio · Roma</title>
+  <meta name="description" content="Bottega Marco Aurelio · Banco orafo indipendente a Campo de’ Fiori, Roma. Pezzi unici su appuntamento.">
+  <style>
+    :root{
+      --bg:#050505;
+      --panel:#101010;
+      --line:#8c8c8c;
+      --line-soft:#424242;
+      --text:#f5f5f5;
+      --muted:#cfcfcf;
+      --gold:#d4aa45;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth; overflow-x:hidden}
+    body{
+      margin:0;
+      overflow-x:hidden;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Arial, Helvetica, sans-serif;
+      line-height:1.05;
+    }
+    a{color:inherit;text-decoration:none}
+    .map-link{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+    .page{
+      width:min(760px,100%);
+      margin:0 auto;
+      padding:5px 8px 86px;
+      overflow:hidden;
+    }
+    header{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto;
+      gap:8px;
+      align-items:end;
+      padding:2px 2px 7px;
+    }
+    .brand{
+      min-width:0;
+      overflow:hidden;
+      display:flex;
+      align-items:baseline;
+      gap:.42em;
+      white-space:nowrap;
+      font-weight:700;
+    }
+    .brand-main{
+      letter-spacing:.18em;
+      font-size:clamp(22px,6vw,42px);
+      line-height:.9;
+    }
+    .brand-sub{
+      letter-spacing:.03em;
+      font-size:clamp(15px,4vw,28px);
+      text-transform:none;
+      opacity:.95;
+    }
+    .tag{
+      max-width:100px;
+      overflow:hidden;
+      text-align:right;
+      color:var(--muted);
+      font-size:clamp(10px,2.8vw,16px);
+      font-weight:700;
+      line-height:1.02;
+    }
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border-radius:17px;
+      height:clamp(126px,29vw,210px);
+      background:#111;
+      border:1.3px solid var(--line);
+      box-shadow:0 10px 34px rgba(0,0,0,.45);
+    }
+    .hero img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      filter:contrast(1.03) brightness(.72);
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.55));
+      pointer-events:none;
+    }
+    .hero-text{
+      position:absolute;
+      left:14px;
+      right:12px;
+      bottom:12px;
+      z-index:2;
+      text-shadow:0 3px 14px rgba(0,0,0,.9);
+    }
+    .hero h1{
+      margin:0;
+      font-size:clamp(30px,8.1vw,62px);
+      line-height:.90;
+      letter-spacing:-.055em;
+      font-weight:700;
+    }
+    .hero p{
+      margin:7px 0 0;
+      font-size:clamp(14px,3.7vw,23px);
+      font-weight:700;
+      line-height:1.05;
+    }
+    .access-card{
+      margin-top:7px;
+      border:1.5px solid var(--line);
+      background:linear-gradient(180deg,#151515,#0f0f0f);
+      border-radius:17px;
+      padding:10px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:7px;
+    }
+    .eyebrow{
+      color:var(--gold);
+      letter-spacing:.25em;
+      font-weight:700;
+      font-size:clamp(12px,3.1vw,17px);
+      text-transform:uppercase;
+      line-height:1.1;
+    }
+    .open-big{
+      margin:4px 0 0;
+      font-size:clamp(25px,6.7vw,46px);
+      font-weight:700;
+      line-height:.98;
+    }
+    .access-lines{
+      color:var(--muted);
+      font-size:clamp(14px,3.55vw,22px);
+      font-weight:700;
+      line-height:1.10;
+      margin-top:5px;
+    }
+    .access-lines strong{color:var(--text)}
+    .contact-note{
+      margin-top:4px;
+      font-size:clamp(14px,3.45vw,21px);
+      font-weight:700;
+      color:var(--text);
+      line-height:1.10;
+    }
+    .actions{
+      display:grid;
+      grid-template-columns:1.25fr .75fr;
+      gap:9px;
+      margin-top:9px;
+    }
+    .btn{
+      border-radius:17px;
+      min-height:44px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      font-weight:700;
+      font-size:clamp(17px,4.4vw,27px);
+      border:1.5px solid var(--line);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
+    }
+    .btn.whatsapp{
+      background:linear-gradient(180deg,#e0b752,#c9972f);
+      color:#111;
+      border-color:#d1a844;
+    }
+    .btn.sms{
+      background:#050505;
+      color:var(--text);
+    }
+    .contact-small{
+      color:var(--muted);
+      font-size:clamp(12px,3.25vw,18px);
+      font-weight:700;
+      line-height:1.10;
+      margin-top:8px;
+      overflow-wrap:anywhere;
+    }
+    .collections{
+      margin-top:7px;
+      display:grid;
+      gap:7px;
+    }
+    .collection-card{
+      display:grid;
+      grid-template-columns:.9fr 1fr 1fr 1fr;
+      gap:7px;
+      align-items:center;
+      border:1.4px solid var(--line);
+      background:#0d0d0d;
+      border-radius:16px;
+      padding:7px;
+      min-height:70px;
+    }
+    .collection-card h2{
+      margin:0 0 3px;
+      font-size:clamp(20px,5.25vw,38px);
+      font-weight:700;
+      letter-spacing:.01em;
+      line-height:.95;
+    }
+    .collection-card p{
+      margin:0;
+      color:var(--muted);
+      font-size:clamp(9px,2.45vw,13px);
+      font-weight:700;
+      line-height:1.05;
+    }
+    .thumb{
+      aspect-ratio:1.18/1;
+      border-radius:11px;
+      overflow:hidden;
+      border:1px solid var(--line-soft);
+      background:#222;
+    }
+    .thumb img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .bottom-cta{
+      position:fixed;
+      left:50%;
+      transform:translate(-50%, 130%);
+      bottom:10px;
+      width:min(720px,calc(100% - 22px));
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+      z-index:20;
+      pointer-events:none;
+      opacity:0;
+      transition:transform .22s ease, opacity .22s ease;
+    }
+    .bottom-cta.visible{
+      transform:translate(-50%, 0);
+      opacity:1;
+    }
+    .bottom-cta a{
+      pointer-events:auto;
+      min-height:54px;
+      border-radius:999px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      font-size:clamp(20px,5.2vw,32px);
+      font-weight:700;
+      border:1px solid rgba(255,255,255,.18);
+      box-shadow:0 12px 30px rgba(0,0,0,.45);
+    }
+    .bottom-cta .w{
+      background:linear-gradient(180deg,#33df76,#16b956);
+      color:white;
+    }
+    .bottom-cta .i{
+      background:#111;
+      color:white;
+    }
+    main{
+      margin-top:18px;
+      padding-top:12px;
+      border-top:1px solid var(--line-soft);
+    }
+    section{padding:18px 0 8px}
+    section h3{
+      margin:0 0 11px;
+      font-size:clamp(32px,10vw,64px);
+      letter-spacing:.06em;
+      line-height:.95;
+    }
+    .gallery{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:10px;
+    }
+    .gallery img{
+      width:100%;
+      border-radius:18px;
+      border:1px solid var(--line-soft);
+      display:block;
+    }
+    .placeholder-text{
+      color:var(--muted);
+      font-size:18px;
+      line-height:1.35;
+      margin:10px 0 0;
+    }
+    @media (min-width:620px){
+      .access-card{grid-template-columns:1.02fr .98fr; align-items:center}
+      .gallery{grid-template-columns:repeat(3,1fr)}
+      .gallery img{aspect-ratio:1/1; object-fit:cover}
+    }
+    @media (max-width:390px){
+      .page{padding-left:7px;padding-right:7px}
+      .hero{height:122px}
+      .access-card{padding:9px}
+      .collection-card{grid-template-columns:.78fr 1fr 1fr 1fr}
+      .brand-main{font-size:clamp(21px,6.2vw,30px)}
+      .brand-sub{font-size:clamp(14px,4vw,22px)}
+      .tag{font-size:10px; max-width:92px}
+      .actions{gap:7px}
+    }
+/* v7 — WhatsApp: grigio scuro + filo verde */
+.btn.whatsapp,
+.bottom-cta .w {
+  background: #1c1c1c !important;
+  color: #ffffff !important;
+  border: 2px solid #25D366 !important;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.04), 0 12px 30px rgba(0,0,0,.45) !important;
+}
+.btn.whatsapp:hover,
+.bottom-cta .w:hover {
+  filter: brightness(1.08);
+}
+/* v8 — moduli senza cornici bianche */
+.hero,
+.access-card,
+.collection-card,
+.thumb,
+.gallery img {
+  border: none !important;
+}
+/* mantieni leggibilità separando con sfondo e aria, non con cornici */
+.access-card,
+.collection-card {
+  box-shadow: none !important;
+}
+/* bottone flottante torna-su */
+.top-float {
+  position: fixed;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%) scale(.92);
+  width: 12.5vw;
+  height: 12.5vw;
+  max-width: 64px;
+  max-height: 64px;
+  min-width: 46px;
+  min-height: 46px;
+  border-radius: 999px;
+  border: 2px solid rgba(255,255,255,.88);
+  background: rgba(20,20,20,.58);
+  color: #ffffff;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(26px, 7vw, 42px);
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .22s ease, transform .22s ease;
+  backdrop-filter: blur(4px);
+}
+.top-float.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(-50%) scale(1);
+}
+/* v12 — freccia su collegata ai pulsanti WhatsApp/Instagram */
+.top-float {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity .22s ease, transform .22s ease !important;
+}
+.top-float.visible {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+.bottom-cta {
+  opacity: 0;
+  pointer-events: none;
+}
+.bottom-cta.visible {
+  opacity: 1;
+  pointer-events: none;
+}
+/* v16 — switch lingua al posto della scritta ridondante */
+.lang-switch{
+  position:absolute;
+  top:8px;
+  right:10px;
+  width:clamp(24px,6vw,32px);
+  height:clamp(24px,6vw,32px);
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,.6);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  background:rgba(20,20,20,.6);
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:700;
+  font-size:clamp(9px,2.5vw,12px);
+  letter-spacing:.04em;
+  text-decoration:none;
+  backdrop-filter:blur(4px);
+}
+.lang-switch:active{transform:scale(.96)}
+/* v20 — Campo de' Fiori compatto, senza andare a capo */
+.map-nowrap{
+  white-space:nowrap;
+  display:inline-block;
+}
+.map-pin{
+  color:#ff3b30;
+  font-size:.72em;
+  vertical-align:middle;
+  margin-right:.16em;
+  position:relative;
+  top:-.06em;
+}
+.hero p{
+  letter-spacing:-.02em;
+}
+
+/* v24 — MODERNA / editorial-app */
+:root{
+  --bg:#070707 !important;
+  --panel:#111214 !important;
+  --panel2:#18191c !important;
+  --line:#2d2f35 !important;
+  --line-soft:#26282e !important;
+  --text:#f7f7f7 !important;
+  --muted:#aeb3bb !important;
+  --gold:#d6b15f !important;
+  --green:#25D366 !important;
+}
+
+body{
+  background:
+    radial-gradient(circle at 18% 0%, rgba(214,177,95,.16), transparent 26%),
+    radial-gradient(circle at 90% 12%, rgba(37,211,102,.08), transparent 20%),
+    #070707 !important;
+  color:#f7f7f7 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.page{
+  padding:8px 10px 96px !important;
+}
+
+header{
+  padding:6px 2px 10px !important;
+}
+
+.brand-main{
+  letter-spacing:.18em !important;
+  font-weight:700 !important;
+}
+
+.brand-sub{
+  font-weight:700 !important;
+  opacity:.86 !important;
+}
+
+.lang-switch{
+  background:rgba(255,255,255,.08) !important;
+  border:1px solid rgba(255,255,255,.26) !important;
+  box-shadow:0 10px 26px rgba(0,0,0,.32) !important;
+}
+
+.hero{
+  border-radius:28px !important;
+  overflow:hidden !important;
+  border:1px solid rgba(255,255,255,.08) !important;
+  box-shadow:0 22px 65px rgba(0,0,0,.52) !important;
+  height:clamp(150px,34vw,255px) !important;
+}
+
+.hero img{
+  filter:contrast(1.06) brightness(.70) saturate(.78) !important;
+  transform:scale(1.02);
+}
+
+.hero::after{
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.06), rgba(0,0,0,.72)),
+    linear-gradient(90deg, rgba(0,0,0,.54), transparent 65%) !important;
+}
+
+.hero-text{
+  left:18px !important;
+  bottom:16px !important;
+}
+
+.hero h1{
+  font-size:clamp(38px,9.6vw,74px) !important;
+  letter-spacing:-.07em !important;
+  line-height:.88 !important;
+}
+
+.hero p{
+  font-size:clamp(15px,3.9vw,25px) !important;
+  color:rgba(255,255,255,.92) !important;
+}
+
+.map-link{
+  text-decoration:none !important;
+  border-bottom:2px solid rgba(255,255,255,.88) !important;
+}
+
+.map-pin{
+  color:#ff463a !important;
+  font-size:.7em !important;
+}
+
+.access-card{
+  margin-top:12px !important;
+  background:linear-gradient(180deg, rgba(28,29,33,.94), rgba(13,14,16,.96)) !important;
+  border:1px solid rgba(255,255,255,.08) !important;
+  border-radius:30px !important;
+  box-shadow:0 18px 50px rgba(0,0,0,.42), inset 0 1px 0 rgba(255,255,255,.04) !important;
+  padding:18px !important;
+}
+
+.eyebrow{
+  color:#d6b15f !important;
+  letter-spacing:.28em !important;
+  font-size:clamp(11px,3vw,16px) !important;
+}
+
+.open-big{
+  font-size:clamp(34px,8.4vw,60px) !important;
+  letter-spacing:-.05em !important;
+}
+
+.access-lines{
+  color:#aeb3bb !important;
+}
+
+.access-lines span:first-child,
+.access-lines strong{
+  color:#fff !important;
+}
+
+.contact-note{
+  color:#f4f4f4 !important;
+}
+
+.btn{
+  border-radius:999px !important;
+  background:rgba(255,255,255,.04) !important;
+  border:1px solid rgba(255,255,255,.18) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08), 0 12px 34px rgba(0,0,0,.25) !important;
+}
+
+.btn.whatsapp{
+  color:#fff !important;
+  border:2px solid #25D366 !important;
+  background:rgba(37,211,102,.06) !important;
+}
+
+.btn.sms{
+  color:#fff !important;
+  background:rgba(255,255,255,.03) !important;
+}
+
+.collections{
+  margin-top:12px !important;
+  gap:10px !important;
+}
+
+.collection-card{
+  background:rgba(17,18,20,.86) !important;
+  backdrop-filter:blur(8px) !important;
+  border:1px solid rgba(255,255,255,.07) !important;
+  border-radius:26px !important;
+  box-shadow:0 14px 45px rgba(0,0,0,.35) !important;
+  padding:10px !important;
+}
+
+.collection-card h2{
+  letter-spacing:-.02em !important;
+  font-size:clamp(26px,6.7vw,44px) !important;
+}
+
+.collection-card p{
+  color:#aeb3bb !important;
+  font-size:clamp(10px,2.65vw,14px) !important;
+}
+
+.thumb{
+  border-radius:18px !important;
+  border:1px solid rgba(255,255,255,.09) !important;
+  box-shadow:0 8px 22px rgba(0,0,0,.28) !important;
+}
+
+.thumb img{
+  filter:contrast(1.02) saturate(.9) !important;
+  transition:transform .28s ease, filter .28s ease;
+}
+
+.collection-card:active .thumb img{
+  transform:scale(1.04);
+  filter:contrast(1.08) saturate(1.02) !important;
+}
+
+main{
+  border-top:1px solid rgba(255,255,255,.08) !important;
+  margin-top:22px !important;
+}
+
+section h3{
+  letter-spacing:-.055em !important;
+  font-size:clamp(52px,15vw,100px) !important;
+}
+
+.gallery{
+  gap:14px !important;
+}
+
+.gallery img{
+  border-radius:30px !important;
+  border:1px solid rgba(255,255,255,.08) !important;
+  box-shadow:0 18px 60px rgba(0,0,0,.45) !important;
+}
+
+.placeholder-text{
+  color:#b8bcc4 !important;
+}
+
+.bottom-cta{
+  gap:10px !important;
+}
+
+.bottom-cta a{
+  border-radius:999px !important;
+  backdrop-filter:blur(10px) !important;
+  background:rgba(17,18,20,.82) !important;
+  border:1px solid rgba(255,255,255,.16) !important;
+  box-shadow:0 16px 45px rgba(0,0,0,.48) !important;
+}
+
+.bottom-cta .w{
+  border:2px solid #25D366 !important;
+  background:rgba(17,18,20,.90) !important;
+  color:#fff !important;
+}
+
+.bottom-cta .i{
+  background:rgba(17,18,20,.90) !important;
+}
+
+.top-float{
+  background:rgba(17,18,20,.62) !important;
+  border:1px solid rgba(255,255,255,.68) !important;
+  box-shadow:0 12px 35px rgba(0,0,0,.38) !important;
+  backdrop-filter:blur(10px) !important;
+}
+
+#faq{
+  background:rgba(17,18,20,.72) !important;
+  border-radius:30px !important;
+  margin-top:22px !important;
+  border:1px solid rgba(255,255,255,.07) !important;
+  box-shadow:0 18px 55px rgba(0,0,0,.36) !important;
+}
+
+@media (max-width:390px){
+  .hero{height:138px !important}
+  .access-card{padding:14px !important}
+  .collection-card{border-radius:22px !important}
+}
+
+
+/* V25 HYBRID: colori contrastati + spigoli vivi */
+
+*{border-radius:0 !important;}
+
+body{
+  background:#000 !important;
+  color:#fff !important;
+}
+
+.hero, .access-card, .collection-card, .thumb, .gallery img{
+  border-radius:0 !important;
+}
+
+.muted, .access-lines{
+  color:#cfcfcf !important;
+}
+
+.btn.whatsapp{
+  border:2px solid #25D366 !important;
+  background:transparent !important;
+}
+
+.btn.sms{
+  border:1px solid #ffffff !important;
+  background:transparent !important;
+}
+
+.hero{
+  height:clamp(130px,28vw,200px) !important;
+}
+
+.page{
+  padding:6px 8px 90px !important;
+}
+
+.access-card{
+  padding:14px !important;
+}
+
+.collection-card{
+  padding:8px !important;
+}
+
+
+/* V26: no module boxes + square buttons */
+
+.access-card, .collection-card, .hero, .gallery, .thumb{
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+}
+
+/* keep buttons square */
+.btn{
+  border-radius:0 !important;
+}
+
+/* tighten spacing for more above-the-fold */
+.page{
+  padding:4px 6px 80px !important;
+}
+
+.access-card{
+  padding:10px 0 !important;
+}
+
+.collection-card{
+  padding:6px 0 !important;
+}
+
+
+/* V27: restore V22 readability + tighter spacing */
+
+body{
+  color:#ffffff !important;
+}
+
+.muted, .access-lines{
+  color:#bfbfbf !important;
+}
+
+/* tighten typography */
+h1, .hero-title{
+  font-size:clamp(22px,6vw,32px) !important;
+}
+
+.access-title{
+  font-size:clamp(24px,7vw,36px) !important;
+}
+
+/* compress spacing further */
+.page{
+  padding:2px 6px 70px !important;
+}
+
+.access-card{
+  padding:8px 0 !important;
+}
+
+.collection-card{
+  padding:4px 0 !important;
+}
+
+/* reduce gaps */
+section{
+  margin-bottom:8px !important;
+}
+
+
+/* V29 — vero fix: 22 compatta + bottoni squadrati + gerarchia grigi */
+
+/* elimina spazio morto reale sotto hero */
+.hero{
+  margin-bottom:0 !important;
+}
+.hero-text{
+  bottom:8px !important;
+}
+.hero p{
+  margin-top:3px !important;
+  line-height:1 !important;
+}
+.access-card{
+  margin-top:4px !important;
+  padding-top:6px !important;
+}
+
+/* compatta tutto il fold */
+.page{
+  padding-top:2px !important;
+  padding-left:6px !important;
+  padding-right:6px !important;
+  padding-bottom:76px !important;
+}
+header{
+  padding-top:1px !important;
+  padding-bottom:5px !important;
+}
+.hero{
+  height:clamp(122px,27vw,190px) !important;
+}
+.access-card{
+  padding-bottom:7px !important;
+}
+.collections{
+  margin-top:6px !important;
+  gap:6px !important;
+}
+.collection-card{
+  padding-top:5px !important;
+  padding-bottom:5px !important;
+  min-height:64px !important;
+}
+
+/* bottoni squadrati, ma senza riquadrare tutti i moduli */
+.btn,
+.bottom-cta a,
+.lang-switch{
+  border-radius:0 !important;
+}
+.btn.whatsapp,
+.bottom-cta .w{
+  background:#1c1c1c !important;
+  color:#ffffff !important;
+  border:2px solid #25D366 !important;
+}
+.btn.sms,
+.bottom-cta .i{
+  background:#111111 !important;
+  color:#ffffff !important;
+  border:1.5px solid #9a9a9a !important;
+}
+
+/* gerarchia corretta */
+.access-lines{
+  color:#b6b6b6 !important;
+}
+.access-lines strong,
+.access-lines span[style*="ffffff"]{
+  color:#ffffff !important;
+}
+.access-lines span[style*="9aa0a6"]{
+  color:#a7a7a7 !important;
+}
+
+/* queste due righe devono essere grigie, non bianche */
+.access-lines span:not([style*="ffffff"]),
+.contact-note{
+  color:#b6b6b6 !important;
+}
+
+/* ma i titoli azione restano leggibili */
+.eyebrow{
+  color:#d4aa45 !important;
+}
+
+/* tagli netti dove servono, niente pillole */
+.hero,
+.access-card,
+.collection-card,
+.thumb,
+.gallery img{
+  border-radius:0 !important;
+}
+
+/* niente box decorativi pesanti sui moduli */
+.access-card,
+.collection-card{
+  box-shadow:none !important;
+}
+
+/* immagini: mantieni colori reali */
+.hero img,
+.thumb img,
+.gallery img{
+  filter:none !important;
+}
+
+
+/* v32 — FAQ estese + immagini di chiusura */
+.closing-module{
+  padding:18px 0 0 !important;
+  margin:0 !important;
+}
+.closing-images{
+  display:grid;
+  gap:12px;
+}
+.closing-images img{
+  width:100%;
+  display:block;
+  object-fit:cover;
+  border-radius:0 !important;
+  border:none !important;
+}
+.final-spacer{
+  height:50vh;
+}
+#faq h2,
+#faq h3{
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+</style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand"><span class="brand-main">BOTTEGA</span><span class="brand-sub">Marcoaurelio</span></div>
+      <a class="lang-switch" href="en.html" aria-label="English version">ENG</a>
+    </header>
+    <div class="hero" id="home">
+      <img src="assets/banner.jpg" alt="Interno della Bottega Marco Aurelio">
+      <div class="hero-text">
+        <h1>Pezzi unici.<br></h1>
+        <p>Bottega orafa · <a class="map-link map-nowrap" href="https://www.google.com/maps/search/?api=1&query=Campo%20de%27%20Fiori%20Roma" target="_blank" rel="noopener"><span class="map-pin">●</span> Campo de’ Fiori</a></p>
+      </div>
+    </div>
+    <div class="access-card" id="orari">
+      <div>
+        <div class="eyebrow">Orari / Accesso</div>
+        <p class="open-big">Aperto 7 giorni su 7</p>
+        <div class="access-lines">
+          <span style="color:#ffffff; font-weight:600;">Solo su appuntamento</span><br>
+          <strong><span style="color:#9aa0a6;">Anche in giornata · orari flessibili, anche serali</span></strong>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow">Scrivi, non telefonare</div>
+        <div class="contact-note">Rispondo ai messaggi in giornata.<br>Le telefonate le organizziamo dopo.</div>
+        <div class="actions">
+          <a class="btn whatsapp" href="https://wa.me/393482762842">WhatsApp</a>
+          <a class="btn sms" href="sms:+393482762842">SMS</a>
+        </div>
+        <div class="contact-small">348 276 2842 · <a href="mailto:info.marcoaurelio@gmail.com">info.marcoaurelio@gmail.com</a></div>
+      </div>
+    </div>
+    <nav class="collections" aria-label="Collezioni">
+      <a class="collection-card" href="#kintsugi">
+        <div><h2>KINTSUGI</h2><p>Frattura · oro · continuità</p></div>
+        <div class="thumb"><img src="assets/kintsugi_1.jpg" alt="Kintsugi ritratto"></div>
+        <div class="thumb"><img src="assets/kintsugi_2.jpg" alt="Kintsugi anello"></div>
+        <div class="thumb"><img src="assets/kintsugi_3.jpg" alt="Kintsugi macro"></div>
+      </a>
+      <a class="collection-card" href="#aria">
+        <div><h2>ARIA</h2><p>Luce · leggerezza · struttura</p></div>
+        <div class="thumb"><img src="assets/aria_1.jpg" alt="Aria ritratto"></div>
+        <div class="thumb"><img src="assets/aria_2.jpg" alt="Aria anello"></div>
+        <div class="thumb"><img src="assets/aria_3.jpg" alt="Aria dettaglio"></div>
+      </a>
+      <a class="collection-card" href="#fedi">
+        <div><h2>FEDI</h2><p>Su misura · non in serie</p></div>
+        <div class="thumb"><img src="assets/fedi_1.jpg" alt="Fedi coppia"></div>
+        <div class="thumb"><img src="assets/fedi_2.jpg" alt="Fedi lavorazione"></div>
+        <div class="thumb"><img src="assets/fedi_3.jpg" alt="Fedi indossate"></div>
+      </a>
+      <a class="collection-card" href="#astrolabio">
+        <div><h2>ASTROLABIO</h2><p>Rotte · simboli · materia</p></div>
+        <div class="thumb"><img src="assets/astrolabio_1.jpg" alt="Astrolabio ambientato"></div>
+        <div class="thumb"><img src="assets/astrolabio_2.jpg" alt="Astrolabio indossato"></div>
+        <div class="thumb"><img src="assets/astrolabio_3.jpg" alt="Astrolabio dettaglio"></div>
+      </a>
+    </nav>
+    <main>
+      <section id="kintsugi">
+        <h3>KINTSUGI</h3>
+        <div class="gallery">
+          <img src="assets/kintsugi_1.jpg" alt="">
+          <img src="assets/kintsugi_2.jpg" alt="">
+          <img src="assets/kintsugi_3.jpg" alt="">
+        </div>
+        <p class="placeholder-text">La frattura non interrompe la continuità. La rende visibile.</p>
+      </section>
+      <section id="aria">
+        <h3>ARIA</h3>
+        <div class="gallery">
+          <img src="assets/aria_1.jpg" alt="">
+          <img src="assets/aria_2.jpg" alt="">
+          <img src="assets/aria_3.jpg" alt="">
+        </div>
+        <p class="placeholder-text">Leggerezza non significa fragilità. Significa togliere tutto il superfluo.</p>
+      </section>
+      <section id="fedi">
+        <h3>FEDI</h3>
+        <div class="gallery">
+          <img src="assets/fedi_1.jpg" alt="">
+          <img src="assets/fedi_2.jpg" alt="">
+          <img src="assets/fedi_3.jpg" alt="">
+        </div>
+        <p class="placeholder-text">Fedi su misura, costruite una alla volta. Non in serie.</p>
+      </section>
+      <section id="astrolabio">
+        <h3>ASTROLABIO / ARRAKIS</h3>
+        <div class="gallery">
+          <img src="assets/astrolabio_1.jpg" alt="">
+          <img src="assets/astrolabio_2.jpg" alt="">
+          <img src="assets/astrolabio_3.jpg" alt="">
+        </div>
+        <p class="placeholder-text">Orientarsi non significa possedere una mappa.</p>
+      </section>
+<section id="faq" style="padding:40px 16px;">
+  <h2 style="font-size:24px; margin-bottom:16px;">DOMANDE FREQUENTI</h2>
+
+  <div style="margin-bottom:18px;">
+    <strong>Quanto tempo ci vuole? Posso comprare subito?
+<br><strong>SÌ.</strong> </strong><br>
+    Se trovi qualcosa in vetrina, puoi acquistarlo subito. Nel 99% dei casi però la misura non sarà perfetta.
+    <br><br>
+    Non è un problema: lo adatto alla tua misura oppure lo ricreo su misura, il più fedele possibile, senza costi aggiuntivi dopo l’acquisto.
+  </div>
+
+  <div style="margin-bottom:18px;">
+    <strong>E se mi serve per oggi, come regalo urgente?</strong><br>
+    Se non trovi il pezzo giusto già pronto, posso preparare un certificato intestato alla persona.
+    <br><br>
+    Il certificato indica che il gioiello è in creazione su misura: così non ti presenti a mani vuote e la persona verrà poi in laboratorio per completare il lavoro insieme.
+  </div>
+
+  <div style="margin-bottom:18px;">
+    <strong>Se voglio qualcosa da zero, quanto tempo serve?</strong><br>
+    Dipende dal progetto. Può volerci circa una settimana, oppure diversi mesi.
+    <br><br>
+    Ogni pezzo è unico: non viene scelto da catalogo, viene costruito insieme.
+  </div>
+
+  <div style="margin-bottom:12px;">
+    <strong>Posso venire senza appuntamento?</strong><br>
+    No. L’accesso è solo su appuntamento, per garantire tempo e attenzione a ogni persona.
+  </div>
+  <div style="margin-bottom:12px;">
+    <strong>Come prenoto?</strong><br>
+    Scrivimi su WhatsApp o SMS. Ti rispondo in giornata.
+  </div>
+  <div style="margin-bottom:12px;">
+    <strong>Fate gioielli su misura?</strong><br>
+    Sì. Ogni pezzo è progettato e realizzato in base alla richiesta.
+  </div>
+  <div style="margin-bottom:12px;">
+    <strong>Posso trasformare un gioiello che ho già?</strong><br>
+    Sì. È una parte importante del lavoro: recupero, trasformazione e nuova vita.
+  </div>
+  <div style="margin-bottom:12px;">
+    <strong>Posso chiedere un preventivo?</strong><br>
+    Sì. Scrivimi e vediamo insieme cosa ha senso fare.
+  </div>
+
+  <div style="margin-bottom:18px;">
+    <strong>Posso passare a vedere i gioielli anche quando la bottega è chiusa?</strong><br>
+    Sì. Le vetrine sono accese e visibili 7 giorni su 7, 24 ore su 24.
+    <br><br>
+    Se qualcosa ti interessa, scrivimi su WhatsApp o SMS e organizziamo l’appuntamento.
+  </div>
+</section>
+
+<section id="chiusura" class="closing-module" aria-label="Bottega Marco Aurelio">
+  <div class="closing-images">
+    <img src="assets/chiusura_laboratorio.jpg" alt="Interno della Bottega Marco Aurelio">
+    <img src="assets/chiusura_vetrina.jpg" alt="Vetrina della Bottega Marco Aurelio">
+  </div>
+</section>
+<div class="final-spacer" aria-hidden="true"></div>
+
+</main>
+  </div>
+  <button class="top-float" type="button" aria-label="Torna in alto">↑</button>
+  <div class="bottom-cta">
+    <a class="w" href="https://wa.me/393482762842">Scrivi su<br>WhatsApp<a href="#faq" style="display:block; margin-top:6px; font-weight:700; color:#ffffff; font-size:14px;">DOMANDE FREQUENTI</a></a>
+    <a class="i" href="https://www.instagram.com/bottegamarcoaurelio/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+<script>
+  const cta = document.querySelector('.bottom-cta');
+  const topFloat = document.querySelector('.top-float');
+  function toggleFloatingButtons(){
+    const show = window.scrollY > 8;
+    if (cta) cta.classList.toggle('visible', show);
+    if (topFloat) topFloat.classList.toggle('visible', show);
+  }
+  if (topFloat) {
+    topFloat.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+  }
+  toggleFloatingButtons();
+  window.addEventListener('scroll', toggleFloatingButtons, {passive:true});
+</script>
+
+
+
+
+<script>
+(function(){
+  let userInteracted = false;
+  let autoTimer = null;
+
+  function stopAutoScroll(){
+    userInteracted = true;
+    if (autoTimer) {
+      clearInterval(autoTimer);
+      autoTimer = null;
+    }
+  }
+
+  ["touchstart", "wheel", "mousedown", "keydown", "pointerdown"].forEach(function(eventName){
+    window.addEventListener(eventName, stopAutoScroll, { passive: true, once: true });
+  });
+
+  function startAutoScroll(){
+    if (userInteracted || window.scrollY > 20) return;
+
+    autoTimer = setInterval(function(){
+      if (userInteracted) {
+        clearInterval(autoTimer);
+        autoTimer = null;
+        return;
+      }
+
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      if (window.scrollY >= maxScroll - 2) {
+        clearInterval(autoTimer);
+        autoTimer = null;
+        return;
+      }
+
+      window.scrollBy(0, 0.45);
+    }, 16);
+  }
+
+  window.addEventListener("load", function(){
+    setTimeout(startAutoScroll, 5000);
+  });
+})();
+</script>
+
+</body>
+</html>
