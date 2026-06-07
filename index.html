@@ -976,6 +976,104 @@ header{
   color:#fff !important;
 }
 
+
+
+/* v42 — L'Ombra della Bottega: micro-banner + prima tavola */
+.ombra-teaser{
+  display:block;
+  margin:10px 0 7px;
+  border:1px solid rgba(214,177,95,.34);
+  background:#100f0c;
+  overflow:hidden;
+}
+.ombra-teaser img{
+  width:100%;
+  height:clamp(78px,18vw,132px);
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+.ombra-section{
+  padding:28px 0 18px !important;
+  margin-top:18px !important;
+  border-top:1px solid rgba(214,177,95,.28);
+}
+.ombra-kicker{
+  color:#d6b15f;
+  font-size:clamp(12px,3.2vw,17px);
+  font-weight:900;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin:0 0 6px;
+}
+.ombra-section h2{
+  margin:0;
+  font-size:clamp(34px,9vw,64px);
+  line-height:.92;
+  letter-spacing:-.045em;
+}
+.ombra-subtitle{
+  margin:7px 0 16px;
+  color:#d6b15f;
+  font-style:italic;
+  font-size:clamp(18px,4.8vw,30px);
+  line-height:1.05;
+}
+.ombra-card{
+  background:rgba(255,255,255,.035);
+  border:1px solid rgba(255,255,255,.10);
+  padding:14px;
+  margin-top:14px;
+}
+.ombra-card h3{
+  margin:0 0 8px;
+  font-size:clamp(25px,6.4vw,42px) !important;
+  line-height:1.02 !important;
+  letter-spacing:-.02em !important;
+}
+.ombra-card .lead{
+  color:#f2f2f2;
+  font-size:17px;
+  line-height:1.42;
+  margin:0 0 12px;
+}
+.ombra-plate{
+  width:100%;
+  display:block;
+  margin:12px 0 14px;
+  border:1px solid rgba(214,177,95,.26);
+}
+.ombra-text p,
+.ombra-note p{
+  color:#d8d8d8;
+  font-size:16px;
+  line-height:1.52;
+  margin:0 0 13px;
+}
+.ombra-note{
+  margin-top:14px;
+  padding:13px;
+  border-left:3px solid #d6b15f;
+  background:rgba(214,177,95,.08);
+}
+.ombra-note h4{
+  margin:0 0 8px;
+  color:#fff;
+  font-size:18px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+.ombra-intro{
+  color:#bfc2c8;
+  font-size:16px;
+  line-height:1.48;
+  margin:8px 0 0;
+}
+@media (max-width:390px){
+  .ombra-teaser img{height:74px;}
+  .ombra-card{padding:11px;}
+}
+
 </style>
 </head>
 <body>
@@ -1010,6 +1108,10 @@ header{
         <div class="contact-small">348 276 2842 · <a href="mailto:info.marcoaurelio@gmail.com">info.marcoaurelio@gmail.com</a></div>
       </div>
     </div>
+
+    <a class="ombra-teaser" href="#ombra-bottega" aria-label="Entra nell'Ombra della Bottega">
+      <img src="assets/ombra_bottega_banner.jpg" alt="L'Ombra della Bottega · Il Vento dei Gesti Dimenticati">
+    </a>
     <nav class="collections" aria-label="Collezioni">
       <a class="collection-card" href="#kintsugi">
         <div><h2>KINTSUGI</h2><p>Frattura · oro · continuità</p></div>
@@ -1072,6 +1174,33 @@ header{
           <img src="assets/astrolabio_3.jpg" alt="">
         </div>
         <p class="placeholder-text">Orientarsi non significa possedere una mappa.</p>
+      </section>
+
+      <section id="ombra-bottega" class="ombra-section" aria-label="L'Ombra della Bottega">
+        <p class="ombra-kicker">Nuova rubrica</p>
+        <h2>L'Ombra della Bottega</h2>
+        <p class="ombra-subtitle">Il Vento dei Gesti Dimenticati</p>
+        <p class="ombra-intro">Una raccolta di tecniche, strumenti e piccoli gesti che rischiano di essere dimenticati.</p>
+        <article class="ombra-card">
+          <h3>Come si fa una saldatura?</h3>
+          <p class="lead"><em>Guida illustrata per capire, passo dopo passo, uno dei gesti più antichi dell'oreficeria.</em></p>
+          <img class="ombra-plate" src="assets/ombra_saldatura_tavola.jpg" alt="Tavola illustrata: come si fa una saldatura con cannello da orafo">
+          <div class="ombra-text">
+            <p>Esistono molti modi per saldare i metalli e ogni artigiano sviluppa nel tempo le proprie preferenze, i propri strumenti e il proprio modo di lavorare.</p>
+            <p>In bottega utilizziamo spesso uno strumento tradizionale chiamato <strong>chalumeau</strong>. Si tratta di un piccolo cannello da orafo che permette di controllare il calore con grande precisione.</p>
+            <p>La parte affascinante è che il controllo della fiamma è quasi immediato. Dopo anni di esperienza il movimento diventa naturale, quasi istintivo.</p>
+            <p>Contrariamente a quanto si potrebbe immaginare, durante una saldatura non si punta sempre la fiamma direttamente sul punto da unire. Nella maggior parte dei casi si scalda l'intero pezzo in modo controllato e uniforme, lasciando che il calore raggiunga la giunzione.</p>
+            <p>Quando la temperatura è corretta, la saldatura fonde e scorre nel punto desiderato per capillarità.</p>
+            <p>Il risultato finale dipende da molti fattori: temperatura, pulizia delle superfici, scelta della lega saldante e soprattutto esperienza dell'artigiano.</p>
+            <p>È uno di quei lavori che sembrano semplici quando vengono eseguiti bene, ma che richiedono anni di pratica per essere padroneggiati davvero.</p>
+          </div>
+          <div class="ombra-note">
+            <h4>Nota di Bottega</h4>
+            <p>Esistono molti tipi di cannello e quasi ogni orafo ha il proprio preferito.</p>
+            <p>Cambiano forma, regolazioni e dettagli costruttivi, ma il principio rimane lo stesso: controllare il calore con precisione.</p>
+            <p>Anche la fiamma illustrata è soltanto un esempio. Ogni lavorazione può richiedere una regolazione diversa.</p>
+          </div>
+        </article>
       </section>
 <section id="faq" style="padding:40px 16px;">
   <h2 style="font-size:24px; margin-bottom:22px;">DOMANDE FREQUENTI</h2>
@@ -1202,7 +1331,7 @@ header{
     <img src="assets/chiusura_laboratorio.jpg" alt="Interno della Bottega Marco Aurelio">
     <img src="assets/chiusura_vetrina.jpg" alt="Vetrina della Bottega Marco Aurelio">
   </div>
-  <p style="margin:14px 0 0; color:#777; font-size:12px; text-align:center;"><strong>SITO AGGIORNATO</strong> · 03/06/2026</p>
+  <p style="margin:14px 0 0; color:#777; font-size:12px; text-align:center;"><strong>SITO AGGIORNATO</strong> · 07/06/2026</p>
 </section>
 <div class="final-spacer" aria-hidden="true"></div>
 
