@@ -1077,6 +1077,40 @@ header{
   line-height:1.48;
   margin:8px 0 0;
 }
+
+.ombra-index{
+  margin:14px 0 18px;
+  padding:12px 13px;
+  border:1px solid rgba(214,177,95,.26);
+  background:rgba(214,177,95,.06);
+}
+.ombra-index-title{
+  margin:0 0 8px;
+  color:#d6b15f;
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.ombra-index a{
+  display:block;
+  color:#f2f2f2;
+  text-decoration:none;
+  font-size:16px;
+  line-height:1.35;
+  padding:5px 0;
+}
+.ombra-index a strong{
+  color:#d6b15f;
+  letter-spacing:.05em;
+}
+.ombra-index a:hover,
+.ombra-index a:focus{
+  color:#fff;
+  text-decoration:underline;
+  text-decoration-color:#d6b15f;
+}
+
 @media (max-width:390px){
   .ombra-teaser img{height:74px;}
   .ombra-card{padding:11px;}
@@ -1189,7 +1223,12 @@ header{
         <h2>L'Ombra della Bottega</h2>
         <p class="ombra-subtitle">Il Vento dei Gesti Dimenticati</p>
         <p class="ombra-intro">Una raccolta di tecniche, strumenti e piccoli gesti che rischiano di essere dimenticati.</p>
-        <article class="ombra-card">
+        <div class="ombra-index" aria-label="Gesti salvati">
+          <p class="ombra-index-title">Gesti salvati</p>
+          <a href="#gesto-001-saldatura"><strong>001</strong> · Come si fa una saldatura?</a>
+          <a href="#gesto-002-castone-premuto"><strong>002</strong> · Come si realizza un castone premuto?</a>
+        </div>
+        <article class="ombra-card" id="gesto-001-saldatura">
           <h3>Come si fa una saldatura?</h3>
           <p class="lead"><em>Guida illustrata per capire, passo dopo passo, uno dei gesti più antichi dell'oreficeria.</em></p>
           <a class="ombra-plate-link" href="assets/ombra_saldatura_tavola.jpg" target="_blank" rel="noopener" title="Apri la tavola a schermo intero"><img class="ombra-plate" src="assets/ombra_saldatura_tavola.jpg" alt="Tavola illustrata: come si fa una saldatura con cannello da orafo"></a>
@@ -1207,6 +1246,24 @@ header{
             <p>Esistono molti tipi di cannello e quasi ogni orafo ha il proprio preferito.</p>
             <p>Cambiano forma, regolazioni e dettagli costruttivi, ma il principio rimane lo stesso: controllare il calore con precisione.</p>
             <p>Anche la fiamma illustrata è soltanto un esempio. Ogni lavorazione può richiedere una regolazione diversa.</p>
+          </div>
+        </article>
+        <article class="ombra-card" id="gesto-002-castone-premuto">
+          <h3>Come si realizza un castone premuto?</h3>
+          <p class="lead"><em>Guida illustrata per capire, passo dopo passo, come si chiude un castone senza colpire l'oggetto.</em></p>
+          <a class="ombra-plate-link" href="assets/ombra_castone_tavola.jpg" target="_blank" rel="noopener" title="Apri la tavola a schermo intero"><img class="ombra-plate" src="assets/ombra_castone_tavola.jpg" alt="Tavola illustrata: come si realizza un castone premuto"></a>
+          <div class="ombra-text">
+            <p>Il castone premuto si usa quando ciò che deve essere incastonato è troppo delicato per sopportare colpi o pressioni violente.</p>
+            <p>Il castone è una semplice fascetta di metallo avvolta intorno all'oggetto. Viene assottigliato prima all'interno, per accogliere la moneta o la pietra, e poi all'esterno, fino a lasciare un bordo sottile.</p>
+            <p>Invece di battere il metallo con il martello, si usa uno <strong>spingitore</strong>: un utensile corto, guidato dalle dita e serrato nel palmo della mano.</p>
+            <p>Lo spingitore non lavora sulla moneta. Lavora solo sul bordo esterno del castone, accompagnando il metallo verso l'interno con piccole pressioni successive.</p>
+            <p>Le tracce lasciate sul bordo spesso non vengono eliminate. Sembrano un'ornamentazione, ma sono anche il segno di una scelta: preservare ciò che è fragile.</p>
+          </div>
+          <div class="ombra-note">
+            <h4>Nota di Bottega</h4>
+            <p>Non tutto deve essere vinto con la forza.</p>
+            <p>Alcune cose si conservano accompagnandole.</p>
+            <p>La scheda mostra il principio del gesto. La manualità vera, quella delle dita e della pressione, si impara solo facendola.</p>
           </div>
         </article>
       </section>
@@ -1229,6 +1286,42 @@ header{
         <li>Hai un budget indicativo? Non è obbligatorio, ma aiuta a proporre soluzioni sensate.</li>
       </ul>
       Non serve conoscere termini tecnici. Anche una descrizione semplice come “vorrei un anello ispirato al mare, in argento, senza pietre” è più che sufficiente per iniziare.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <span class="faq-q">Posso ordinare un anello personalizzato in oro prima di arrivare a Roma e ritirarlo durante il viaggio?</span>
+    <div class="faq-a">
+      No.
+      <br><br>
+      Un gioiello personalizzato non è un prodotto da magazzino e non può essere progettato, preventivato e realizzato correttamente soltanto tramite messaggi, fotografie o disegni inviati a distanza.
+      <br><br>
+      Per iniziare un lavoro su misura è necessario un appuntamento in bottega.
+      <br><br>
+      La misura del dito deve essere presa personalmente, perché la vestibilità finale dipende anche dalla larghezza, dallo spessore, dalla sezione e dalle proporzioni dell'anello. Una semplice misura numerica non è sufficiente.
+      <br><br>
+      Anche il peso dell'oro non può essere determinato prima di aver definito il progetto. Piccole variazioni di forma e proporzioni possono modificare sensibilmente la quantità di metallo necessaria.
+      <br><br>
+      Lo stesso vale per smeraldi, diamanti e altre pietre, che cambiano per dimensione, taglio, qualità, colore, disponibilità e prezzo.
+      <br><br>
+      Per questo motivo i lavori personalizzati vengono presi in considerazione solo con queste condizioni:
+      <ul>
+        <li>appuntamento in bottega;</li>
+        <li>misura presa personalmente;</li>
+        <li>scelta o definizione del modello dal vivo;</li>
+        <li>valutazione reale delle pietre;</li>
+        <li>acconto iniziale pari al valore stimato del metallo più il 50% della manifattura stimata;</li>
+        <li>saldo completo prima della consegna o della spedizione;</li>
+        <li>conteggio finale basato sul metallo effettivamente utilizzato, comprensivo del normale calo di lavorazione artigianale, convenzionalmente considerato pari al 25% del metallo impiegato;</li>
+        <li>eventuali modifiche del progetto, variazioni delle pietre o diversa quantità di oro necessaria vengono conteggiate nel saldo finale.</li>
+      </ul>
+      La consegna durante un breve soggiorno a Roma non è garantita.
+      <br><br>
+      Una volta terminato, il pezzo può essere spedito all'indirizzo del cliente con spedizione documentata.
+      <br><br>
+      <strong>Un gioiello personalizzato non è un prodotto da magazzino.</strong>
+      <br><br>
+      <strong>È un lavoro che inizia con un incontro e si conclude quando il pezzo è pronto, non quando lo impone il calendario del viaggio.</strong>
     </div>
   </div>
 
@@ -1339,7 +1432,7 @@ header{
     <img src="assets/chiusura_laboratorio.jpg" alt="Interno della Bottega Marco Aurelio">
     <img src="assets/chiusura_vetrina.jpg" alt="Vetrina della Bottega Marco Aurelio">
   </div>
-  <p style="margin:14px 0 0; color:#777; font-size:12px; text-align:center;"><strong>SITO AGGIORNATO</strong> · 07/06/2026</p>
+  <p style="margin:14px 0 0; color:#777; font-size:12px; text-align:center;"><strong>SITO AGGIORNATO</strong> · 18/06/2026</p>
 </section>
 <div class="final-spacer" aria-hidden="true"></div>
 
