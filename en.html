@@ -1,0 +1,1518 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Bottega Marco Aurelio · Rome</title>
+  <meta name="description" content="Bottega Marco Aurelio · Independent goldsmith in Campo de’ Fiori, Rome. One-of-a-kind pieces by appointment.">
+  <style>
+    :root{
+      --bg:#050505;
+      --panel:#101010;
+      --line:#8c8c8c;
+      --line-soft:#424242;
+      --text:#f5f5f5;
+      --muted:#cfcfcf;
+      --gold:#d4aa45;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth; overflow-x:hidden}
+    body{
+      margin:0;
+      overflow-x:hidden;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Arial, Helvetica, sans-serif;
+      line-height:1.05;
+    }
+    a{color:inherit;text-decoration:none}
+    .map-link{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+    .page{
+      width:min(760px,100%);
+      margin:0 auto;
+      padding:5px 8px 86px;
+      overflow:hidden;
+    }
+    header{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto;
+      gap:8px;
+      align-items:end;
+      padding:2px 2px 7px;
+    }
+    .brand{
+      min-width:0;
+      overflow:hidden;
+      display:flex;
+      align-items:baseline;
+      gap:.42em;
+      white-space:nowrap;
+      font-weight:700;
+    }
+    .brand-main{
+      letter-spacing:.18em;
+      font-size:clamp(22px,6vw,42px);
+      line-height:.9;
+    }
+    .brand-sub{
+      letter-spacing:.03em;
+      font-size:clamp(15px,4vw,28px);
+      text-transform:none;
+      opacity:.95;
+    }
+    .tag{
+      max-width:100px;
+      overflow:hidden;
+      text-align:right;
+      color:var(--muted);
+      font-size:clamp(10px,2.8vw,16px);
+      font-weight:700;
+      line-height:1.02;
+    }
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border-radius:17px;
+      height:clamp(126px,29vw,210px);
+      background:#111;
+      border:1.3px solid var(--line);
+      box-shadow:0 10px 34px rgba(0,0,0,.45);
+    }
+    .hero img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      filter:contrast(1.03) brightness(.72);
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.55));
+      pointer-events:none;
+    }
+    .hero-text{
+      position:absolute;
+      left:14px;
+      right:12px;
+      bottom:12px;
+      z-index:2;
+      text-shadow:0 3px 14px rgba(0,0,0,.9);
+    }
+    .hero h1{
+      margin:0;
+      font-size:clamp(30px,8.1vw,62px);
+      line-height:.90;
+      letter-spacing:-.055em;
+      font-weight:700;
+    }
+    .hero p{
+      margin:7px 0 0;
+      font-size:clamp(14px,3.7vw,23px);
+      font-weight:700;
+      line-height:1.05;
+    }
+    .access-card{
+      margin-top:7px;
+      border:1.5px solid var(--line);
+      background:linear-gradient(180deg,#151515,#0f0f0f);
+      border-radius:17px;
+      padding:10px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:7px;
+    }
+    .eyebrow{
+      color:var(--gold);
+      letter-spacing:.25em;
+      font-weight:700;
+      font-size:clamp(12px,3.1vw,17px);
+      text-transform:uppercase;
+      line-height:1.1;
+    }
+    .open-big{
+      margin:4px 0 0;
+      font-size:clamp(25px,6.7vw,46px);
+      font-weight:700;
+      line-height:.98;
+    }
+    .access-lines{
+      color:var(--muted);
+      font-size:clamp(14px,3.55vw,22px);
+      font-weight:700;
+      line-height:1.10;
+      margin-top:5px;
+    }
+    .access-lines strong{color:var(--text)}
+    .contact-note{
+      margin-top:4px;
+      font-size:clamp(14px,3.45vw,21px);
+      font-weight:700;
+      color:var(--text);
+      line-height:1.10;
+    }
+    .actions{
+      display:grid;
+      grid-template-columns:1.25fr .75fr;
+      gap:9px;
+      margin-top:9px;
+    }
+    .btn{
+      border-radius:17px;
+      min-height:44px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      font-weight:700;
+      font-size:clamp(17px,4.4vw,27px);
+      border:1.5px solid var(--line);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
+    }
+    .btn.whatsapp{
+      background:linear-gradient(180deg,#e0b752,#c9972f);
+      color:#111;
+      border-color:#d1a844;
+    }
+    .btn.sms{
+      background:#050505;
+      color:var(--text);
+    }
+    .contact-small{
+      color:var(--muted);
+      font-size:clamp(12px,3.25vw,18px);
+      font-weight:700;
+      line-height:1.10;
+      margin-top:8px;
+      overflow-wrap:anywhere;
+    }
+    .collections{
+      margin-top:7px;
+      display:grid;
+      gap:7px;
+    }
+    .collection-card{
+      display:grid;
+      grid-template-columns:.9fr 1fr 1fr 1fr;
+      gap:7px;
+      align-items:center;
+      border:1.4px solid var(--line);
+      background:#0d0d0d;
+      border-radius:16px;
+      padding:7px;
+      min-height:70px;
+    }
+    .collection-card h2{
+      margin:0 0 3px;
+      font-size:clamp(20px,5.25vw,38px);
+      font-weight:700;
+      letter-spacing:.01em;
+      line-height:.95;
+    }
+    .collection-card p{
+      margin:0;
+      color:var(--muted);
+      font-size:clamp(9px,2.45vw,13px);
+      font-weight:700;
+      line-height:1.05;
+    }
+    .thumb{
+      aspect-ratio:1.18/1;
+      border-radius:11px;
+      overflow:hidden;
+      border:1px solid var(--line-soft);
+      background:#222;
+    }
+    .thumb img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .bottom-cta{
+      position:fixed;
+      left:50%;
+      transform:translate(-50%, 130%);
+      bottom:10px;
+      width:min(720px,calc(100% - 22px));
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+      z-index:20;
+      pointer-events:none;
+      opacity:0;
+      transition:transform .22s ease, opacity .22s ease;
+    }
+    .bottom-cta.visible{
+      transform:translate(-50%, 0);
+      opacity:1;
+    }
+    .bottom-cta a{
+      pointer-events:auto;
+      min-height:54px;
+      border-radius:999px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      font-size:clamp(20px,5.2vw,32px);
+      font-weight:700;
+      border:1px solid rgba(255,255,255,.18);
+      box-shadow:0 12px 30px rgba(0,0,0,.45);
+    }
+    .bottom-cta .w{
+      background:linear-gradient(180deg,#33df76,#16b956);
+      color:white;
+    }
+    .bottom-cta .i{
+      background:#111;
+      color:white;
+    }
+    main{
+      margin-top:18px;
+      padding-top:12px;
+      border-top:1px solid var(--line-soft);
+    }
+    section{padding:18px 0 8px}
+    section h3{
+      margin:0 0 11px;
+      font-size:clamp(32px,10vw,64px);
+      letter-spacing:.06em;
+      line-height:.95;
+    }
+    .gallery{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:10px;
+    }
+    .gallery img{
+      width:100%;
+      border-radius:18px;
+      border:1px solid var(--line-soft);
+      display:block;
+    }
+    .placeholder-text{
+      color:var(--muted);
+      font-size:18px;
+      line-height:1.35;
+      margin:10px 0 0;
+    }
+    @media (min-width:620px){
+      .access-card{grid-template-columns:1.02fr .98fr; align-items:center}
+      .gallery{grid-template-columns:repeat(3,1fr)}
+      .gallery img{aspect-ratio:1/1; object-fit:cover}
+    }
+    @media (max-width:390px){
+      .page{padding-left:7px;padding-right:7px}
+      .hero{height:122px}
+      .access-card{padding:9px}
+      .collection-card{grid-template-columns:.78fr 1fr 1fr 1fr}
+      .brand-main{font-size:clamp(21px,6.2vw,30px)}
+      .brand-sub{font-size:clamp(14px,4vw,22px)}
+      .tag{font-size:10px; max-width:92px}
+      .actions{gap:7px}
+    }
+/* v7 — WhatsApp: grigio scuro + filo verde */
+.btn.whatsapp,
+.bottom-cta .w {
+  background: #1c1c1c !important;
+  color: #ffffff !important;
+  border: 2px solid #25D366 !important;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.04), 0 12px 30px rgba(0,0,0,.45) !important;
+}
+.btn.whatsapp:hover,
+.bottom-cta .w:hover {
+  filter: brightness(1.08);
+}
+/* v8 — moduli senza cornici bianche */
+.hero,
+.access-card,
+.collection-card,
+.thumb,
+.gallery img {
+  border: none !important;
+}
+/* mantieni leggibilità separando con sfondo e aria, non con cornici */
+.access-card,
+.collection-card {
+  box-shadow: none !important;
+}
+/* bottone flottante torna-su */
+.top-float {
+  position: fixed;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%) scale(.92);
+  width: 12.5vw;
+  height: 12.5vw;
+  max-width: 64px;
+  max-height: 64px;
+  min-width: 46px;
+  min-height: 46px;
+  border-radius: 999px;
+  border: 2px solid rgba(255,255,255,.88);
+  background: rgba(20,20,20,.58);
+  color: #ffffff;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(26px, 7vw, 42px);
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .22s ease, transform .22s ease;
+  backdrop-filter: blur(4px);
+}
+.top-float.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(-50%) scale(1);
+}
+/* v12 — freccia su collegata ai pulsanti WhatsApp/Instagram */
+.top-float {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity .22s ease, transform .22s ease !important;
+}
+.top-float.visible {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+.bottom-cta {
+  opacity: 0;
+  pointer-events: none;
+}
+.bottom-cta.visible {
+  opacity: 1;
+  pointer-events: none;
+}
+/* v16 — switch lingua al posto della scritta ridondante */
+.lang-switch{
+  position:absolute;
+  top:8px;
+  right:10px;
+  width:clamp(24px,6vw,32px);
+  height:clamp(24px,6vw,32px);
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,.6);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  background:rgba(20,20,20,.6);
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:700;
+  font-size:clamp(9px,2.5vw,12px);
+  letter-spacing:.04em;
+  text-decoration:none;
+  backdrop-filter:blur(4px);
+}
+.lang-switch:active{transform:scale(.96)}
+/* v20 — Campo de' Fiori compatto, senza andare a capo */
+.map-nowrap{
+  white-space:nowrap;
+  display:inline-block;
+}
+.map-pin{
+  color:#ff3b30;
+  font-size:.72em;
+  vertical-align:middle;
+  margin-right:.16em;
+  position:relative;
+  top:-.06em;
+}
+.hero p{
+  letter-spacing:-.02em;
+}
+
+/* v24 — MODERNA / editorial-app */
+:root{
+  --bg:#070707 !important;
+  --panel:#111214 !important;
+  --panel2:#18191c !important;
+  --line:#2d2f35 !important;
+  --line-soft:#26282e !important;
+  --text:#f7f7f7 !important;
+  --muted:#aeb3bb !important;
+  --gold:#d6b15f !important;
+  --green:#25D366 !important;
+}
+
+body{
+  background:
+    radial-gradient(circle at 18% 0%, rgba(214,177,95,.16), transparent 26%),
+    radial-gradient(circle at 90% 12%, rgba(37,211,102,.08), transparent 20%),
+    #070707 !important;
+  color:#f7f7f7 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.page{
+  padding:8px 10px 96px !important;
+}
+
+header{
+  padding:6px 2px 10px !important;
+}
+
+.brand-main{
+  letter-spacing:.18em !important;
+  font-weight:700 !important;
+}
+
+.brand-sub{
+  font-weight:700 !important;
+  opacity:.86 !important;
+}
+
+.lang-switch{
+  background:rgba(255,255,255,.08) !important;
+  border:1px solid rgba(255,255,255,.26) !important;
+  box-shadow:0 10px 26px rgba(0,0,0,.32) !important;
+}
+
+.hero{
+  border-radius:28px !important;
+  overflow:hidden !important;
+  border:1px solid rgba(255,255,255,.08) !important;
+  box-shadow:0 22px 65px rgba(0,0,0,.52) !important;
+  height:clamp(150px,34vw,255px) !important;
+}
+
+.hero img{
+  filter:contrast(1.06) brightness(.70) saturate(.78) !important;
+  transform:scale(1.02);
+}
+
+.hero::after{
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.06), rgba(0,0,0,.72)),
+    linear-gradient(90deg, rgba(0,0,0,.54), transparent 65%) !important;
+}
+
+.hero-text{
+  left:18px !important;
+  bottom:16px !important;
+}
+
+.hero h1{
+  font-size:clamp(38px,9.6vw,74px) !important;
+  letter-spacing:-.07em !important;
+  line-height:.88 !important;
+}
+
+.hero p{
+  font-size:clamp(15px,3.9vw,25px) !important;
+  color:rgba(255,255,255,.92) !important;
+}
+
+.map-link{
+  text-decoration:none !important;
+  border-bottom:2px solid rgba(255,255,255,.88) !important;
+}
+
+.map-pin{
+  color:#ff463a !important;
+  font-size:.7em !important;
+}
+
+.access-card{
+  margin-top:12px !important;
+  background:linear-gradient(180deg, rgba(28,29,33,.94), rgba(13,14,16,.96)) !important;
+  border:1px solid rgba(255,255,255,.08) !important;
+  border-radius:30px !important;
+  box-shadow:0 18px 50px rgba(0,0,0,.42), inset 0 1px 0 rgba(255,255,255,.04) !important;
+  padding:18px !important;
+}
+
+.eyebrow{
+  color:#d6b15f !important;
+  letter-spacing:.28em !important;
+  font-size:clamp(11px,3vw,16px) !important;
+}
+
+.open-big{
+  font-size:clamp(34px,8.4vw,60px) !important;
+  letter-spacing:-.05em !important;
+}
+
+.access-lines{
+  color:#aeb3bb !important;
+}
+
+.access-lines span:first-child,
+.access-lines strong{
+  color:#fff !important;
+}
+
+.contact-note{
+  color:#f4f4f4 !important;
+}
+
+.btn{
+  border-radius:999px !important;
+  background:rgba(255,255,255,.04) !important;
+  border:1px solid rgba(255,255,255,.18) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08), 0 12px 34px rgba(0,0,0,.25) !important;
+}
+
+.btn.whatsapp{
+  color:#fff !important;
+  border:2px solid #25D366 !important;
+  background:rgba(37,211,102,.06) !important;
+}
+
+.btn.sms{
+  color:#fff !important;
+  background:rgba(255,255,255,.03) !important;
+}
+
+.collections{
+  margin-top:12px !important;
+  gap:10px !important;
+}
+
+.collection-card{
+  background:rgba(17,18,20,.86) !important;
+  backdrop-filter:blur(8px) !important;
+  border:1px solid rgba(255,255,255,.07) !important;
+  border-radius:26px !important;
+  box-shadow:0 14px 45px rgba(0,0,0,.35) !important;
+  padding:10px !important;
+}
+
+.collection-card h2{
+  letter-spacing:-.02em !important;
+  font-size:clamp(26px,6.7vw,44px) !important;
+}
+
+.collection-card p{
+  color:#aeb3bb !important;
+  font-size:clamp(10px,2.65vw,14px) !important;
+}
+
+.thumb{
+  border-radius:18px !important;
+  border:1px solid rgba(255,255,255,.09) !important;
+  box-shadow:0 8px 22px rgba(0,0,0,.28) !important;
+}
+
+.thumb img{
+  filter:contrast(1.02) saturate(.9) !important;
+  transition:transform .28s ease, filter .28s ease;
+}
+
+.collection-card:active .thumb img{
+  transform:scale(1.04);
+  filter:contrast(1.08) saturate(1.02) !important;
+}
+
+main{
+  border-top:1px solid rgba(255,255,255,.08) !important;
+  margin-top:22px !important;
+}
+
+section h3{
+  letter-spacing:-.055em !important;
+  font-size:clamp(52px,15vw,100px) !important;
+}
+
+.gallery{
+  gap:14px !important;
+}
+
+.gallery img{
+  border-radius:30px !important;
+  border:1px solid rgba(255,255,255,.08) !important;
+  box-shadow:0 18px 60px rgba(0,0,0,.45) !important;
+}
+
+.placeholder-text{
+  color:#b8bcc4 !important;
+}
+
+.bottom-cta{
+  gap:10px !important;
+}
+
+.bottom-cta a{
+  border-radius:999px !important;
+  backdrop-filter:blur(10px) !important;
+  background:rgba(17,18,20,.82) !important;
+  border:1px solid rgba(255,255,255,.16) !important;
+  box-shadow:0 16px 45px rgba(0,0,0,.48) !important;
+}
+
+.bottom-cta .w{
+  border:2px solid #25D366 !important;
+  background:rgba(17,18,20,.90) !important;
+  color:#fff !important;
+}
+
+.bottom-cta .i{
+  background:rgba(17,18,20,.90) !important;
+}
+
+.top-float{
+  background:rgba(17,18,20,.62) !important;
+  border:1px solid rgba(255,255,255,.68) !important;
+  box-shadow:0 12px 35px rgba(0,0,0,.38) !important;
+  backdrop-filter:blur(10px) !important;
+}
+
+#faq{
+  background:rgba(17,18,20,.72) !important;
+  border-radius:30px !important;
+  margin-top:22px !important;
+  border:1px solid rgba(255,255,255,.07) !important;
+  box-shadow:0 18px 55px rgba(0,0,0,.36) !important;
+}
+
+@media (max-width:390px){
+  .hero{height:138px !important}
+  .access-card{padding:14px !important}
+  .collection-card{border-radius:22px !important}
+}
+
+
+/* V25 HYBRID: colori contrastati + spigoli vivi */
+
+*{border-radius:0 !important;}
+
+body{
+  background:#000 !important;
+  color:#fff !important;
+}
+
+.hero, .access-card, .collection-card, .thumb, .gallery img{
+  border-radius:0 !important;
+}
+
+.muted, .access-lines{
+  color:#cfcfcf !important;
+}
+
+.btn.whatsapp{
+  border:2px solid #25D366 !important;
+  background:transparent !important;
+}
+
+.btn.sms{
+  border:1px solid #ffffff !important;
+  background:transparent !important;
+}
+
+.hero{
+  height:clamp(130px,28vw,200px) !important;
+}
+
+.page{
+  padding:6px 8px 90px !important;
+}
+
+.access-card{
+  padding:14px !important;
+}
+
+.collection-card{
+  padding:8px !important;
+}
+
+
+/* V26: no module boxes + square buttons */
+
+.access-card, .collection-card, .hero, .gallery, .thumb{
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+}
+
+/* keep buttons square */
+.btn{
+  border-radius:0 !important;
+}
+
+/* tighten spacing for more above-the-fold */
+.page{
+  padding:4px 6px 80px !important;
+}
+
+.access-card{
+  padding:10px 0 !important;
+}
+
+.collection-card{
+  padding:6px 0 !important;
+}
+
+
+/* V27: restore V22 readability + tighter spacing */
+
+body{
+  color:#ffffff !important;
+}
+
+.muted, .access-lines{
+  color:#bfbfbf !important;
+}
+
+/* tighten typography */
+h1, .hero-title{
+  font-size:clamp(22px,6vw,32px) !important;
+}
+
+.access-title{
+  font-size:clamp(24px,7vw,36px) !important;
+}
+
+/* compress spacing further */
+.page{
+  padding:2px 6px 70px !important;
+}
+
+.access-card{
+  padding:8px 0 !important;
+}
+
+.collection-card{
+  padding:4px 0 !important;
+}
+
+/* reduce gaps */
+section{
+  margin-bottom:8px !important;
+}
+
+
+/* V29 — vero fix: 22 compatta + bottoni squadrati + gerarchia grigi */
+
+/* elimina spazio morto reale sotto hero */
+.hero{
+  margin-bottom:0 !important;
+}
+.hero-text{
+  bottom:8px !important;
+}
+.hero p{
+  margin-top:3px !important;
+  line-height:1 !important;
+}
+.access-card{
+  margin-top:4px !important;
+  padding-top:6px !important;
+}
+
+/* compatta tutto il fold */
+.page{
+  padding-top:2px !important;
+  padding-left:6px !important;
+  padding-right:6px !important;
+  padding-bottom:76px !important;
+}
+header{
+  padding-top:1px !important;
+  padding-bottom:5px !important;
+}
+.hero{
+  height:clamp(122px,27vw,190px) !important;
+}
+.access-card{
+  padding-bottom:7px !important;
+}
+.collections{
+  margin-top:6px !important;
+  gap:6px !important;
+}
+.collection-card{
+  padding-top:5px !important;
+  padding-bottom:5px !important;
+  min-height:64px !important;
+}
+
+/* bottoni squadrati, ma senza riquadrare tutti i moduli */
+.btn,
+.bottom-cta a,
+.lang-switch{
+  border-radius:0 !important;
+}
+.btn.whatsapp,
+.bottom-cta .w{
+  background:#1c1c1c !important;
+  color:#ffffff !important;
+  border:2px solid #25D366 !important;
+}
+.btn.sms,
+.bottom-cta .i{
+  background:#111111 !important;
+  color:#ffffff !important;
+  border:1.5px solid #9a9a9a !important;
+}
+
+/* gerarchia corretta */
+.access-lines{
+  color:#b6b6b6 !important;
+}
+.access-lines strong,
+.access-lines span[style*="ffffff"]{
+  color:#ffffff !important;
+}
+.access-lines span[style*="9aa0a6"]{
+  color:#a7a7a7 !important;
+}
+
+/* queste due righe devono essere grigie, non bianche */
+.access-lines span:not([style*="ffffff"]),
+.contact-note{
+  color:#b6b6b6 !important;
+}
+
+/* ma i titoli azione restano leggibili */
+.eyebrow{
+  color:#d4aa45 !important;
+}
+
+/* tagli netti dove servono, niente pillole */
+.hero,
+.access-card,
+.collection-card,
+.thumb,
+.gallery img{
+  border-radius:0 !important;
+}
+
+/* niente box decorativi pesanti sui moduli */
+.access-card,
+.collection-card{
+  box-shadow:none !important;
+}
+
+/* immagini: mantieni colori reali */
+.hero img,
+.thumb img,
+.gallery img{
+  filter:none !important;
+}
+
+
+/* v32 — FAQ estese + immagini di chiusura */
+.closing-module{
+  padding:18px 0 0 !important;
+  margin:0 !important;
+}
+.closing-images{
+  display:grid;
+  gap:12px;
+}
+.closing-images img{
+  width:100%;
+  display:block;
+  object-fit:cover;
+  border-radius:0 !important;
+  border:none !important;
+}
+.final-spacer{
+  height:50vh;
+}
+#faq h2,
+#faq h3{
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+
+
+/* v35 — CTA coerenti IT/EN + pulsante FAQ separato */
+.bottom-cta{
+  grid-template-columns:1fr 1fr 1fr !important;
+}
+.bottom-cta a{
+  font-size:clamp(14px,3.4vw,24px) !important;
+  line-height:1.06 !important;
+  padding:0 10px !important;
+}
+.bottom-cta .faq{
+  background:rgba(17,18,20,.90) !important;
+  color:#fff !important;
+  border:1px solid rgba(255,255,255,.28) !important;
+}
+
+
+
+/* v36 — FAQ leggibili da smartphone: domanda grande, risposta normale */
+#faq .faq-item{
+  margin-bottom:26px !important;
+}
+
+#faq .faq-q{
+  display:block !important;
+  font-size:clamp(21px, 5.6vw, 30px) !important;
+  line-height:1.12 !important;
+  font-weight:900 !important;
+  letter-spacing:.01em !important;
+  margin-bottom:9px !important;
+  color:#fff !important;
+}
+
+#faq .faq-a{
+  font-size:16px !important;
+  line-height:1.48 !important;
+  color:#d8d8d8 !important;
+}
+
+#faq .faq-a ul{
+  margin:10px 0 12px 20px !important;
+  padding:0 !important;
+}
+
+#faq .faq-a li{
+  margin:5px 0 !important;
+}
+
+#faq .faq-yes{
+  font-weight:900 !important;
+  color:#fff !important;
+}
+
+
+
+/* v42 — L'Ombra della Bottega: micro-banner + prima tavola */
+.ombra-teaser{
+  display:block;
+  margin:10px 0 7px;
+  border:1px solid rgba(214,177,95,.34);
+  background:#100f0c;
+  overflow:hidden;
+}
+.ombra-teaser img{
+  width:100%;
+  height:clamp(78px,18vw,132px);
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+.ombra-section{
+  padding:28px 0 18px !important;
+  margin-top:18px !important;
+  border-top:1px solid rgba(214,177,95,.28);
+}
+.ombra-kicker{
+  color:#d6b15f;
+  font-size:clamp(12px,3.2vw,17px);
+  font-weight:900;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin:0 0 6px;
+}
+.ombra-section h2{
+  margin:0;
+  font-size:clamp(34px,9vw,64px);
+  line-height:.92;
+  letter-spacing:-.045em;
+}
+.ombra-subtitle{
+  margin:7px 0 16px;
+  color:#d6b15f;
+  font-style:italic;
+  font-size:clamp(18px,4.8vw,30px);
+  line-height:1.05;
+}
+.ombra-card{
+  background:rgba(255,255,255,.035);
+  border:1px solid rgba(255,255,255,.10);
+  padding:14px;
+  margin-top:14px;
+}
+.ombra-card h3{
+  margin:0 0 8px;
+  font-size:clamp(25px,6.4vw,42px) !important;
+  line-height:1.02 !important;
+  letter-spacing:-.02em !important;
+}
+.ombra-card .lead{
+  color:#f2f2f2;
+  font-size:17px;
+  line-height:1.42;
+  margin:0 0 12px;
+}
+.ombra-plate{
+  width:100%;
+  display:block;
+  margin:12px 0 14px;
+  border:1px solid rgba(214,177,95,.26);
+}
+.ombra-plate-link{
+  display:block;
+  cursor:zoom-in;
+}
+.ombra-plate-link:focus{
+  outline:2px solid #d6b15f;
+  outline-offset:3px;
+}
+.ombra-text p,
+.ombra-note p{
+  color:#d8d8d8;
+  font-size:16px;
+  line-height:1.52;
+  margin:0 0 13px;
+}
+.ombra-note{
+  margin-top:14px;
+  padding:13px;
+  border-left:3px solid #d6b15f;
+  background:rgba(214,177,95,.08);
+}
+.ombra-note h4{
+  margin:0 0 8px;
+  color:#fff;
+  font-size:18px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+.ombra-intro{
+  color:#bfc2c8;
+  font-size:16px;
+  line-height:1.48;
+  margin:8px 0 0;
+}
+
+.ombra-index{
+  margin:14px 0 18px;
+  padding:12px 13px;
+  border:1px solid rgba(214,177,95,.26);
+  background:rgba(214,177,95,.06);
+}
+.ombra-index-title{
+  margin:0 0 8px;
+  color:#d6b15f;
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.ombra-index a{
+  display:block;
+  color:#f2f2f2;
+  text-decoration:none;
+  font-size:16px;
+  line-height:1.35;
+  padding:5px 0;
+}
+.ombra-index a strong{
+  color:#d6b15f;
+  letter-spacing:.05em;
+}
+.ombra-index a:hover,
+.ombra-index a:focus{
+  color:#fff;
+  text-decoration:underline;
+  text-decoration-color:#d6b15f;
+}
+
+@media (max-width:390px){
+  .ombra-teaser img{height:74px;}
+  .ombra-card{padding:11px;}
+}
+
+</style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand"><span class="brand-main">BOTTEGA</span><span class="brand-sub">Marcoaurelio</span></div>
+      <a class="lang-switch" href="index.html" aria-label="Italian version">IT</a>
+    </header>
+    <div class="hero" id="home">
+      <img src="assets/banner.jpg" alt="Inside Bottega Marco Aurelio">
+      <div class="hero-text">
+        <h1>Unique pieces.<br></h1>
+        <p>Independent goldsmith · <a class="map-link map-nowrap" href="https://www.google.com/maps/search/?api=1&query=Campo%20de%27%20Fiori%20Roma" target="_blank" rel="noopener"><span class="map-pin">●</span> Campo de’ Fiori</a></p>
+      </div>
+    </div>
+    <div class="access-card" id="orari">
+      <div>
+        <div class="eyebrow">Hours / Access</div>
+        <p class="open-big">Open 7 days a week</p>
+        <div class="access-lines">
+          <span style="color:#ffffff; font-weight:600;">By appointment only</span><br>
+          <strong><span style="color:#9aa0a6;">Same-day availability · flexible hours, evenings included</span></strong>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow">Message, don’t call</div>
+        <div class="contact-note">I reply to messages within the day.<br>Calls are scheduled after.</div>
+        <div class="actions">
+          <a class="btn whatsapp" href="https://wa.me/393482762842">WhatsApp</a>
+          <a class="btn sms" href="sms:+393482762842">SMS</a>
+        </div>
+        <div class="contact-small">348 276 2842 · <a href="mailto:info.marcoaurelio@gmail.com">info.marcoaurelio@gmail.com</a></div>
+      </div>
+    </div>
+    <a class="ombra-teaser" href="#ombra-bottega" aria-label="Enter L'Ombra della Bottega">
+      <img src="assets/ombra_bottega_banner.jpg" alt="L'Ombra della Bottega · Il Vento dei Gesti Dimenticati">
+    </a>
+    <nav class="collections" aria-label="Collezioni">
+      <a class="collection-card" href="#kintsugi">
+        <div><h2>KINTSUGI</h2><p>Fracture · gold · continuity</p></div>
+        <div class="thumb"><img src="assets/kintsugi_1.jpg" alt="Kintsugi portrait"></div>
+        <div class="thumb"><img src="assets/kintsugi_2.jpg" alt="Kintsugi ring"></div>
+        <div class="thumb"><img src="assets/kintsugi_3.jpg" alt="Kintsugi macro detail"></div>
+      </a>
+      <a class="collection-card" href="#aria">
+        <div><h2>ARIA</h2><p>Light · lightness · structure</p></div>
+        <div class="thumb"><img src="assets/aria_1.jpg" alt="Aria portrait"></div>
+        <div class="thumb"><img src="assets/aria_2.jpg" alt="Aria ring"></div>
+        <div class="thumb"><img src="assets/aria_3.jpg" alt="Aria detail"></div>
+      </a>
+      <a class="collection-card" href="#fedi">
+        <div><h2>FEDI</h2><p>Custom made · not mass-produced</p></div>
+        <div class="thumb"><img src="assets/fedi_1.jpg" alt="Wedding bands pair"></div>
+        <div class="thumb"><img src="assets/fedi_2.jpg" alt="Wedding bands work in progress"></div>
+        <div class="thumb"><img src="assets/fedi_3.jpg" alt="Wedding bands worn"></div>
+      </a>
+      <a class="collection-card" href="#astrolabio">
+        <div><h2>ASTROLABIO</h2><p>Routes · symbols · matter</p></div>
+        <div class="thumb"><img src="assets/astrolabio_1.jpg" alt="Astrolabe staged image"></div>
+        <div class="thumb"><img src="assets/astrolabio_2.jpg" alt="Astrolabe worn"></div>
+        <div class="thumb"><img src="assets/astrolabio_3.jpg" alt="Astrolabe detail"></div>
+      </a>
+    </nav>
+    <main>
+      <section id="kintsugi">
+        <h3>KINTSUGI</h3>
+        <div class="gallery">
+          <img src="assets/kintsugi_1.jpg" alt="">
+          <img src="assets/kintsugi_2.jpg" alt="">
+          <img src="assets/kintsugi_3.jpg" alt="">
+        </div>
+        <p class="placeholder-text">The fracture does not break continuity. It makes it visible.</p>
+      </section>
+      <section id="aria">
+        <h3>ARIA</h3>
+        <div class="gallery">
+          <img src="assets/aria_1.jpg" alt="">
+          <img src="assets/aria_2.jpg" alt="">
+          <img src="assets/aria_3.jpg" alt="">
+        </div>
+        <p class="placeholder-text">Lightness does not mean fragility. It means removing everything unnecessary.</p>
+      </section>
+      <section id="fedi">
+        <h3>FEDI</h3>
+        <div class="gallery">
+          <img src="assets/fedi_1.jpg" alt="">
+          <img src="assets/fedi_2.jpg" alt="">
+          <img src="assets/fedi_3.jpg" alt="">
+        </div>
+        <p class="placeholder-text">Wedding bands made to measure, one at a time. Not mass-produced.</p>
+      </section>
+      <section id="astrolabio">
+        <h3>ASTROLABE / ARRAKIS</h3>
+        <div class="gallery">
+          <img src="assets/astrolabio_1.jpg" alt="">
+          <img src="assets/astrolabio_2.jpg" alt="">
+          <img src="assets/astrolabio_3.jpg" alt="">
+        </div>
+        <p class="placeholder-text">Finding your way does not mean owning a map.</p>
+      </section>
+    
+
+      <section id="ombra-bottega" class="ombra-section" aria-label="L'Ombra della Bottega">
+        <p class="ombra-kicker">New section</p>
+        <h2>L'Ombra della Bottega</h2>
+        <p class="ombra-subtitle">Il Vento dei Gesti Dimenticati</p>
+        <p class="ombra-intro">A collection of techniques, tools and small workshop gestures that risk being forgotten.</p>
+        <div class="ombra-index" aria-label="Saved gestures">
+          <p class="ombra-index-title">Saved gestures</p>
+          <a href="#gesture-001-soldering"><strong>001</strong> · How is soldering done?</a>
+          <a href="#gesture-002-pressed-bezel"><strong>002</strong> · How is a pressed bezel made?</a>
+        </div>
+        <article class="ombra-card" id="gesture-001-soldering">
+          <h3>How is soldering done?</h3>
+          <p class="lead"><em>An illustrated guide to understand, step by step, one of the oldest gestures in goldsmithing.</em></p>
+          <a class="ombra-plate-link" href="assets/ombra_saldatura_tavola.jpg" target="_blank" rel="noopener" title="Open the plate full size"><img class="ombra-plate" src="assets/ombra_saldatura_tavola.jpg" alt="Illustrated plate: how soldering is done with a jeweller's torch"></a>
+          <div class="ombra-text">
+            <p>There are many ways to solder metals, and every craftsperson develops personal preferences, tools and working habits over time.</p>
+            <p>In the workshop we often use a traditional tool called a <strong>chalumeau</strong>: a small jeweller's torch that allows very precise control of heat.</p>
+            <p>The fascinating part is that flame control is almost immediate. After years of practice, the movement becomes natural, almost instinctive.</p>
+            <p>Contrary to what one might imagine, soldering does not always mean pointing the flame directly at the exact joint. In most cases the whole piece is heated in a controlled and even way, allowing the heat to reach the joint.</p>
+            <p>When the temperature is right, the solder melts and flows into the desired point by capillary action.</p>
+            <p>The final result depends on many factors: temperature, clean surfaces, the choice of soldering alloy and, above all, the experience of the craftsperson.</p>
+            <p>It is one of those jobs that look simple when done well, but take years of practice to truly master.</p>
+          </div>
+          <div class="ombra-note">
+            <h4>Workshop note</h4>
+            <p>There are many types of torch, and almost every goldsmith has a favourite one.</p>
+            <p>Shapes, controls and construction details may change, but the principle remains the same: controlling heat with precision.</p>
+            <p>The flame shown in the illustration is only one example. Each job may require a different adjustment.</p>
+          </div>
+        </article>
+        <article class="ombra-card" id="gesture-002-pressed-bezel">
+          <h3>How is a pressed bezel made?</h3>
+          <p class="lead"><em>An illustrated guide to understand, step by step, how a bezel can be closed without striking the object.</em></p>
+          <a class="ombra-plate-link" href="assets/ombra_castone_tavola.jpg" target="_blank" rel="noopener" title="Open the plate full size"><img class="ombra-plate" src="assets/ombra_castone_tavola.jpg" alt="Illustrated plate: how a pressed bezel is made"></a>
+          <div class="ombra-text">
+            <p>A pressed bezel is used when the object being set is too delicate to withstand blows or violent pressure.</p>
+            <p>The bezel is a simple strip of metal wrapped around the object. It is thinned first on the inside, to receive the coin or stone, and then on the outside, leaving a very thin edge.</p>
+            <p>Instead of striking the metal with a hammer, a <strong>pusher</strong> is used: a short tool guided by the fingers and held firmly in the palm.</p>
+            <p>The pusher does not work on the coin. It works only on the outer edge of the bezel, gently moving the metal inward through a series of small pressures.</p>
+            <p>The marks left on the edge are often not removed. They look like ornamentation, but they are also the sign of a choice: preserving what is fragile.</p>
+          </div>
+          <div class="ombra-note">
+            <h4>Workshop Note</h4>
+            <p>Not everything must be won by force.</p>
+            <p>Some things are preserved by accompanying them.</p>
+            <p>The plate shows the principle of the gesture. The real hand skill — the fingers, the pressure, the control — can only be learned by doing it.</p>
+          </div>
+        </article>
+      </section>
+<section id="faq" style="padding:40px 16px;">
+  <h2 style="font-size:24px; margin-bottom:22px;">FREQUENTLY ASKED QUESTIONS</h2>
+
+  <div class="faq-item">
+    <span class="faq-q">You do not know where to start? That is normal.</span>
+    <div class="faq-a">
+      Most clients arrive with an idea, not with a fully defined project.
+      <br><br>
+      To prepare an estimate or understand what can be made, a few details are useful:
+      <ul>
+        <li>What kind of object would you like? Ring, pendant, bracelet, earrings, or something else.</li>
+        <li>Which metal? Silver, yellow gold, white gold, rose gold, or “I do not know”.</li>
+        <li>Will there be stones? Diamonds, coloured stones, no stones, or “I do not know”.</li>
+        <li>Do you have reference images? Screenshots, online photos or hand drawings are fine.</li>
+        <li>Are there symbols or personal meanings? Dates, initials, animals, constellations, personal themes.</li>
+        <li>When would you need it? No rush, within a month, or for a specific date.</li>
+        <li>Do you have an approximate budget? It is not mandatory, but it helps suggest sensible solutions.</li>
+      </ul>
+      You do not need to know technical terms. Even a simple description such as “I would like a silver ring inspired by the sea, without stones” is more than enough to begin.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <span class="faq-q">Can I order a custom gold ring before arriving in Rome and collect it during my trip?</span>
+    <div class="faq-a">
+      No.
+      <br><br>
+      A custom jewel is not a stock product and cannot be properly designed, estimated and made only through messages, photographs or drawings sent from a distance.
+      <br><br>
+      To begin a made-to-measure piece, an appointment in the workshop is necessary.
+      <br><br>
+      The finger size must be taken in person, because the final fit also depends on the width, thickness, section and proportions of the ring. A simple numerical size is not enough.
+      <br><br>
+      The weight of the gold also cannot be determined before the project has been defined. Small variations in shape and proportions can significantly change the amount of metal required.
+      <br><br>
+      The same applies to emeralds, diamonds and other stones, which vary by size, cut, quality, colour, availability and price.
+      <br><br>
+      For this reason, custom work is considered only under these conditions:
+      <ul>
+        <li>appointment in the workshop;</li>
+        <li>size taken in person;</li>
+        <li>choice or definition of the model in person;</li>
+        <li>real evaluation of the stones;</li>
+        <li>initial deposit equal to the estimated value of the metal plus 50% of the estimated workmanship;</li>
+        <li>full balance before delivery or shipment;</li>
+        <li>final calculation based on the metal actually used, including the normal loss of handmade work, conventionally considered as 25% of the metal used;</li>
+        <li>any project changes, stone variations or different amount of gold required are calculated in the final balance.</li>
+      </ul>
+      Delivery during a short stay in Rome is not guaranteed.
+      <br><br>
+      Once completed, the piece can be shipped to the client's address with documented shipping.
+      <br><br>
+      <strong>A custom jewel is not a stock product.</strong>
+      <br><br>
+      <strong>It is a work that begins with a meeting and ends when the piece is ready, not when the travel calendar demands it.</strong>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <span class="faq-q">How much does a custom jewel cost?</span>
+    <div class="faq-a">
+      It is one of the questions we receive most often.
+      <br><br>
+      The most honest answer is: it depends on what we are making.
+      <br><br>
+      A handmade jewel is not made only of metal.
+      <br><br>
+      The final cost can depend on many factors:
+      <ul>
+        <li>quantity and type of metal (silver, gold, etc.);</li>
+        <li>presence of stones and their characteristics;</li>
+        <li>complexity of the project;</li>
+        <li>hours of work required.</li>
+      </ul>
+      For example:
+      <br><br>
+      a very simple ring may require little material and few hours of work.
+      <br><br>
+      On the other hand, a jewel with complex engraving, handmade details or many stones may require dozens of hours of work, regardless of the weight of the metal.
+      <br><br>
+      For this reason, the cost of materials and the cost of workmanship are two separate items.
+      <br><br>
+      As an indication, the workmanship for a custom handmade jewel starts from about 200 euros, plus any materials and stones.
+      <br><br>
+      If you would like an estimate, even a simple description or a reference image is enough to begin.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <span class="faq-q">How long does it take? Can I buy immediately?</span>
+    <div class="faq-a">
+      <span class="faq-yes">Yes.</span> If you find something in the window, you can buy it immediately. In most cases, however, the size will not be perfect.
+      <br><br>
+      That is not a problem: I can adjust it to your size or recreate it as faithfully as possible, with no additional cost after purchase.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <span class="faq-q">What if I need it today, as an urgent gift?</span>
+    <div class="faq-a">
+      If the right piece is not ready, I can prepare a certificate addressed to the person receiving the gift.
+      <br><br>
+      The certificate states that the jewel is being created especially for them: you do not show up empty-handed, and they can later come to the workshop to complete the piece together.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <span class="faq-q">If I want something made from scratch, how long does it take?</span>
+    <div class="faq-a">
+      It depends on the project. It can take about a week, or several months.
+      <br><br>
+      Every piece is unique: it is not chosen from a catalogue, it is built together.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <span class="faq-q">Do I need an appointment to visit?</span>
+    <div class="faq-a">
+      <span class="faq-yes">Yes.</span> Visits are by appointment only, so every person receives proper time and attention.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <span class="faq-q">How do I book?</span>
+    <div class="faq-a">
+      Message me on WhatsApp or SMS. I reply during the day.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <span class="faq-q">Do you make custom jewellery?</span>
+    <div class="faq-a">
+      Yes. Every piece is designed and made according to the request.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <span class="faq-q">Can I transform a jewel I already own?</span>
+    <div class="faq-a">
+      Yes. It is an important part of the work: recovery, transformation and new life.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <span class="faq-q">Can I ask for an estimate?</span>
+    <div class="faq-a">
+      Yes. Write to me and we can understand together what makes sense.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <span class="faq-q">Can I see the jewels even when the workshop is closed?</span>
+    <div class="faq-a">
+      Yes. The windows are lit and visible 7 days a week, 24 hours a day.
+      <br><br>
+      If something interests you, message me on WhatsApp or SMS and we can arrange an appointment.
+    </div>
+  </div>
+</section>
+
+<section id="closing" class="closing-module" aria-label="Bottega Marco Aurelio">
+  <div class="closing-images">
+    <img src="assets/chiusura_laboratorio.jpg" alt="Inside Bottega Marco Aurelio">
+    <img src="assets/chiusura_vetrina.jpg" alt="Bottega Marco Aurelio window display">
+  </div>
+</section>
+<div class="final-spacer" aria-hidden="true"></div>
+
+
+</main>
+  </div>
+  <button class="top-float" type="button" aria-label="Torna in alto">↑</button>
+  <div class="bottom-cta">
+    <a class="w" href="https://wa.me/393482762842">Message on<br>WhatsApp</a>
+    <a class="faq" href="#faq">FAQ</a>
+    <a class="i" href="https://www.instagram.com/bottegamarcoaurelio/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+<script>
+  const cta = document.querySelector('.bottom-cta');
+  const topFloat = document.querySelector('.top-float');
+  function toggleFloatingButtons(){
+    const show = window.scrollY > 8;
+    if (cta) cta.classList.toggle('visible', show);
+    if (topFloat) topFloat.classList.toggle('visible', show);
+  }
+  if (topFloat) {
+    topFloat.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+  }
+  toggleFloatingButtons();
+  window.addEventListener('scroll', toggleFloatingButtons, {passive:true});
+</script>
+
+
+
+
+<script>
+(function(){
+  let userInteracted = false;
+  let autoTimer = null;
+
+  function stopAutoScroll(){
+    userInteracted = true;
+    if (autoTimer) {
+      clearInterval(autoTimer);
+      autoTimer = null;
+    }
+  }
+
+  ["touchstart", "wheel", "mousedown", "keydown", "pointerdown"].forEach(function(eventName){
+    window.addEventListener(eventName, stopAutoScroll, { passive: true, once: true });
+  });
+
+  function startAutoScroll(){
+    if (userInteracted || window.scrollY > 20) return;
+
+    autoTimer = setInterval(function(){
+      if (userInteracted) {
+        clearInterval(autoTimer);
+        autoTimer = null;
+        return;
+      }
+
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      if (window.scrollY >= maxScroll - 2) {
+        clearInterval(autoTimer);
+        autoTimer = null;
+        return;
+      }
+
+      window.scrollBy(0, 0.45);
+    }, 16);
+  }
+
+  window.addEventListener("load", function(){
+    setTimeout(startAutoScroll, 5000);
+  });
+})();
+</script>
+
+<!-- Analytics privacy-friendly — GoatCounter
+     ATTENZIONE: per attivarlo davvero devi creare il sito/account con codice: bottegamarcoaurelio
+     Dashboard: https://bottegamarcoaurelio.goatcounter.com/
+     Finché l'account non esiste, il sito continua a funzionare: semplicemente non registra visite.
+-->
+<script data-goatcounter="https://bottegamarcoaurelio.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
+
+</body>
+</html>
