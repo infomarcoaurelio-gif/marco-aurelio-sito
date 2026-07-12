@@ -1117,6 +1117,264 @@ header{
 }
 
 </style>
+<style>
+/* V47A — veste conservativa "Bottega / locandine". Struttura, contenuti e meccanica invariati. */
+:root{
+  --bg:#d8c7a4 !important;
+  --panel:#eee2c8 !important;
+  --line:#4b3422 !important;
+  --line-soft:#8a7458 !important;
+  --text:#21170f !important;
+  --muted:#5e4b39 !important;
+  --gold:#8a5b18 !important;
+  --burgundy:#6b1719 !important;
+  --paper:#eadcbd !important;
+}
+html{background:#cbb994 !important;}
+body{
+  color:var(--text) !important;
+  font-family:Georgia,"Times New Roman",serif !important;
+  background:
+    radial-gradient(circle at 18% 12%,rgba(255,255,255,.20) 0 1px,transparent 1.6px),
+    radial-gradient(circle at 72% 38%,rgba(76,49,25,.08) 0 1px,transparent 1.5px),
+    linear-gradient(rgba(235,221,190,.94),rgba(218,198,159,.94)) !important;
+  background-size:17px 19px,23px 29px,auto !important;
+}
+.page{
+  width:min(760px,100%) !important;
+  padding:4px 7px 82px !important;
+  position:relative;
+}
+.page:before{
+  content:"";position:fixed;inset:3px;pointer-events:none;z-index:9999;
+  border:1px solid rgba(75,52,34,.48);
+}
+header{
+  padding:4px 3px 6px !important;
+  border-bottom:1px solid rgba(75,52,34,.48) !important;
+  margin-bottom:5px !important;
+}
+.brand-main{
+  font-family:Georgia,"Times New Roman",serif !important;
+  letter-spacing:.095em !important;
+  font-weight:700 !important;
+  color:#1f160f !important;
+  text-transform:uppercase !important;
+}
+.brand-sub,.tag{color:#6b1719 !important;font-family:Georgia,"Times New Roman",serif !important;}
+.lang-switch{
+  background:transparent !important;color:#2a1c12 !important;border:1px solid #6c5138 !important;
+  box-shadow:none !important;padding:5px 8px !important;
+}
+.hero{
+  height:clamp(122px,27vw,190px) !important;
+  border:1px solid #6d5238 !important;
+  box-shadow:none !important;background:#cbb994 !important;
+}
+.hero img{filter:sepia(.12) contrast(1.04) saturate(.82) !important;}
+.hero::after{background:linear-gradient(180deg,transparent 25%,rgba(24,14,7,.70)) !important;}
+.hero-text{text-shadow:0 2px 8px rgba(0,0,0,.72) !important;}
+.hero h1{font-family:Georgia,"Times New Roman",serif !important;letter-spacing:-.035em !important;color:#fff8e8 !important;}
+.hero p{color:#f4e8d0 !important;font-family:Georgia,"Times New Roman",serif !important;}
+.access-card{
+  margin-top:5px !important;padding:8px 7px 7px !important;
+  background:rgba(246,236,214,.46) !important;
+  border:1px solid rgba(75,52,34,.58) !important;
+  box-shadow:none !important;
+}
+.eyebrow{
+  color:#6b1719 !important;font-family:Georgia,"Times New Roman",serif !important;
+  letter-spacing:.16em !important;
+}
+.open-big{
+  color:#21170f !important;font-family:Georgia,"Times New Roman",serif !important;
+  letter-spacing:-.035em !important;
+}
+.access-lines,.contact-note,.contact-small{color:#5b4735 !important;font-family:Georgia,"Times New Roman",serif !important;}
+.access-lines strong,.access-lines span[style*="ffffff"]{color:#21170f !important;}
+.map-link{border-bottom:1px solid #6b1719 !important;color:#21170f !important;}
+.actions{gap:7px !important;margin-top:7px !important;}
+.btn{
+  min-height:42px !important;background:rgba(244,233,208,.64) !important;
+  color:#2a1b11 !important;border:1px solid #5d422d !important;box-shadow:none !important;
+  font-family:Georgia,"Times New Roman",serif !important;
+}
+.btn.whatsapp{background:rgba(244,233,208,.64) !important;color:#5c1518 !important;border:1.5px solid #6b1719 !important;}
+.btn.sms{background:rgba(244,233,208,.40) !important;color:#2a1b11 !important;border:1px solid #5d422d !important;}
+.collections{margin-top:7px !important;gap:7px !important;}
+.collection-card{
+  padding:6px !important;min-height:64px !important;background:rgba(246,236,214,.38) !important;
+  border:1px solid rgba(75,52,34,.55) !important;box-shadow:none !important;backdrop-filter:none !important;
+}
+.collection-card h2,section h3,#faq h2,#faq h3{
+  color:#26180f !important;font-family:Georgia,"Times New Roman",serif !important;
+}
+.collection-card h2{letter-spacing:-.025em !important;}
+.collection-card p,.placeholder-text{color:#604b38 !important;font-family:Georgia,"Times New Roman",serif !important;}
+.thumb{border:1px solid #80664a !important;box-shadow:none !important;background:#d5c09a !important;}
+.thumb img,.gallery img{filter:sepia(.10) saturate(.86) contrast(1.03) !important;}
+main{border-top:1px solid #72583e !important;margin-top:14px !important;}
+main:before{content:"◆";display:block;text-align:center;color:#6b1719;margin:-10px auto 4px;background:#dfcda8;width:34px;font-size:12px;}
+section{border-color:rgba(75,52,34,.48) !important;}
+section h3{letter-spacing:-.035em !important;text-transform:none !important;}
+.gallery img{border:1px solid #765b40 !important;box-shadow:none !important;}
+#faq{background:rgba(246,236,214,.34) !important;border:1px solid rgba(75,52,34,.55) !important;box-shadow:none !important;}
+#faq details{border-color:rgba(75,52,34,.45) !important;color:#2a1c12 !important;}
+#faq summary{color:#5f1719 !important;font-family:Georgia,"Times New Roman",serif !important;}
+.closing-images img{filter:sepia(.10) saturate(.86) !important;border:1px solid #765b40 !important;}
+.bottom-cta a,.top-float{
+  backdrop-filter:none !important;background:#eadcbd !important;color:#24170f !important;
+  border:1px solid #5d422d !important;box-shadow:0 3px 10px rgba(53,35,20,.18) !important;
+  font-family:Georgia,"Times New Roman",serif !important;
+}
+.bottom-cta .w{background:#eadcbd !important;color:#6b1719 !important;border:1.5px solid #6b1719 !important;}
+.bottom-cta .i,.bottom-cta .faq{background:#eadcbd !important;color:#24170f !important;border:1px solid #5d422d !important;}
+.top-float{color:#6b1719 !important;}
+@media(max-width:390px){
+  .page{padding-left:6px !important;padding-right:6px !important;}
+  .hero{height:122px !important;}
+  .access-card{padding:7px 6px !important;}
+}
+
+</style>
+
+<style id="v47a-text-color-fix">
+  :root{
+    --ink:#241913;
+    --ink-soft:#5a5148;
+    --burgundy:#741f24;
+  }
+
+  /* Default readable ink */
+  body, main, section, article, div, p, li, span,
+  h1, h2, h3, h4, h5, h6,
+  strong, b, em, i, small, label {
+    color: var(--ink);
+  }
+
+  /* Secondary/supporting copy */
+  .muted, .sub, .subtitle, .eyebrow,
+  [class*="muted"], [class*="secondary"], [class*="subtitle"],
+  [class*="caption"], [class*="meta"] {
+    color: var(--ink-soft) !important;
+  }
+
+  /* Existing accent classes stay dark burgundy, never pale gold/yellow */
+  .accent, .gold, .kicker,
+  [class*="accent"], [class*="gold"], [class*="kicker"],
+  [class*="label"], [class*="section-title"] {
+    color: var(--burgundy) !important;
+  }
+
+  /* Links and controls */
+  a { color: var(--burgundy); }
+  button, .btn, [class*="button"], [class*="btn"] {
+    color: var(--ink) !important;
+  }
+
+  /* Explicit inline legacy colors from the dark V47 must not turn pale on parchment */
+  [style*="color: white"], [style*="color:white"],
+  [style*="color: #fff"], [style*="color:#fff"],
+  [style*="color: #FFF"], [style*="color:#FFF"],
+  [style*="color: rgb(255, 255, 255)"],
+  [style*="color:rgb(255, 255, 255)"] {
+    color: var(--ink) !important;
+  }
+</style>
+
+
+<style id="v47a-strict-text-palette">
+  :root{
+    --text-black:#17120f;
+    --text-dark-gray:#4a433d;
+    --text-burgundy:#6f1d24;
+  }
+
+  /* Regola assoluta: nessun testo chiaro sulla carta */
+  body, body * {
+    color: var(--text-black) !important;
+    -webkit-text-fill-color: currentColor !important;
+  }
+
+  /* Testi secondari: solo grigio scuro */
+  .muted, .sub, .subtitle, .caption, .meta,
+  [class*="muted"], [class*="secondary"], [class*="caption"],
+  [class*="meta"], [class*="description"], [class*="desc"] {
+    color: var(--text-dark-gray) !important;
+    -webkit-text-fill-color: var(--text-dark-gray) !important;
+  }
+
+  /* Accenti: solo bordeaux scuro */
+  .accent, .kicker, .eyebrow,
+  [class*="accent"], [class*="kicker"], [class*="eyebrow"],
+  [class*="section-label"] {
+    color: var(--text-burgundy) !important;
+    -webkit-text-fill-color: var(--text-burgundy) !important;
+  }
+
+  a, button, .btn, [class*="button"], [class*="btn"] {
+    color: var(--text-black) !important;
+    -webkit-text-fill-color: var(--text-black) !important;
+  }
+</style>
+
+
+<style id="v47a-bold-definitive-fix">
+  :root {
+    --ink: #17120f;
+    --burgundy: #6f1d24;
+  }
+
+  /* Tutto il testo della pagina: più spesso, senza eccezioni ereditate */
+  body, body * {
+    font-weight: 600 !important;
+  }
+
+  /* Titoli, evidenze, pulsanti */
+  h1, h2, h3, h4, h5, h6,
+  strong, b,
+  button, .btn, [class*="btn"], [class*="button"],
+  [class*="title"], [class*="heading"] {
+    font-weight: 800 !important;
+  }
+
+  /* Corsivi: corposi ma ancora corsivi */
+  em, i {
+    font-weight: 600 !important;
+  }
+
+  /* Nessun testo può restare chiaro o slavato */
+  body, body * {
+    color: var(--ink) !important;
+    -webkit-text-fill-color: var(--ink) !important;
+  }
+
+  /* La riga "Anche in giornata..." viene marcata nel DOM con questa classe */
+  .v47a-access-note {
+    color: var(--burgundy) !important;
+    -webkit-text-fill-color: var(--burgundy) !important;
+    opacity: 1 !important;
+    font-weight: 700 !important;
+  }
+</style>
+
+
+<style id="v47a-hero-white-fix">
+  /* Eccezione necessaria: testo sovrapposto alla foto hero */
+  .hero h1,
+  .hero h2,
+  .hero p,
+  .hero .hero-title,
+  .hero .hero-subtitle,
+  .hero [class*="title"],
+  .hero [class*="subtitle"],
+  .hero-copy,
+  .hero-copy * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
+</style>
+
 </head>
 <body>
   <div class="page">
@@ -1137,7 +1395,7 @@ header{
         <p class="open-big">Aperto 7 giorni su 7</p>
         <div class="access-lines">
           <span style="color:#ffffff; font-weight:600;">Solo su appuntamento</span><br>
-          <strong><span style="color:#9aa0a6;">Anche in giornata · orari flessibili, anche serali</span></strong>
+          <strong><span style="color:#9aa0a6;" class="v47a-access-note">Anche in giornata · orari flessibili, anche serali</span></strong>
         </div>
       </div>
       <div>
