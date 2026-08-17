@@ -1,11 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Bottega Marco Aurelio · Rome</title>
-  <meta name="description" content="Bottega Marco Aurelio · Independent goldsmith in Campo de’ Fiori, Rome. One-of-a-kind pieces by appointment.">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<title>Bottega MarcoAurelio · A Bottega · Rome</title>
+<meta content="Bottega MarcoAurelio · A Bottega. Wedding bands made by you, personal jewels, unique pieces and made-to-measure work at the Old Bench, Campo de’ Fiori, Rome." name="description"/>
+<style>
     :root{
       --bg:#050505;
       --panel:#101010;
@@ -1116,6 +1117,95 @@ header{
   .ombra-card{padding:11px;}
 }
 
+
+
+/* A BOTTEGA 000H — leggibilità definitiva: bianco + nero, immagini cliccabili */
+:root{
+  --bg:#ffffff !important;
+  --panel:#ffffff !important;
+  --panel2:#ffffff !important;
+  --line:#b9b9b9 !important;
+  --line-soft:#d5d5d5 !important;
+  --text:#000000 !important;
+  --muted:#000000 !important;
+  --gold:#000000 !important;
+}
+html, body, .page, main, section,
+.access-card, .collection-card, .ab-section, .ab-hub, .ab-gate,
+.ab-note, .ombra-section, .ombra-index, .ombra-article,
+.quick-top a, .btn, .ab-cta, .ab-cta.secondary{
+  background:#ffffff !important;
+  background-image:none !important;
+}
+body, body *,
+h1,h2,h3,h4,h5,h6,p,span,div,a,strong,em,li,small,
+.brand-main,.brand-sub,.eyebrow,.open-big,.access-lines,.contact-note,.contact-small,
+.ab-kicker,.ab-logo,.ab-title,.ab-subtitle,.ab-eyebrow,.ab-note,.ab-note strong,
+.ab-num,.ombra-section h2,.ombra-section h3,.ombra-index a,
+.collection-card h2,.collection-card p{
+  color:#000000 !important;
+  -webkit-text-fill-color:#000000 !important;
+  text-shadow:none !important;
+}
+.hero-text{display:none !important;}
+.hero{background:#ffffff !important; border:1px solid #999 !important; border-radius:0 !important; box-shadow:none !important;}
+.hero::after{display:none !important;}
+.hero img{filter:contrast(1.08) brightness(1.08) saturate(1.08) !important; transform:none !important;}
+.quick-top{
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:10px !important;
+  margin:10px 0 12px !important;
+}
+.quick-top a,
+.btn,.ab-cta,.ab-cta.secondary{
+  border:1.5px solid #777 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+  color:#000 !important;
+  -webkit-text-fill-color:#000 !important;
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+}
+.quick-top a:first-child{border-color:#8d1d2c !important;}
+.access-card,.collection-card,.ab-section,.ombra-section{
+  border:1px solid #c8c8c8 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+header{border-bottom:1px solid #c8c8c8 !important;}
+.brand-main,.brand-sub{font-family:Arial, Helvetica, sans-serif !important; letter-spacing:.12em !important; font-weight:700 !important;}
+.lang-switch{border:1px solid #777 !important; border-radius:0 !important; background:#fff !important; position:static !important; color:#000 !important; -webkit-text-fill-color:#000 !important;}
+.ab-title,.open-big,section h3,.ombra-section h2,.ombra-section h3{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:0 !important;
+}
+.ab-kicker,.eyebrow,.collection-card h2{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:.18em !important;
+}
+.ab-logo{
+  font-size:clamp(28px,8vw,54px) !important;
+  letter-spacing:.18em !important;
+  font-weight:700 !important;
+}
+.ab-rule span,.ab-rule:before,.ab-rule:after{color:#000 !important; background:#999 !important; -webkit-text-fill-color:#000 !important;}
+.zoomable-img{display:block; text-decoration:none !important;}
+.zoomable-img img{display:block; width:100%; height:auto;}
+.ab-tiles .zoomable-img img,
+.ab-poster-stack .zoomable-img img,
+.ab-poster.zoomed-img{
+  cursor:zoom-in;
+}
+.ab-tiles .zoomable-img{min-width:0;}
+.ab-poster-stack .zoomable-img{margin:0 0 12px;}
+.ombra-card .thumb:first-of-type{grid-column:auto;}
+.ombra-card .thumb img{object-fit:cover;}
+/* nessun oro/giallo CSS su fondo bianco */
+*[style*="color:#"], *[style*="color: #"]{color:#000000 !important; -webkit-text-fill-color:#000000 !important;}
+
 </style>
 <style>
 /* V47A — veste conservativa "Bottega / locandine". Struttura, contenuti e meccanica invariati. */
@@ -1236,8 +1326,96 @@ section h3{letter-spacing:-.035em !important;text-transform:none !important;}
   .access-card{padding:7px 6px !important;}
 }
 
-</style>
 
+
+/* A BOTTEGA 000H — leggibilità definitiva: bianco + nero, immagini cliccabili */
+:root{
+  --bg:#ffffff !important;
+  --panel:#ffffff !important;
+  --panel2:#ffffff !important;
+  --line:#b9b9b9 !important;
+  --line-soft:#d5d5d5 !important;
+  --text:#000000 !important;
+  --muted:#000000 !important;
+  --gold:#000000 !important;
+}
+html, body, .page, main, section,
+.access-card, .collection-card, .ab-section, .ab-hub, .ab-gate,
+.ab-note, .ombra-section, .ombra-index, .ombra-article,
+.quick-top a, .btn, .ab-cta, .ab-cta.secondary{
+  background:#ffffff !important;
+  background-image:none !important;
+}
+body, body *,
+h1,h2,h3,h4,h5,h6,p,span,div,a,strong,em,li,small,
+.brand-main,.brand-sub,.eyebrow,.open-big,.access-lines,.contact-note,.contact-small,
+.ab-kicker,.ab-logo,.ab-title,.ab-subtitle,.ab-eyebrow,.ab-note,.ab-note strong,
+.ab-num,.ombra-section h2,.ombra-section h3,.ombra-index a,
+.collection-card h2,.collection-card p{
+  color:#000000 !important;
+  -webkit-text-fill-color:#000000 !important;
+  text-shadow:none !important;
+}
+.hero-text{display:none !important;}
+.hero{background:#ffffff !important; border:1px solid #999 !important; border-radius:0 !important; box-shadow:none !important;}
+.hero::after{display:none !important;}
+.hero img{filter:contrast(1.08) brightness(1.08) saturate(1.08) !important; transform:none !important;}
+.quick-top{
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:10px !important;
+  margin:10px 0 12px !important;
+}
+.quick-top a,
+.btn,.ab-cta,.ab-cta.secondary{
+  border:1.5px solid #777 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+  color:#000 !important;
+  -webkit-text-fill-color:#000 !important;
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+}
+.quick-top a:first-child{border-color:#8d1d2c !important;}
+.access-card,.collection-card,.ab-section,.ombra-section{
+  border:1px solid #c8c8c8 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+header{border-bottom:1px solid #c8c8c8 !important;}
+.brand-main,.brand-sub{font-family:Arial, Helvetica, sans-serif !important; letter-spacing:.12em !important; font-weight:700 !important;}
+.lang-switch{border:1px solid #777 !important; border-radius:0 !important; background:#fff !important; position:static !important; color:#000 !important; -webkit-text-fill-color:#000 !important;}
+.ab-title,.open-big,section h3,.ombra-section h2,.ombra-section h3{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:0 !important;
+}
+.ab-kicker,.eyebrow,.collection-card h2{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:.18em !important;
+}
+.ab-logo{
+  font-size:clamp(28px,8vw,54px) !important;
+  letter-spacing:.18em !important;
+  font-weight:700 !important;
+}
+.ab-rule span,.ab-rule:before,.ab-rule:after{color:#000 !important; background:#999 !important; -webkit-text-fill-color:#000 !important;}
+.zoomable-img{display:block; text-decoration:none !important;}
+.zoomable-img img{display:block; width:100%; height:auto;}
+.ab-tiles .zoomable-img img,
+.ab-poster-stack .zoomable-img img,
+.ab-poster.zoomed-img{
+  cursor:zoom-in;
+}
+.ab-tiles .zoomable-img{min-width:0;}
+.ab-poster-stack .zoomable-img{margin:0 0 12px;}
+.ombra-card .thumb:first-of-type{grid-column:auto;}
+.ombra-card .thumb img{object-fit:cover;}
+/* nessun oro/giallo CSS su fondo bianco */
+*[style*="color:#"], *[style*="color: #"]{color:#000000 !important; -webkit-text-fill-color:#000000 !important;}
+
+</style>
 <style id="v47a-text-color-fix">
   :root{
     --ink:#241913;
@@ -1280,9 +1458,96 @@ section h3{letter-spacing:-.035em !important;text-transform:none !important;}
   [style*="color:rgb(255, 255, 255)"] {
     color: var(--ink) !important;
   }
+
+
+/* A BOTTEGA 000H — leggibilità definitiva: bianco + nero, immagini cliccabili */
+:root{
+  --bg:#ffffff !important;
+  --panel:#ffffff !important;
+  --panel2:#ffffff !important;
+  --line:#b9b9b9 !important;
+  --line-soft:#d5d5d5 !important;
+  --text:#000000 !important;
+  --muted:#000000 !important;
+  --gold:#000000 !important;
+}
+html, body, .page, main, section,
+.access-card, .collection-card, .ab-section, .ab-hub, .ab-gate,
+.ab-note, .ombra-section, .ombra-index, .ombra-article,
+.quick-top a, .btn, .ab-cta, .ab-cta.secondary{
+  background:#ffffff !important;
+  background-image:none !important;
+}
+body, body *,
+h1,h2,h3,h4,h5,h6,p,span,div,a,strong,em,li,small,
+.brand-main,.brand-sub,.eyebrow,.open-big,.access-lines,.contact-note,.contact-small,
+.ab-kicker,.ab-logo,.ab-title,.ab-subtitle,.ab-eyebrow,.ab-note,.ab-note strong,
+.ab-num,.ombra-section h2,.ombra-section h3,.ombra-index a,
+.collection-card h2,.collection-card p{
+  color:#000000 !important;
+  -webkit-text-fill-color:#000000 !important;
+  text-shadow:none !important;
+}
+.hero-text{display:none !important;}
+.hero{background:#ffffff !important; border:1px solid #999 !important; border-radius:0 !important; box-shadow:none !important;}
+.hero::after{display:none !important;}
+.hero img{filter:contrast(1.08) brightness(1.08) saturate(1.08) !important; transform:none !important;}
+.quick-top{
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:10px !important;
+  margin:10px 0 12px !important;
+}
+.quick-top a,
+.btn,.ab-cta,.ab-cta.secondary{
+  border:1.5px solid #777 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+  color:#000 !important;
+  -webkit-text-fill-color:#000 !important;
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+}
+.quick-top a:first-child{border-color:#8d1d2c !important;}
+.access-card,.collection-card,.ab-section,.ombra-section{
+  border:1px solid #c8c8c8 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+header{border-bottom:1px solid #c8c8c8 !important;}
+.brand-main,.brand-sub{font-family:Arial, Helvetica, sans-serif !important; letter-spacing:.12em !important; font-weight:700 !important;}
+.lang-switch{border:1px solid #777 !important; border-radius:0 !important; background:#fff !important; position:static !important; color:#000 !important; -webkit-text-fill-color:#000 !important;}
+.ab-title,.open-big,section h3,.ombra-section h2,.ombra-section h3{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:0 !important;
+}
+.ab-kicker,.eyebrow,.collection-card h2{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:.18em !important;
+}
+.ab-logo{
+  font-size:clamp(28px,8vw,54px) !important;
+  letter-spacing:.18em !important;
+  font-weight:700 !important;
+}
+.ab-rule span,.ab-rule:before,.ab-rule:after{color:#000 !important; background:#999 !important; -webkit-text-fill-color:#000 !important;}
+.zoomable-img{display:block; text-decoration:none !important;}
+.zoomable-img img{display:block; width:100%; height:auto;}
+.ab-tiles .zoomable-img img,
+.ab-poster-stack .zoomable-img img,
+.ab-poster.zoomed-img{
+  cursor:zoom-in;
+}
+.ab-tiles .zoomable-img{min-width:0;}
+.ab-poster-stack .zoomable-img{margin:0 0 12px;}
+.ombra-card .thumb:first-of-type{grid-column:auto;}
+.ombra-card .thumb img{object-fit:cover;}
+/* nessun oro/giallo CSS su fondo bianco */
+*[style*="color:#"], *[style*="color: #"]{color:#000000 !important; -webkit-text-fill-color:#000000 !important;}
+
 </style>
-
-
 <style id="v47a-strict-text-palette">
   :root{
     --text-black:#17120f;
@@ -1316,9 +1581,96 @@ section h3{letter-spacing:-.035em !important;text-transform:none !important;}
     color: var(--text-black) !important;
     -webkit-text-fill-color: var(--text-black) !important;
   }
+
+
+/* A BOTTEGA 000H — leggibilità definitiva: bianco + nero, immagini cliccabili */
+:root{
+  --bg:#ffffff !important;
+  --panel:#ffffff !important;
+  --panel2:#ffffff !important;
+  --line:#b9b9b9 !important;
+  --line-soft:#d5d5d5 !important;
+  --text:#000000 !important;
+  --muted:#000000 !important;
+  --gold:#000000 !important;
+}
+html, body, .page, main, section,
+.access-card, .collection-card, .ab-section, .ab-hub, .ab-gate,
+.ab-note, .ombra-section, .ombra-index, .ombra-article,
+.quick-top a, .btn, .ab-cta, .ab-cta.secondary{
+  background:#ffffff !important;
+  background-image:none !important;
+}
+body, body *,
+h1,h2,h3,h4,h5,h6,p,span,div,a,strong,em,li,small,
+.brand-main,.brand-sub,.eyebrow,.open-big,.access-lines,.contact-note,.contact-small,
+.ab-kicker,.ab-logo,.ab-title,.ab-subtitle,.ab-eyebrow,.ab-note,.ab-note strong,
+.ab-num,.ombra-section h2,.ombra-section h3,.ombra-index a,
+.collection-card h2,.collection-card p{
+  color:#000000 !important;
+  -webkit-text-fill-color:#000000 !important;
+  text-shadow:none !important;
+}
+.hero-text{display:none !important;}
+.hero{background:#ffffff !important; border:1px solid #999 !important; border-radius:0 !important; box-shadow:none !important;}
+.hero::after{display:none !important;}
+.hero img{filter:contrast(1.08) brightness(1.08) saturate(1.08) !important; transform:none !important;}
+.quick-top{
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:10px !important;
+  margin:10px 0 12px !important;
+}
+.quick-top a,
+.btn,.ab-cta,.ab-cta.secondary{
+  border:1.5px solid #777 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+  color:#000 !important;
+  -webkit-text-fill-color:#000 !important;
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+}
+.quick-top a:first-child{border-color:#8d1d2c !important;}
+.access-card,.collection-card,.ab-section,.ombra-section{
+  border:1px solid #c8c8c8 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+header{border-bottom:1px solid #c8c8c8 !important;}
+.brand-main,.brand-sub{font-family:Arial, Helvetica, sans-serif !important; letter-spacing:.12em !important; font-weight:700 !important;}
+.lang-switch{border:1px solid #777 !important; border-radius:0 !important; background:#fff !important; position:static !important; color:#000 !important; -webkit-text-fill-color:#000 !important;}
+.ab-title,.open-big,section h3,.ombra-section h2,.ombra-section h3{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:0 !important;
+}
+.ab-kicker,.eyebrow,.collection-card h2{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:.18em !important;
+}
+.ab-logo{
+  font-size:clamp(28px,8vw,54px) !important;
+  letter-spacing:.18em !important;
+  font-weight:700 !important;
+}
+.ab-rule span,.ab-rule:before,.ab-rule:after{color:#000 !important; background:#999 !important; -webkit-text-fill-color:#000 !important;}
+.zoomable-img{display:block; text-decoration:none !important;}
+.zoomable-img img{display:block; width:100%; height:auto;}
+.ab-tiles .zoomable-img img,
+.ab-poster-stack .zoomable-img img,
+.ab-poster.zoomed-img{
+  cursor:zoom-in;
+}
+.ab-tiles .zoomable-img{min-width:0;}
+.ab-poster-stack .zoomable-img{margin:0 0 12px;}
+.ombra-card .thumb:first-of-type{grid-column:auto;}
+.ombra-card .thumb img{object-fit:cover;}
+/* nessun oro/giallo CSS su fondo bianco */
+*[style*="color:#"], *[style*="color: #"]{color:#000000 !important; -webkit-text-fill-color:#000000 !important;}
+
 </style>
-
-
 <style id="v47a-bold-definitive-fix">
   :root {
     --ink: #17120f;
@@ -1356,9 +1708,96 @@ section h3{letter-spacing:-.035em !important;text-transform:none !important;}
     opacity: 1 !important;
     font-weight: 700 !important;
   }
+
+
+/* A BOTTEGA 000H — leggibilità definitiva: bianco + nero, immagini cliccabili */
+:root{
+  --bg:#ffffff !important;
+  --panel:#ffffff !important;
+  --panel2:#ffffff !important;
+  --line:#b9b9b9 !important;
+  --line-soft:#d5d5d5 !important;
+  --text:#000000 !important;
+  --muted:#000000 !important;
+  --gold:#000000 !important;
+}
+html, body, .page, main, section,
+.access-card, .collection-card, .ab-section, .ab-hub, .ab-gate,
+.ab-note, .ombra-section, .ombra-index, .ombra-article,
+.quick-top a, .btn, .ab-cta, .ab-cta.secondary{
+  background:#ffffff !important;
+  background-image:none !important;
+}
+body, body *,
+h1,h2,h3,h4,h5,h6,p,span,div,a,strong,em,li,small,
+.brand-main,.brand-sub,.eyebrow,.open-big,.access-lines,.contact-note,.contact-small,
+.ab-kicker,.ab-logo,.ab-title,.ab-subtitle,.ab-eyebrow,.ab-note,.ab-note strong,
+.ab-num,.ombra-section h2,.ombra-section h3,.ombra-index a,
+.collection-card h2,.collection-card p{
+  color:#000000 !important;
+  -webkit-text-fill-color:#000000 !important;
+  text-shadow:none !important;
+}
+.hero-text{display:none !important;}
+.hero{background:#ffffff !important; border:1px solid #999 !important; border-radius:0 !important; box-shadow:none !important;}
+.hero::after{display:none !important;}
+.hero img{filter:contrast(1.08) brightness(1.08) saturate(1.08) !important; transform:none !important;}
+.quick-top{
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:10px !important;
+  margin:10px 0 12px !important;
+}
+.quick-top a,
+.btn,.ab-cta,.ab-cta.secondary{
+  border:1.5px solid #777 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+  color:#000 !important;
+  -webkit-text-fill-color:#000 !important;
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+}
+.quick-top a:first-child{border-color:#8d1d2c !important;}
+.access-card,.collection-card,.ab-section,.ombra-section{
+  border:1px solid #c8c8c8 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+header{border-bottom:1px solid #c8c8c8 !important;}
+.brand-main,.brand-sub{font-family:Arial, Helvetica, sans-serif !important; letter-spacing:.12em !important; font-weight:700 !important;}
+.lang-switch{border:1px solid #777 !important; border-radius:0 !important; background:#fff !important; position:static !important; color:#000 !important; -webkit-text-fill-color:#000 !important;}
+.ab-title,.open-big,section h3,.ombra-section h2,.ombra-section h3{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:0 !important;
+}
+.ab-kicker,.eyebrow,.collection-card h2{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:.18em !important;
+}
+.ab-logo{
+  font-size:clamp(28px,8vw,54px) !important;
+  letter-spacing:.18em !important;
+  font-weight:700 !important;
+}
+.ab-rule span,.ab-rule:before,.ab-rule:after{color:#000 !important; background:#999 !important; -webkit-text-fill-color:#000 !important;}
+.zoomable-img{display:block; text-decoration:none !important;}
+.zoomable-img img{display:block; width:100%; height:auto;}
+.ab-tiles .zoomable-img img,
+.ab-poster-stack .zoomable-img img,
+.ab-poster.zoomed-img{
+  cursor:zoom-in;
+}
+.ab-tiles .zoomable-img{min-width:0;}
+.ab-poster-stack .zoomable-img{margin:0 0 12px;}
+.ombra-card .thumb:first-of-type{grid-column:auto;}
+.ombra-card .thumb img{object-fit:cover;}
+/* nessun oro/giallo CSS su fondo bianco */
+*[style*="color:#"], *[style*="color: #"]{color:#000000 !important; -webkit-text-fill-color:#000000 !important;}
+
 </style>
-
-
 <style id="v47a-hero-white-fix">
   /* Eccezione necessaria: testo sovrapposto alla foto hero */
   .hero h1,
@@ -1373,9 +1812,96 @@ section h3{letter-spacing:-.035em !important;text-transform:none !important;}
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
   }
+
+
+/* A BOTTEGA 000H — leggibilità definitiva: bianco + nero, immagini cliccabili */
+:root{
+  --bg:#ffffff !important;
+  --panel:#ffffff !important;
+  --panel2:#ffffff !important;
+  --line:#b9b9b9 !important;
+  --line-soft:#d5d5d5 !important;
+  --text:#000000 !important;
+  --muted:#000000 !important;
+  --gold:#000000 !important;
+}
+html, body, .page, main, section,
+.access-card, .collection-card, .ab-section, .ab-hub, .ab-gate,
+.ab-note, .ombra-section, .ombra-index, .ombra-article,
+.quick-top a, .btn, .ab-cta, .ab-cta.secondary{
+  background:#ffffff !important;
+  background-image:none !important;
+}
+body, body *,
+h1,h2,h3,h4,h5,h6,p,span,div,a,strong,em,li,small,
+.brand-main,.brand-sub,.eyebrow,.open-big,.access-lines,.contact-note,.contact-small,
+.ab-kicker,.ab-logo,.ab-title,.ab-subtitle,.ab-eyebrow,.ab-note,.ab-note strong,
+.ab-num,.ombra-section h2,.ombra-section h3,.ombra-index a,
+.collection-card h2,.collection-card p{
+  color:#000000 !important;
+  -webkit-text-fill-color:#000000 !important;
+  text-shadow:none !important;
+}
+.hero-text{display:none !important;}
+.hero{background:#ffffff !important; border:1px solid #999 !important; border-radius:0 !important; box-shadow:none !important;}
+.hero::after{display:none !important;}
+.hero img{filter:contrast(1.08) brightness(1.08) saturate(1.08) !important; transform:none !important;}
+.quick-top{
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:10px !important;
+  margin:10px 0 12px !important;
+}
+.quick-top a,
+.btn,.ab-cta,.ab-cta.secondary{
+  border:1.5px solid #777 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+  color:#000 !important;
+  -webkit-text-fill-color:#000 !important;
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+}
+.quick-top a:first-child{border-color:#8d1d2c !important;}
+.access-card,.collection-card,.ab-section,.ombra-section{
+  border:1px solid #c8c8c8 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+header{border-bottom:1px solid #c8c8c8 !important;}
+.brand-main,.brand-sub{font-family:Arial, Helvetica, sans-serif !important; letter-spacing:.12em !important; font-weight:700 !important;}
+.lang-switch{border:1px solid #777 !important; border-radius:0 !important; background:#fff !important; position:static !important; color:#000 !important; -webkit-text-fill-color:#000 !important;}
+.ab-title,.open-big,section h3,.ombra-section h2,.ombra-section h3{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:0 !important;
+}
+.ab-kicker,.eyebrow,.collection-card h2{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:.18em !important;
+}
+.ab-logo{
+  font-size:clamp(28px,8vw,54px) !important;
+  letter-spacing:.18em !important;
+  font-weight:700 !important;
+}
+.ab-rule span,.ab-rule:before,.ab-rule:after{color:#000 !important; background:#999 !important; -webkit-text-fill-color:#000 !important;}
+.zoomable-img{display:block; text-decoration:none !important;}
+.zoomable-img img{display:block; width:100%; height:auto;}
+.ab-tiles .zoomable-img img,
+.ab-poster-stack .zoomable-img img,
+.ab-poster.zoomed-img{
+  cursor:zoom-in;
+}
+.ab-tiles .zoomable-img{min-width:0;}
+.ab-poster-stack .zoomable-img{margin:0 0 12px;}
+.ombra-card .thumb:first-of-type{grid-column:auto;}
+.ombra-card .thumb img{object-fit:cover;}
+/* nessun oro/giallo CSS su fondo bianco */
+*[style*="color:#"], *[style*="color: #"]{color:#000000 !important; -webkit-text-fill-color:#000000 !important;}
+
 </style>
-
-
 <style id="v47a2-refinements">
   /* V47A2 — rifiniture 13/07/2026 */
 
@@ -1415,384 +1941,2373 @@ section h3{letter-spacing:-.035em !important;text-transform:none !important;}
       font-size:clamp(25px,5.15vw,35px) !important;
     }
   }
-</style>
 
+
+/* A BOTTEGA 000H — leggibilità definitiva: bianco + nero, immagini cliccabili */
+:root{
+  --bg:#ffffff !important;
+  --panel:#ffffff !important;
+  --panel2:#ffffff !important;
+  --line:#b9b9b9 !important;
+  --line-soft:#d5d5d5 !important;
+  --text:#000000 !important;
+  --muted:#000000 !important;
+  --gold:#000000 !important;
+}
+html, body, .page, main, section,
+.access-card, .collection-card, .ab-section, .ab-hub, .ab-gate,
+.ab-note, .ombra-section, .ombra-index, .ombra-article,
+.quick-top a, .btn, .ab-cta, .ab-cta.secondary{
+  background:#ffffff !important;
+  background-image:none !important;
+}
+body, body *,
+h1,h2,h3,h4,h5,h6,p,span,div,a,strong,em,li,small,
+.brand-main,.brand-sub,.eyebrow,.open-big,.access-lines,.contact-note,.contact-small,
+.ab-kicker,.ab-logo,.ab-title,.ab-subtitle,.ab-eyebrow,.ab-note,.ab-note strong,
+.ab-num,.ombra-section h2,.ombra-section h3,.ombra-index a,
+.collection-card h2,.collection-card p{
+  color:#000000 !important;
+  -webkit-text-fill-color:#000000 !important;
+  text-shadow:none !important;
+}
+.hero-text{display:none !important;}
+.hero{background:#ffffff !important; border:1px solid #999 !important; border-radius:0 !important; box-shadow:none !important;}
+.hero::after{display:none !important;}
+.hero img{filter:contrast(1.08) brightness(1.08) saturate(1.08) !important; transform:none !important;}
+.quick-top{
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:10px !important;
+  margin:10px 0 12px !important;
+}
+.quick-top a,
+.btn,.ab-cta,.ab-cta.secondary{
+  border:1.5px solid #777 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+  color:#000 !important;
+  -webkit-text-fill-color:#000 !important;
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+}
+.quick-top a:first-child{border-color:#8d1d2c !important;}
+.access-card,.collection-card,.ab-section,.ombra-section{
+  border:1px solid #c8c8c8 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+header{border-bottom:1px solid #c8c8c8 !important;}
+.brand-main,.brand-sub{font-family:Arial, Helvetica, sans-serif !important; letter-spacing:.12em !important; font-weight:700 !important;}
+.lang-switch{border:1px solid #777 !important; border-radius:0 !important; background:#fff !important; position:static !important; color:#000 !important; -webkit-text-fill-color:#000 !important;}
+.ab-title,.open-big,section h3,.ombra-section h2,.ombra-section h3{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:0 !important;
+}
+.ab-kicker,.eyebrow,.collection-card h2{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:.18em !important;
+}
+.ab-logo{
+  font-size:clamp(28px,8vw,54px) !important;
+  letter-spacing:.18em !important;
+  font-weight:700 !important;
+}
+.ab-rule span,.ab-rule:before,.ab-rule:after{color:#000 !important; background:#999 !important; -webkit-text-fill-color:#000 !important;}
+.zoomable-img{display:block; text-decoration:none !important;}
+.zoomable-img img{display:block; width:100%; height:auto;}
+.ab-tiles .zoomable-img img,
+.ab-poster-stack .zoomable-img img,
+.ab-poster.zoomed-img{
+  cursor:zoom-in;
+}
+.ab-tiles .zoomable-img{min-width:0;}
+.ab-poster-stack .zoomable-img{margin:0 0 12px;}
+.ombra-card .thumb:first-of-type{grid-column:auto;}
+.ombra-card .thumb img{object-fit:cover;}
+/* nessun oro/giallo CSS su fondo bianco */
+*[style*="color:#"], *[style*="color: #"]{color:#000000 !important; -webkit-text-fill-color:#000000 !important;}
+
+</style>
+<style id="abottega-000">
+  /* A BOTTEGA 000 — innesto editoriale su base v47A3 */
+  :root{
+    --ab-ink:#17120f;
+    --ab-soft:#4f4338;
+    --ab-burgundy:#6f1d24;
+    --ab-gold:#a97422;
+    --ab-paper:#eadcc0;
+    --ab-dark:#090909;
+    --ab-dark-soft:#171717;
+  }
+
+  .ab-section{
+    margin:14px 0 18px;
+    padding:18px 10px;
+    border-top:1px solid rgba(75,52,34,.48);
+    border-bottom:1px solid rgba(75,52,34,.34);
+    background:rgba(246,236,214,.25);
+  }
+  .ab-hub{
+    margin-top:10px;
+    padding-top:16px;
+  }
+  .ab-center{text-align:center;}
+  .ab-kicker{
+    margin:0 0 7px;
+    color:var(--ab-burgundy) !important;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    font-weight:800 !important;
+    font-size:clamp(13px,3.6vw,18px);
+  }
+  .ab-eyebrow{
+    margin:0 0 6px;
+    color:var(--ab-burgundy) !important;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    font-size:clamp(12px,3.3vw,16px);
+    font-weight:800 !important;
+  }
+  .ab-title{
+    margin:0;
+    font-size:clamp(42px,13vw,92px);
+    line-height:.90;
+    letter-spacing:-.045em;
+    font-weight:800 !important;
+    color:var(--ab-ink) !important;
+  }
+  .ab-title.medium{
+    font-size:clamp(34px,10.5vw,72px);
+  }
+  .ab-subtitle{
+    margin:9px auto 0;
+    max-width:660px;
+    color:var(--ab-soft) !important;
+    font-size:clamp(18px,4.7vw,27px);
+    line-height:1.16;
+    font-weight:650 !important;
+  }
+  .ab-rule{
+    display:flex;
+    align-items:center;
+    gap:13px;
+    justify-content:center;
+    margin:14px auto 12px;
+    color:var(--ab-gold) !important;
+  }
+  .ab-rule:before,.ab-rule:after{
+    content:"";
+    height:1px;
+    width:min(155px,28vw);
+    background:rgba(169,116,34,.72);
+  }
+  .ab-rule span{color:var(--ab-gold) !important;font-size:18px;line-height:1;}
+
+  .ab-gates{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:12px;
+    margin-top:14px;
+  }
+  .ab-gate{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:10px;
+    align-items:stretch;
+    padding:10px;
+    background:rgba(244,233,208,.46);
+    border:1px solid rgba(75,52,34,.55);
+  }
+  .ab-gate .copy{display:flex; flex-direction:column; justify-content:center; min-width:0;}
+  .ab-gate h3{
+    margin:0 0 6px;
+    font-size:clamp(27px,7.3vw,48px) !important;
+    line-height:.93 !important;
+    letter-spacing:-.045em !important;
+    color:var(--ab-ink) !important;
+  }
+  .ab-gate p{
+    margin:0;
+    color:var(--ab-soft) !important;
+    font-size:clamp(14px,3.75vw,19px);
+    line-height:1.15;
+  }
+  .ab-gate .mini{
+    margin-top:9px;
+    color:var(--ab-burgundy) !important;
+    font-size:clamp(12px,3.1vw,15px);
+    letter-spacing:.08em;
+    text-transform:uppercase;
+  }
+  .ab-gate img{
+    width:100%;
+    height:100%;
+    min-height:145px;
+    object-fit:cover;
+    display:block;
+    border:1px solid rgba(75,52,34,.42);
+  }
+
+  .ab-poster{
+    width:100%;
+    display:block;
+    border:1px solid rgba(75,52,34,.48);
+    margin:14px 0;
+    background:#e8dcc2;
+  }
+  .ab-tiles{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:8px;
+    margin:14px 0;
+  }
+  .ab-tiles img{
+    width:100%;
+    aspect-ratio:4/5;
+    object-fit:cover;
+    display:block;
+    border:1px solid rgba(75,52,34,.42);
+  }
+  .ab-steps{
+    display:grid;
+    gap:9px;
+    margin:16px 0 4px;
+  }
+  .ab-step{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:10px;
+    align-items:start;
+    padding:10px 0;
+    border-top:1px solid rgba(75,52,34,.32);
+  }
+  .ab-num{
+    min-width:34px;
+    color:var(--ab-burgundy) !important;
+    font-size:20px;
+    line-height:1;
+    font-weight:900 !important;
+  }
+  .ab-step h4{
+    margin:0 0 4px;
+    font-size:clamp(21px,5.6vw,30px);
+    line-height:1.02;
+    color:var(--ab-ink) !important;
+  }
+  .ab-step p{
+    margin:0;
+    color:var(--ab-soft) !important;
+    font-size:16px;
+    line-height:1.35;
+  }
+  .ab-note{
+    margin:16px 0 0;
+    padding:13px 12px;
+    border-left:4px solid var(--ab-burgundy);
+    background:rgba(111,29,36,.08);
+    color:var(--ab-soft) !important;
+    font-size:16px;
+    line-height:1.42;
+  }
+  .ab-cta-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:9px;
+    margin:18px 0 6px;
+  }
+  .ab-cta{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    min-height:48px;
+    padding:9px 10px;
+    border:1.5px solid #6f1d24;
+    color:#6f1d24 !important;
+    background:rgba(244,233,208,.64);
+    font-size:clamp(17px,4.4vw,24px);
+    line-height:1.05;
+    font-weight:800 !important;
+  }
+  .ab-cta.secondary{border-color:#5d422d;color:#24170f !important;}
+
+  .ab-noir{
+    background:#050505;
+    color:#efefef !important;
+    border-color:#050505;
+    padding:20px 10px;
+  }
+  .ab-noir .ab-kicker,
+  .ab-noir .ab-eyebrow{color:#d0a247 !important;}
+  .ab-noir .ab-title,
+  .ab-noir h3,
+  .ab-noir h4{color:#f3f0e8 !important;}
+  .ab-noir .ab-subtitle,
+  .ab-noir p,
+  .ab-noir .ab-step p{color:#cfcfcf !important;}
+  .ab-noir .ab-step{border-top-color:rgba(255,255,255,.18);}
+  .ab-noir .ab-num{color:#d0a247 !important;}
+  .ab-noir .ab-note{background:rgba(208,162,71,.10);border-left-color:#d0a247;color:#dfdfdf !important;}
+  .ab-noir .ab-poster,
+  .ab-noir .ab-tiles img{border-color:rgba(208,162,71,.36); background:#0c0c0c;}
+
+  .ab-method-strip{
+    margin:18px 0 4px;
+    padding:13px 10px;
+    border:1px solid rgba(75,52,34,.38);
+    background:rgba(246,236,214,.22);
+  }
+  .ab-method-strip h3{
+    margin:0 0 8px;
+    font-size:clamp(26px,7vw,44px) !important;
+    line-height:.95 !important;
+    letter-spacing:-.035em !important;
+  }
+  .ab-method-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:6px;
+  }
+  .ab-method-grid img{
+    width:100%;aspect-ratio:4/5;object-fit:cover;display:block;border:1px solid rgba(75,52,34,.34);
+  }
+
+  #faq .faq-new{
+    padding:12px 0 18px;
+    margin-bottom:18px;
+    border-bottom:2px solid rgba(111,29,36,.35);
+  }
+  #faq .faq-new .faq-q{color:#6f1d24 !important;}
+
+  .ab-version{
+    margin:14px 0 0;
+    color:#6a5b4d !important;
+    font-size:12px;
+    text-align:center;
+    letter-spacing:.05em;
+  }
+
+  @media (min-width:620px){
+    .ab-gates{grid-template-columns:1fr 1fr;}
+    .ab-gate{grid-template-columns:1fr;}
+    .ab-gate img{min-height:230px;}
+    .ab-tiles{grid-template-columns:repeat(3,1fr);}
+    .ab-steps{grid-template-columns:repeat(3,1fr);}
+    .ab-step{grid-template-columns:1fr;}
+  }
+  @media (max-width:390px){
+    .ab-section{padding-left:7px;padding-right:7px;}
+    .ab-gate{grid-template-columns:1fr .82fr; padding:8px; gap:8px;}
+    .ab-gate img{min-height:126px;}
+    .ab-title{font-size:clamp(38px,12vw,68px);}
+    .ab-cta-row{grid-template-columns:1fr;}
+  }
+
+
+/* A BOTTEGA 000H — leggibilità definitiva: bianco + nero, immagini cliccabili */
+:root{
+  --bg:#ffffff !important;
+  --panel:#ffffff !important;
+  --panel2:#ffffff !important;
+  --line:#b9b9b9 !important;
+  --line-soft:#d5d5d5 !important;
+  --text:#000000 !important;
+  --muted:#000000 !important;
+  --gold:#000000 !important;
+}
+html, body, .page, main, section,
+.access-card, .collection-card, .ab-section, .ab-hub, .ab-gate,
+.ab-note, .ombra-section, .ombra-index, .ombra-article,
+.quick-top a, .btn, .ab-cta, .ab-cta.secondary{
+  background:#ffffff !important;
+  background-image:none !important;
+}
+body, body *,
+h1,h2,h3,h4,h5,h6,p,span,div,a,strong,em,li,small,
+.brand-main,.brand-sub,.eyebrow,.open-big,.access-lines,.contact-note,.contact-small,
+.ab-kicker,.ab-logo,.ab-title,.ab-subtitle,.ab-eyebrow,.ab-note,.ab-note strong,
+.ab-num,.ombra-section h2,.ombra-section h3,.ombra-index a,
+.collection-card h2,.collection-card p{
+  color:#000000 !important;
+  -webkit-text-fill-color:#000000 !important;
+  text-shadow:none !important;
+}
+.hero-text{display:none !important;}
+.hero{background:#ffffff !important; border:1px solid #999 !important; border-radius:0 !important; box-shadow:none !important;}
+.hero::after{display:none !important;}
+.hero img{filter:contrast(1.08) brightness(1.08) saturate(1.08) !important; transform:none !important;}
+.quick-top{
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:10px !important;
+  margin:10px 0 12px !important;
+}
+.quick-top a,
+.btn,.ab-cta,.ab-cta.secondary{
+  border:1.5px solid #777 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+  color:#000 !important;
+  -webkit-text-fill-color:#000 !important;
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+}
+.quick-top a:first-child{border-color:#8d1d2c !important;}
+.access-card,.collection-card,.ab-section,.ombra-section{
+  border:1px solid #c8c8c8 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+header{border-bottom:1px solid #c8c8c8 !important;}
+.brand-main,.brand-sub{font-family:Arial, Helvetica, sans-serif !important; letter-spacing:.12em !important; font-weight:700 !important;}
+.lang-switch{border:1px solid #777 !important; border-radius:0 !important; background:#fff !important; position:static !important; color:#000 !important; -webkit-text-fill-color:#000 !important;}
+.ab-title,.open-big,section h3,.ombra-section h2,.ombra-section h3{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:0 !important;
+}
+.ab-kicker,.eyebrow,.collection-card h2{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:.18em !important;
+}
+.ab-logo{
+  font-size:clamp(28px,8vw,54px) !important;
+  letter-spacing:.18em !important;
+  font-weight:700 !important;
+}
+.ab-rule span,.ab-rule:before,.ab-rule:after{color:#000 !important; background:#999 !important; -webkit-text-fill-color:#000 !important;}
+.zoomable-img{display:block; text-decoration:none !important;}
+.zoomable-img img{display:block; width:100%; height:auto;}
+.ab-tiles .zoomable-img img,
+.ab-poster-stack .zoomable-img img,
+.ab-poster.zoomed-img{
+  cursor:zoom-in;
+}
+.ab-tiles .zoomable-img{min-width:0;}
+.ab-poster-stack .zoomable-img{margin:0 0 12px;}
+.ombra-card .thumb:first-of-type{grid-column:auto;}
+.ombra-card .thumb img{object-fit:cover;}
+/* nessun oro/giallo CSS su fondo bianco */
+*[style*="color:#"], *[style*="color: #"]{color:#000000 !important; -webkit-text-fill-color:#000000 !important;}
+
+</style>
+<style id="abottega-000A-refinements">
+  /* A BOTTEGA 000H — fix leggibilità + hero Arabesco Nero + grafica più vicina a Fedi/Arabesco */
+  :root{
+    --ab-ink:#17120f;
+    --ab-soft:#4f4338;
+    --ab-burgundy:#6f1d24;
+    --ab-gold:#a97422;
+    --ab-paper:#eadcc0;
+  }
+
+  /* Hero: Arabesco Nero al posto della striscia laboratorio poco leggibile */
+  .hero{
+    height:clamp(158px, 41vw, 292px) !important;
+    border:1px solid #6d5238 !important;
+    background:#050505 !important;
+    margin-bottom:5px !important;
+  }
+  .hero img{
+    object-position:center 43% !important;
+    filter:contrast(1.05) brightness(.78) saturate(.98) !important;
+  }
+  .hero::after{
+    background:
+      linear-gradient(180deg, rgba(0,0,0,.06), rgba(0,0,0,.74)),
+      linear-gradient(90deg, rgba(0,0,0,.58), transparent 75%) !important;
+  }
+  .hero h1,
+  .hero p,
+  .hero a,
+  .hero span,
+  .hero .map-link{
+    color:#fff5df !important;
+    -webkit-text-fill-color:#fff5df !important;
+    font-family:Georgia,"Times New Roman",serif !important;
+  }
+  .hero h1{
+    font-size:clamp(36px, 9.2vw, 72px) !important;
+    letter-spacing:.01em !important;
+    text-transform:uppercase !important;
+  }
+  .hero p{
+    font-size:clamp(14px, 3.6vw, 24px) !important;
+    letter-spacing:.01em !important;
+  }
+  .hero .map-link{border-bottom:1px solid rgba(255,245,223,.88) !important;}
+
+  /* Parchment system: tutte le sezioni A Bottega devono restare leggibili */
+  .ab-section,
+  .ab-section *{
+    font-family:Georgia,"Times New Roman",serif !important;
+    color:var(--ab-ink) !important;
+    -webkit-text-fill-color:currentColor !important;
+  }
+  .ab-section{
+    background:rgba(246,236,214,.42) !important;
+    border-top:1px solid rgba(75,52,34,.52) !important;
+    border-bottom:1px solid rgba(75,52,34,.40) !important;
+  }
+  .ab-section .ab-kicker,
+  .ab-section .ab-eyebrow,
+  .ab-section .ab-num,
+  .ab-section .mini{
+    color:var(--ab-burgundy) !important;
+    -webkit-text-fill-color:var(--ab-burgundy) !important;
+  }
+  .ab-section .ab-title,
+  .ab-section h2,
+  .ab-section h3,
+  .ab-section h4{
+    color:var(--ab-ink) !important;
+    -webkit-text-fill-color:var(--ab-ink) !important;
+    letter-spacing:-.025em !important;
+  }
+  .ab-section .ab-subtitle,
+  .ab-section p,
+  .ab-section .ab-step p,
+  .ab-section .ab-note,
+  .ab-section li{
+    color:var(--ab-soft) !important;
+    -webkit-text-fill-color:var(--ab-soft) !important;
+  }
+  .ab-section strong,
+  .ab-section b{
+    color:var(--ab-ink) !important;
+    -webkit-text-fill-color:var(--ab-ink) !important;
+  }
+  .ab-section .ab-rule,
+  .ab-section .ab-rule span{
+    color:var(--ab-gold) !important;
+    -webkit-text-fill-color:var(--ab-gold) !important;
+  }
+
+  /* CTA dentro A Bottega: pulite, tipo footer locandine */
+  .ab-cta,
+  .ab-cta *{
+    color:#6f1d24 !important;
+    -webkit-text-fill-color:#6f1d24 !important;
+  }
+  .ab-cta.secondary,
+  .ab-cta.secondary *{
+    color:#24170f !important;
+    -webkit-text-fill-color:#24170f !important;
+  }
+
+  /* Crea a Bottega: immagini noir, sezione carta. Niente più nero su nero. */
+  #crea-a-bottega{
+    background:rgba(246,236,214,.42) !important;
+  }
+  #crea-a-bottega .ab-poster,
+  #crea-a-bottega .ab-tiles img{
+    background:#050505 !important;
+    border-color:rgba(75,52,34,.55) !important;
+    filter:none !important;
+  }
+
+  /* Arabesco come pezzo manifesto */
+  .ab-arabesco{
+    background:rgba(18,15,12,.94) !important;
+    border:1px solid rgba(169,116,34,.55) !important;
+  }
+  .ab-arabesco,
+  .ab-arabesco *{
+    color:#f1e7cf !important;
+    -webkit-text-fill-color:currentColor !important;
+  }
+  .ab-arabesco .ab-kicker,
+  .ab-arabesco .ab-eyebrow,
+  .ab-arabesco .ab-rule,
+  .ab-arabesco .ab-rule span{
+    color:#d6b15f !important;
+    -webkit-text-fill-color:#d6b15f !important;
+  }
+  .ab-arabesco .ab-title,
+  .ab-arabesco h2,
+  .ab-arabesco h3,
+  .ab-arabesco h4,
+  .ab-arabesco strong{
+    color:#fff3d6 !important;
+    -webkit-text-fill-color:#fff3d6 !important;
+  }
+  .ab-arabesco .ab-subtitle,
+  .ab-arabesco p,
+  .ab-arabesco .ab-note{
+    color:#ded1b8 !important;
+    -webkit-text-fill-color:#ded1b8 !important;
+  }
+  .ab-arabesco .ab-note{
+    background:rgba(214,177,95,.10) !important;
+    border-left-color:#d6b15f !important;
+  }
+  .ab-arabesco .ab-poster,
+  .ab-arabesco .ab-tiles img{
+    border-color:rgba(214,177,95,.38) !important;
+    background:#050505 !important;
+    filter:none !important;
+  }
+  .ab-tiles-three{
+    grid-template-columns:repeat(3,1fr) !important;
+  }
+
+  /* Gate cards più simili alla locandina Fedi: carta, filo, titolo netto */
+  .ab-gate{
+    background:rgba(244,233,208,.62) !important;
+    border:1px solid rgba(75,52,34,.62) !important;
+  }
+  .ab-gate img{
+    border-color:rgba(75,52,34,.48) !important;
+    filter:none !important;
+  }
+
+  /* Mobile: hero abbastanza forte ma non mangia tutta la prima schermata */
+  @media (max-width:390px){
+    .hero{height:150px !important;}
+    .hero h1{font-size:clamp(32px, 8.6vw, 48px) !important;}
+    .hero p{font-size:clamp(12px, 3.25vw, 18px) !important;}
+  }
+
+
+/* A BOTTEGA 000H — leggibilità definitiva: bianco + nero, immagini cliccabili */
+:root{
+  --bg:#ffffff !important;
+  --panel:#ffffff !important;
+  --panel2:#ffffff !important;
+  --line:#b9b9b9 !important;
+  --line-soft:#d5d5d5 !important;
+  --text:#000000 !important;
+  --muted:#000000 !important;
+  --gold:#000000 !important;
+}
+html, body, .page, main, section,
+.access-card, .collection-card, .ab-section, .ab-hub, .ab-gate,
+.ab-note, .ombra-section, .ombra-index, .ombra-article,
+.quick-top a, .btn, .ab-cta, .ab-cta.secondary{
+  background:#ffffff !important;
+  background-image:none !important;
+}
+body, body *,
+h1,h2,h3,h4,h5,h6,p,span,div,a,strong,em,li,small,
+.brand-main,.brand-sub,.eyebrow,.open-big,.access-lines,.contact-note,.contact-small,
+.ab-kicker,.ab-logo,.ab-title,.ab-subtitle,.ab-eyebrow,.ab-note,.ab-note strong,
+.ab-num,.ombra-section h2,.ombra-section h3,.ombra-index a,
+.collection-card h2,.collection-card p{
+  color:#000000 !important;
+  -webkit-text-fill-color:#000000 !important;
+  text-shadow:none !important;
+}
+.hero-text{display:none !important;}
+.hero{background:#ffffff !important; border:1px solid #999 !important; border-radius:0 !important; box-shadow:none !important;}
+.hero::after{display:none !important;}
+.hero img{filter:contrast(1.08) brightness(1.08) saturate(1.08) !important; transform:none !important;}
+.quick-top{
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:10px !important;
+  margin:10px 0 12px !important;
+}
+.quick-top a,
+.btn,.ab-cta,.ab-cta.secondary{
+  border:1.5px solid #777 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+  color:#000 !important;
+  -webkit-text-fill-color:#000 !important;
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+}
+.quick-top a:first-child{border-color:#8d1d2c !important;}
+.access-card,.collection-card,.ab-section,.ombra-section{
+  border:1px solid #c8c8c8 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+header{border-bottom:1px solid #c8c8c8 !important;}
+.brand-main,.brand-sub{font-family:Arial, Helvetica, sans-serif !important; letter-spacing:.12em !important; font-weight:700 !important;}
+.lang-switch{border:1px solid #777 !important; border-radius:0 !important; background:#fff !important; position:static !important; color:#000 !important; -webkit-text-fill-color:#000 !important;}
+.ab-title,.open-big,section h3,.ombra-section h2,.ombra-section h3{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:0 !important;
+}
+.ab-kicker,.eyebrow,.collection-card h2{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:.18em !important;
+}
+.ab-logo{
+  font-size:clamp(28px,8vw,54px) !important;
+  letter-spacing:.18em !important;
+  font-weight:700 !important;
+}
+.ab-rule span,.ab-rule:before,.ab-rule:after{color:#000 !important; background:#999 !important; -webkit-text-fill-color:#000 !important;}
+.zoomable-img{display:block; text-decoration:none !important;}
+.zoomable-img img{display:block; width:100%; height:auto;}
+.ab-tiles .zoomable-img img,
+.ab-poster-stack .zoomable-img img,
+.ab-poster.zoomed-img{
+  cursor:zoom-in;
+}
+.ab-tiles .zoomable-img{min-width:0;}
+.ab-poster-stack .zoomable-img{margin:0 0 12px;}
+.ombra-card .thumb:first-of-type{grid-column:auto;}
+.ombra-card .thumb img{object-fit:cover;}
+/* nessun oro/giallo CSS su fondo bianco */
+*[style*="color:#"], *[style*="color: #"]{color:#000000 !important; -webkit-text-fill-color:#000000 !important;}
+
+</style>
+<style id="abottega-000B-clean-fedi-system">
+  /* A BOTTEGA 000H — pulizia stile Fedi/Arabesco, hero luminosa cliccabile */
+  :root{
+    --paper-clean:#f4eee2;
+    --paper-soft:#ede3d0;
+    --ink-clean:#15110f;
+    --muted-clean:#4b4037;
+    --gold-clean:#b88a35;
+    --line-clean:rgba(39,30,24,.34);
+    --burgundy-clean:#6f1d24;
+  }
+
+  html, body{
+    background:var(--paper-clean) !important;
+    background-image:none !important;
+    color:var(--ink-clean) !important;
+  }
+  .page{
+    width:min(760px,100%) !important;
+    padding:6px 8px 92px !important;
+    background:var(--paper-clean) !important;
+    border-left:1px solid rgba(40,28,18,.18) !important;
+    border-right:1px solid rgba(40,28,18,.18) !important;
+  }
+
+  body, body *{
+    font-family:Georgia,"Times New Roman",serif !important;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  header{
+    padding:8px 2px 8px !important;
+    border-bottom:1px solid var(--line-clean) !important;
+    align-items:center !important;
+  }
+  .brand{
+    display:block !important;
+    text-align:left !important;
+    line-height:1 !important;
+  }
+  .brand-main{
+    font-size:clamp(24px,6.1vw,40px) !important;
+    letter-spacing:.16em !important;
+    color:var(--ink-clean) !important;
+    -webkit-text-fill-color:var(--ink-clean) !important;
+  }
+  .brand-main::after{content:" MARCOAURELIO";}
+  .brand-sub{display:none !important;}
+  .lang-switch{
+    background:transparent !important;
+    border:1px solid rgba(39,30,24,.55) !important;
+    color:var(--ink-clean) !important;
+    -webkit-text-fill-color:var(--ink-clean) !important;
+    border-radius:0 !important;
+    font-size:13px !important;
+    padding:8px 7px !important;
+    font-weight:800 !important;
+  }
+
+  .hero,
+  a.hero{
+    display:block !important;
+    position:relative !important;
+    height:clamp(108px,25vw,178px) !important;
+    margin:8px 0 8px !important;
+    border:1px solid rgba(39,30,24,.55) !important;
+    border-radius:0 !important;
+    background:#050505 !important;
+    overflow:hidden !important;
+  }
+  .hero img{
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover !important;
+    object-position:center 44% !important;
+    filter:brightness(1.12) contrast(1.04) saturate(1.08) !important;
+    opacity:1 !important;
+    transform:scale(1.01);
+  }
+  .hero::after{
+    content:"" !important;
+    position:absolute !important;
+    inset:0 !important;
+    background:linear-gradient(90deg,rgba(0,0,0,.22),rgba(0,0,0,.03) 46%,rgba(0,0,0,.08)) !important;
+    pointer-events:none !important;
+  }
+  .hero-text{
+    position:absolute !important;
+    left:9px !important;
+    right:8px !important;
+    bottom:8px !important;
+    z-index:2 !important;
+    max-width:none !important;
+    padding:0 !important;
+    text-shadow:0 2px 5px rgba(0,0,0,.88), 0 0 1px #000 !important;
+  }
+  .hero h1{
+    margin:0 !important;
+    color:#fff7e8 !important;
+    -webkit-text-fill-color:#fff7e8 !important;
+    -webkit-text-stroke:.45px rgba(0,0,0,.65);
+    font-size:clamp(30px,8.2vw,58px) !important;
+    line-height:.86 !important;
+    letter-spacing:.015em !important;
+    text-transform:uppercase !important;
+    font-weight:800 !important;
+  }
+  .hero p{
+    margin:4px 0 0 !important;
+    color:#fff7e8 !important;
+    -webkit-text-fill-color:#fff7e8 !important;
+    font-size:clamp(12px,3.25vw,21px) !important;
+    line-height:1 !important;
+    font-weight:700 !important;
+  }
+
+  .quick-top{
+    display:grid !important;
+    grid-template-columns:1fr 1.25fr 1fr !important;
+    gap:7px !important;
+    margin:8px 0 9px !important;
+  }
+  .quick-top a{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    text-align:center !important;
+    min-height:42px !important;
+    padding:7px 6px !important;
+    border:1px solid rgba(39,30,24,.64) !important;
+    background:#f8f1e4 !important;
+    color:var(--ink-clean) !important;
+    -webkit-text-fill-color:var(--ink-clean) !important;
+    font-size:clamp(15px,3.7vw,22px) !important;
+    line-height:1.02 !important;
+    font-weight:800 !important;
+  }
+  .quick-top a:first-child{
+    border-color:var(--burgundy-clean) !important;
+    color:var(--burgundy-clean) !important;
+    -webkit-text-fill-color:var(--burgundy-clean) !important;
+  }
+
+  .access-card,
+  .collection-card,
+  .ab-section,
+  #faq{
+    background:#f8f1e4 !important;
+    background-image:none !important;
+    border:1px solid var(--line-clean) !important;
+    border-radius:0 !important;
+    box-shadow:none !important;
+    color:var(--ink-clean) !important;
+    -webkit-text-fill-color:var(--ink-clean) !important;
+  }
+  .access-card{
+    padding:14px 12px !important;
+    margin:0 0 14px !important;
+  }
+  .eyebrow,
+  .ab-kicker,
+  .ab-eyebrow{
+    color:var(--burgundy-clean) !important;
+    -webkit-text-fill-color:var(--burgundy-clean) !important;
+    letter-spacing:.20em !important;
+    text-transform:uppercase !important;
+    font-weight:800 !important;
+  }
+  .open-big,
+  .contact-note,
+  .access-lines,
+  .contact-small,
+  .access-card span,
+  .access-card strong{
+    color:var(--ink-clean) !important;
+    -webkit-text-fill-color:var(--ink-clean) !important;
+  }
+  .v47a-access-note{
+    color:var(--burgundy-clean) !important;
+    -webkit-text-fill-color:var(--burgundy-clean) !important;
+  }
+  .actions .btn,
+  .bottom-cta a,
+  .ab-cta{
+    border-radius:0 !important;
+    background:#f8f1e4 !important;
+    color:var(--ink-clean) !important;
+    -webkit-text-fill-color:var(--ink-clean) !important;
+    border:1px solid rgba(39,30,24,.64) !important;
+    box-shadow:none !important;
+  }
+  .actions .whatsapp,
+  .ab-cta:not(.secondary){
+    border-color:var(--burgundy-clean) !important;
+    color:var(--burgundy-clean) !important;
+    -webkit-text-fill-color:var(--burgundy-clean) !important;
+  }
+
+  .ab-section{
+    margin:14px 0 18px !important;
+    padding:22px 12px !important;
+  }
+  .ab-center{text-align:center !important;}
+  .ab-title,
+  .ab-section h2,
+  .ab-section h3,
+  .ab-section h4,
+  section h3{
+    color:var(--ink-clean) !important;
+    -webkit-text-fill-color:var(--ink-clean) !important;
+    font-weight:500 !important;
+    letter-spacing:-.035em !important;
+    line-height:.92 !important;
+  }
+  .ab-title{
+    font-size:clamp(42px,12.2vw,86px) !important;
+  }
+  .ab-title.medium{
+    font-size:clamp(36px,10.2vw,70px) !important;
+  }
+  .ab-subtitle,
+  .ab-section p,
+  .ab-step p,
+  .ab-note,
+  .placeholder-text{
+    color:var(--muted-clean) !important;
+    -webkit-text-fill-color:var(--muted-clean) !important;
+    font-weight:500 !important;
+  }
+  .ab-rule:before,.ab-rule:after{background:rgba(184,138,53,.75) !important;}
+  .ab-rule span{color:var(--gold-clean) !important; -webkit-text-fill-color:var(--gold-clean) !important;}
+
+  .ab-gate{
+    background:#f8f1e4 !important;
+    border:1px solid rgba(39,30,24,.38) !important;
+    border-radius:0 !important;
+    padding:10px !important;
+  }
+  .ab-gate img,
+  .ab-poster,
+  .ab-tiles img,
+  .gallery img,
+  .thumb{
+    border-radius:0 !important;
+    border:1px solid rgba(39,30,24,.32) !important;
+    box-shadow:none !important;
+  }
+
+  .collections{
+    display:grid !important;
+    gap:9px !important;
+    margin:12px 0 !important;
+  }
+  .collection-card{
+    padding:10px !important;
+  }
+  .collection-card h2{
+    color:var(--ink-clean) !important;
+    -webkit-text-fill-color:var(--ink-clean) !important;
+    font-weight:600 !important;
+  }
+  .collection-card p{
+    color:var(--muted-clean) !important;
+    -webkit-text-fill-color:var(--muted-clean) !important;
+  }
+
+  .ab-arabesco,
+  .ab-arabesco *{
+    background:#f8f1e4 !important;
+    color:var(--ink-clean) !important;
+    -webkit-text-fill-color:currentColor !important;
+  }
+  .ab-arabesco .ab-kicker,
+  .ab-arabesco .ab-eyebrow{color:var(--burgundy-clean) !important; -webkit-text-fill-color:var(--burgundy-clean) !important;}
+  .ab-arabesco .ab-subtitle,
+  .ab-arabesco p,
+  .ab-arabesco .ab-note{color:var(--muted-clean) !important; -webkit-text-fill-color:var(--muted-clean) !important;}
+  .ab-poster-stack{display:grid !important; gap:12px !important; margin:14px 0 !important;}
+  .ab-poster-stack .ab-poster{margin:0 !important; width:100% !important; height:auto !important; display:block !important;}
+  .arabesco-stack .ab-poster{background:#050505 !important;}
+
+  #crea-a-bottega .ab-poster,
+  #crea-a-bottega .ab-tiles img,
+  #metodo-a-bottega img{
+    filter:none !important;
+  }
+
+  #faq{
+    padding:26px 12px !important;
+    margin-top:18px !important;
+  }
+  #faq h2,
+  #faq h3{
+    color:var(--ink-clean) !important;
+    -webkit-text-fill-color:var(--ink-clean) !important;
+  }
+  #faq .faq-q,
+  #faq summary{
+    color:var(--burgundy-clean) !important;
+    -webkit-text-fill-color:var(--burgundy-clean) !important;
+  }
+  #faq .faq-a,
+  #faq .faq-a *{
+    color:var(--muted-clean) !important;
+    -webkit-text-fill-color:var(--muted-clean) !important;
+  }
+
+  @media (max-width:390px){
+    .page{padding-left:6px !important; padding-right:6px !important;}
+    .hero, a.hero{height:112px !important;}
+    .hero h1{font-size:clamp(28px,8.3vw,38px) !important;}
+    .hero p{font-size:11px !important; white-space:nowrap !important;}
+    .quick-top{gap:5px !important;}
+    .quick-top a{font-size:clamp(13px,3.45vw,17px) !important; min-height:39px !important; padding:6px 4px !important;}
+    .ab-section{padding:18px 10px !important;}
+    .ab-title{font-size:clamp(38px,11.6vw,56px) !important;}
+    .ab-title.medium{font-size:clamp(34px,9.8vw,52px) !important;}
+  }
+
+
+/* A BOTTEGA 000H — leggibilità definitiva: bianco + nero, immagini cliccabili */
+:root{
+  --bg:#ffffff !important;
+  --panel:#ffffff !important;
+  --panel2:#ffffff !important;
+  --line:#b9b9b9 !important;
+  --line-soft:#d5d5d5 !important;
+  --text:#000000 !important;
+  --muted:#000000 !important;
+  --gold:#000000 !important;
+}
+html, body, .page, main, section,
+.access-card, .collection-card, .ab-section, .ab-hub, .ab-gate,
+.ab-note, .ombra-section, .ombra-index, .ombra-article,
+.quick-top a, .btn, .ab-cta, .ab-cta.secondary{
+  background:#ffffff !important;
+  background-image:none !important;
+}
+body, body *,
+h1,h2,h3,h4,h5,h6,p,span,div,a,strong,em,li,small,
+.brand-main,.brand-sub,.eyebrow,.open-big,.access-lines,.contact-note,.contact-small,
+.ab-kicker,.ab-logo,.ab-title,.ab-subtitle,.ab-eyebrow,.ab-note,.ab-note strong,
+.ab-num,.ombra-section h2,.ombra-section h3,.ombra-index a,
+.collection-card h2,.collection-card p{
+  color:#000000 !important;
+  -webkit-text-fill-color:#000000 !important;
+  text-shadow:none !important;
+}
+.hero-text{display:none !important;}
+.hero{background:#ffffff !important; border:1px solid #999 !important; border-radius:0 !important; box-shadow:none !important;}
+.hero::after{display:none !important;}
+.hero img{filter:contrast(1.08) brightness(1.08) saturate(1.08) !important; transform:none !important;}
+.quick-top{
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:10px !important;
+  margin:10px 0 12px !important;
+}
+.quick-top a,
+.btn,.ab-cta,.ab-cta.secondary{
+  border:1.5px solid #777 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+  color:#000 !important;
+  -webkit-text-fill-color:#000 !important;
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+}
+.quick-top a:first-child{border-color:#8d1d2c !important;}
+.access-card,.collection-card,.ab-section,.ombra-section{
+  border:1px solid #c8c8c8 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+header{border-bottom:1px solid #c8c8c8 !important;}
+.brand-main,.brand-sub{font-family:Arial, Helvetica, sans-serif !important; letter-spacing:.12em !important; font-weight:700 !important;}
+.lang-switch{border:1px solid #777 !important; border-radius:0 !important; background:#fff !important; position:static !important; color:#000 !important; -webkit-text-fill-color:#000 !important;}
+.ab-title,.open-big,section h3,.ombra-section h2,.ombra-section h3{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:0 !important;
+}
+.ab-kicker,.eyebrow,.collection-card h2{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:.18em !important;
+}
+.ab-logo{
+  font-size:clamp(28px,8vw,54px) !important;
+  letter-spacing:.18em !important;
+  font-weight:700 !important;
+}
+.ab-rule span,.ab-rule:before,.ab-rule:after{color:#000 !important; background:#999 !important; -webkit-text-fill-color:#000 !important;}
+.zoomable-img{display:block; text-decoration:none !important;}
+.zoomable-img img{display:block; width:100%; height:auto;}
+.ab-tiles .zoomable-img img,
+.ab-poster-stack .zoomable-img img,
+.ab-poster.zoomed-img{
+  cursor:zoom-in;
+}
+.ab-tiles .zoomable-img{min-width:0;}
+.ab-poster-stack .zoomable-img{margin:0 0 12px;}
+.ombra-card .thumb:first-of-type{grid-column:auto;}
+.ombra-card .thumb img{object-fit:cover;}
+/* nessun oro/giallo CSS su fondo bianco */
+*[style*="color:#"], *[style*="color: #"]{color:#000000 !important; -webkit-text-fill-color:#000000 !important;}
+
+</style>
+<style id="abottega-000C-final-polish">
+  /* A BOTTEGA 000H — pulizia definitiva verso le schede Fedi / Arabesco */
+  :root{
+    --paper-clean:#fbf7ee;
+    --paper-card:#fbf7ee;
+    --ink-clean:#15110f;
+    --muted-clean:#3f3730;
+    --gold-clean:#b9923c;
+    --line-clean:rgba(28,22,18,.28);
+    --line-strong:rgba(28,22,18,.52);
+    --burgundy-clean:#7a2027;
+  }
+
+  html, body{
+    background:var(--paper-clean) !important;
+    background-image:none !important;
+    color:var(--ink-clean) !important;
+  }
+  .page{
+    background:var(--paper-clean) !important;
+    border-left:1px solid rgba(28,22,18,.14) !important;
+    border-right:1px solid rgba(28,22,18,.14) !important;
+    padding:5px 7px 90px !important;
+  }
+  .page:before{border-color:rgba(28,22,18,.28) !important;}
+
+  /* Font più vicino alle schede: serif asciutto, meno “sito”, più locandina */
+  body, body *,
+  .btn, .quick-top a, .bottom-cta a{
+    font-family:"Bodoni 72","Didot","Bodoni MT","Times New Roman",Times,serif !important;
+  }
+  h1,h2,h3,h4,
+  .brand-main,
+  .ab-title,
+  .open-big,
+  .collection-card h2,
+  section h3,
+  .ab-gate h3{
+    font-family:"Bodoni 72","Didot","Bodoni MT","Times New Roman",Times,serif !important;
+    font-weight:500 !important;
+  }
+
+  /* Header: più piccolo, entra con ENG */
+  header{
+    grid-template-columns:minmax(0,1fr) auto !important;
+    align-items:center !important;
+    padding:6px 2px 7px !important;
+    margin-bottom:6px !important;
+  }
+  .brand{
+    display:block !important;
+    overflow:hidden !important;
+    white-space:nowrap !important;
+    min-width:0 !important;
+  }
+  .brand-main{
+    font-size:clamp(16px,4.75vw,34px) !important;
+    letter-spacing:.115em !important;
+    line-height:1 !important;
+    color:var(--ink-clean) !important;
+    -webkit-text-fill-color:var(--ink-clean) !important;
+  }
+  .brand-main::after{content:" MARCOAURELIO" !important;}
+  .brand-sub{display:none !important;}
+  .lang-switch{
+    position:static !important;
+    width:auto !important;
+    height:auto !important;
+    min-width:42px !important;
+    padding:6px 7px !important;
+    background:var(--paper-clean) !important;
+    color:var(--ink-clean) !important;
+    -webkit-text-fill-color:var(--ink-clean) !important;
+    border:1px solid var(--line-strong) !important;
+    font-size:clamp(12px,3.1vw,15px) !important;
+    letter-spacing:.04em !important;
+    line-height:1 !important;
+  }
+
+  /* Hero ok: luminosa, senza velatura pesante */
+  .hero, a.hero{
+    height:clamp(112px,30vw,190px) !important;
+    margin:7px 0 8px !important;
+    border:1px solid var(--line-strong) !important;
+    background:#050505 !important;
+  }
+  .hero img{
+    filter:brightness(1.18) contrast(1.06) saturate(1.12) !important;
+    object-position:center 45% !important;
+    transform:scale(1.012) !important;
+  }
+  .hero::after{
+    background:linear-gradient(90deg,rgba(0,0,0,.22),rgba(0,0,0,.03) 50%,rgba(0,0,0,.05)) !important;
+  }
+  .hero-text{bottom:7px !important; left:9px !important; right:8px !important;}
+  .hero h1{
+    font-size:clamp(28px,7.8vw,54px) !important;
+    letter-spacing:.02em !important;
+    line-height:.86 !important;
+    color:#fff7e8 !important;
+    -webkit-text-fill-color:#fff7e8 !important;
+    -webkit-text-stroke:.35px rgba(0,0,0,.76) !important;
+    text-shadow:0 2px 5px rgba(0,0,0,.9) !important;
+  }
+  .hero p{
+    font-size:clamp(11px,3vw,18px) !important;
+    margin-top:3px !important;
+    white-space:nowrap !important;
+    color:#fff7e8 !important;
+    -webkit-text-fill-color:#fff7e8 !important;
+    text-shadow:0 2px 4px rgba(0,0,0,.9) !important;
+  }
+
+  /* Quattro bottoni subito sotto la hero */
+  .quick-top{
+    grid-template-columns:repeat(4,1fr) !important;
+    gap:6px !important;
+    margin:8px 0 9px !important;
+  }
+  .quick-top a{
+    min-height:42px !important;
+    padding:6px 4px !important;
+    background:var(--paper-card) !important;
+    border:1px solid var(--line-strong) !important;
+    color:var(--ink-clean) !important;
+    -webkit-text-fill-color:var(--ink-clean) !important;
+    font-size:clamp(12px,3.25vw,20px) !important;
+    line-height:1.02 !important;
+    font-weight:700 !important;
+    letter-spacing:-.015em !important;
+  }
+  .quick-top a:first-child{
+    color:var(--burgundy-clean) !important;
+    -webkit-text-fill-color:var(--burgundy-clean) !important;
+    border-color:var(--burgundy-clean) !important;
+  }
+
+  /* Elimina la duplicazione WhatsApp/SMS nel blocco accesso */
+  .access-card .actions{display:none !important;}
+  .access-card{
+    background:var(--paper-card) !important;
+    border:1px solid var(--line-clean) !important;
+    margin:0 0 13px !important;
+    padding:12px 11px 11px !important;
+  }
+  .access-card .eyebrow,
+  .eyebrow,
+  .ab-kicker,
+  .ab-eyebrow{
+    color:var(--burgundy-clean) !important;
+    -webkit-text-fill-color:var(--burgundy-clean) !important;
+    letter-spacing:.22em !important;
+    font-weight:700 !important;
+  }
+  .open-big{
+    font-size:clamp(32px,8.6vw,58px) !important;
+    line-height:.93 !important;
+    letter-spacing:-.025em !important;
+    font-weight:500 !important;
+    margin:5px 0 4px !important;
+  }
+  .access-lines,
+  .contact-note,
+  .contact-small{
+    color:var(--ink-clean) !important;
+    -webkit-text-fill-color:var(--ink-clean) !important;
+    font-weight:600 !important;
+  }
+  .contact-note{margin-top:4px !important;}
+  .contact-small{margin-top:7px !important; overflow-wrap:anywhere !important;}
+
+  /* Pulisci il “giallino”: moduli come carta delle schede */
+  .access-card,
+  .collection-card,
+  .ab-section,
+  #faq,
+  .ab-gate,
+  .ab-method-strip,
+  .ombra-card,
+  .ombra-index{
+    background:var(--paper-card) !important;
+    background-image:none !important;
+    border-radius:0 !important;
+    box-shadow:none !important;
+  }
+  .ab-section{
+    padding:22px 12px !important;
+    margin:14px 0 18px !important;
+    border:1px solid var(--line-clean) !important;
+  }
+  .ab-hub{padding-top:20px !important;}
+
+  /* “a Bottega” come marchio */
+  .ab-logo{
+    display:block !important;
+    font-size:clamp(20px,5.6vw,34px) !important;
+    line-height:1 !important;
+    letter-spacing:.20em !important;
+    text-transform:none !important;
+    font-weight:800 !important;
+    color:var(--burgundy-clean) !important;
+    -webkit-text-fill-color:var(--burgundy-clean) !important;
+    margin-bottom:12px !important;
+  }
+  .ab-logo::first-letter{text-transform:lowercase !important;}
+
+  .ab-title,
+  .ab-section h2,
+  .ab-section h3,
+  .ab-section h4,
+  section h3{
+    color:var(--ink-clean) !important;
+    -webkit-text-fill-color:var(--ink-clean) !important;
+    font-weight:500 !important;
+    letter-spacing:-.025em !important;
+  }
+  .ab-title{font-size:clamp(42px,12vw,86px) !important;}
+  .ab-title.medium{font-size:clamp(38px,10.8vw,72px) !important;}
+  .ab-subtitle,
+  .ab-section p,
+  .ab-step p,
+  .ab-note,
+  .placeholder-text{
+    color:var(--muted-clean) !important;
+    -webkit-text-fill-color:var(--muted-clean) !important;
+    font-weight:500 !important;
+  }
+  .ab-rule:before,.ab-rule:after{background:rgba(185,146,60,.76) !important;}
+  .ab-rule span{color:var(--gold-clean) !important; -webkit-text-fill-color:var(--gold-clean) !important;}
+
+  .collection-card{padding:9px !important; border:1px solid var(--line-clean) !important;}
+  .ab-gate{border:1px solid var(--line-clean) !important;}
+  .ab-poster,
+  .ab-tiles img,
+  .gallery img,
+  .thumb,
+  .ab-gate img{
+    border-radius:0 !important;
+    border:1px solid rgba(28,22,18,.24) !important;
+    box-shadow:none !important;
+  }
+
+  /* Arabesco come sezione manifesto, ma sul sistema chiaro */
+  .ab-arabesco,
+  .ab-arabesco *{
+    background:var(--paper-card) !important;
+    color:var(--ink-clean) !important;
+    -webkit-text-fill-color:currentColor !important;
+  }
+  .ab-arabesco .ab-kicker,
+  .ab-arabesco .ab-eyebrow{color:var(--burgundy-clean) !important;-webkit-text-fill-color:var(--burgundy-clean) !important;}
+  .ab-arabesco .ab-subtitle,
+  .ab-arabesco p,
+  .ab-arabesco .ab-note{color:var(--muted-clean) !important;-webkit-text-fill-color:var(--muted-clean) !important;}
+  .arabesco-stack .ab-poster{background:#050505 !important;}
+
+  /* Mobile: serrato ma leggibile */
+  @media (max-width:390px){
+    .page{padding-left:6px !important; padding-right:6px !important;}
+    .brand-main{font-size:clamp(15px,4.55vw,23px) !important; letter-spacing:.105em !important;}
+    .lang-switch{font-size:12px !important; min-width:38px !important; padding:5px 6px !important;}
+    .hero, a.hero{height:112px !important;}
+    .quick-top{gap:5px !important;}
+    .quick-top a{font-size:clamp(11px,3.12vw,15px) !important; min-height:39px !important; padding:5px 3px !important;}
+    .access-card{padding:10px 9px !important;}
+    .open-big{font-size:clamp(31px,8.1vw,44px) !important;}
+    .ab-section{padding:18px 10px !important;}
+    .ab-title{font-size:clamp(38px,11.4vw,58px) !important;}
+    .ab-title.medium{font-size:clamp(34px,10vw,54px) !important;}
+  }
+
+
+/* A BOTTEGA 000H — leggibilità definitiva: bianco + nero, immagini cliccabili */
+:root{
+  --bg:#ffffff !important;
+  --panel:#ffffff !important;
+  --panel2:#ffffff !important;
+  --line:#b9b9b9 !important;
+  --line-soft:#d5d5d5 !important;
+  --text:#000000 !important;
+  --muted:#000000 !important;
+  --gold:#000000 !important;
+}
+html, body, .page, main, section,
+.access-card, .collection-card, .ab-section, .ab-hub, .ab-gate,
+.ab-note, .ombra-section, .ombra-index, .ombra-article,
+.quick-top a, .btn, .ab-cta, .ab-cta.secondary{
+  background:#ffffff !important;
+  background-image:none !important;
+}
+body, body *,
+h1,h2,h3,h4,h5,h6,p,span,div,a,strong,em,li,small,
+.brand-main,.brand-sub,.eyebrow,.open-big,.access-lines,.contact-note,.contact-small,
+.ab-kicker,.ab-logo,.ab-title,.ab-subtitle,.ab-eyebrow,.ab-note,.ab-note strong,
+.ab-num,.ombra-section h2,.ombra-section h3,.ombra-index a,
+.collection-card h2,.collection-card p{
+  color:#000000 !important;
+  -webkit-text-fill-color:#000000 !important;
+  text-shadow:none !important;
+}
+.hero-text{display:none !important;}
+.hero{background:#ffffff !important; border:1px solid #999 !important; border-radius:0 !important; box-shadow:none !important;}
+.hero::after{display:none !important;}
+.hero img{filter:contrast(1.08) brightness(1.08) saturate(1.08) !important; transform:none !important;}
+.quick-top{
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:10px !important;
+  margin:10px 0 12px !important;
+}
+.quick-top a,
+.btn,.ab-cta,.ab-cta.secondary{
+  border:1.5px solid #777 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+  color:#000 !important;
+  -webkit-text-fill-color:#000 !important;
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+}
+.quick-top a:first-child{border-color:#8d1d2c !important;}
+.access-card,.collection-card,.ab-section,.ombra-section{
+  border:1px solid #c8c8c8 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+header{border-bottom:1px solid #c8c8c8 !important;}
+.brand-main,.brand-sub{font-family:Arial, Helvetica, sans-serif !important; letter-spacing:.12em !important; font-weight:700 !important;}
+.lang-switch{border:1px solid #777 !important; border-radius:0 !important; background:#fff !important; position:static !important; color:#000 !important; -webkit-text-fill-color:#000 !important;}
+.ab-title,.open-big,section h3,.ombra-section h2,.ombra-section h3{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:0 !important;
+}
+.ab-kicker,.eyebrow,.collection-card h2{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:.18em !important;
+}
+.ab-logo{
+  font-size:clamp(28px,8vw,54px) !important;
+  letter-spacing:.18em !important;
+  font-weight:700 !important;
+}
+.ab-rule span,.ab-rule:before,.ab-rule:after{color:#000 !important; background:#999 !important; -webkit-text-fill-color:#000 !important;}
+.zoomable-img{display:block; text-decoration:none !important;}
+.zoomable-img img{display:block; width:100%; height:auto;}
+.ab-tiles .zoomable-img img,
+.ab-poster-stack .zoomable-img img,
+.ab-poster.zoomed-img{
+  cursor:zoom-in;
+}
+.ab-tiles .zoomable-img{min-width:0;}
+.ab-poster-stack .zoomable-img{margin:0 0 12px;}
+.ombra-card .thumb:first-of-type{grid-column:auto;}
+.ombra-card .thumb img{object-fit:cover;}
+/* nessun oro/giallo CSS su fondo bianco */
+*[style*="color:#"], *[style*="color: #"]{color:#000000 !important; -webkit-text-fill-color:#000000 !important;}
+
+</style>
+<style id="abottega-000D-final-fix">
+  /* A BOTTEGA 000H — fondo bianco, font più editoriale, FAQ corretta */
+  @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+  :root{
+    --paper-clean:#ffffff !important;
+    --paper-card:#ffffff !important;
+    --ink-clean:#17130f !important;
+    --muted-clean:#3a332d !important;
+    --gold-clean:#b08a2e !important;
+    --line-clean:rgba(25,20,16,.24) !important;
+    --line-strong:rgba(25,20,16,.50) !important;
+    --burgundy-clean:#7b2028 !important;
+  }
+
+  html, body{
+    background:#ffffff !important;
+    background-image:none !important;
+    color:var(--ink-clean) !important;
+  }
+  body, body *,
+  .btn, .quick-top a, .bottom-cta a{
+    font-family:"Cormorant Garamond", Garamond, Georgia, "Times New Roman", serif !important;
+  }
+  h1,h2,h3,h4,
+  .brand-main,
+  .ab-title,
+  .open-big,
+  .collection-card h2,
+  section h3,
+  .ab-gate h3,
+  .faq-q,
+  #faq summary{
+    font-family:"Bodoni Moda", "Bodoni 72", Didot, "Times New Roman", serif !important;
+    font-weight:500 !important;
+  }
+
+  .page{
+    background:#ffffff !important;
+    border-left:1px solid rgba(25,20,16,.12) !important;
+    border-right:1px solid rgba(25,20,16,.12) !important;
+    padding-bottom:42px !important;
+  }
+  .page:before{border-color:rgba(25,20,16,.22) !important;}
+
+  /* Header leggibile su mobile */
+  header{padding:5px 2px 7px !important;}
+  .brand-main{
+    font-size:clamp(14px,4.15vw,30px) !important;
+    letter-spacing:.105em !important;
+    line-height:1.02 !important;
+    white-space:nowrap !important;
+  }
+  .brand-main::after{content:" MARCOAURELIO" !important;}
+  .lang-switch{
+    min-width:38px !important;
+    padding:5px 6px !important;
+    font-size:clamp(11px,2.9vw,14px) !important;
+  }
+  @media(max-width:390px){
+    .brand-main{font-size:clamp(13px,3.85vw,21px) !important;letter-spacing:.092em !important;}
+    .lang-switch{font-size:11px !important;min-width:34px !important;padding:4px 5px !important;}
+  }
+
+  /* Hero: foto in primo piano, nessuna patina */
+  .hero img{
+    filter:brightness(1.24) contrast(1.08) saturate(1.18) !important;
+    object-position:center 47% !important;
+  }
+  .hero::after{
+    background:linear-gradient(90deg,rgba(0,0,0,.18),rgba(0,0,0,.02) 54%,rgba(0,0,0,.04)) !important;
+  }
+
+  /* Bianco vero anche sui moduli: niente pergamena/giallino */
+  .access-card,
+  .collection-card,
+  .ab-section,
+  #faq,
+  .ab-gate,
+  .ab-method-strip,
+  .ombra-card,
+  .ombra-index,
+  .quick-top a,
+  .bottom-cta a,
+  .top-float{
+    background:#ffffff !important;
+    background-image:none !important;
+    box-shadow:none !important;
+  }
+  main:before{background:#ffffff !important;}
+
+  /* Top buttons: restano la barra unica di contatto */
+  .quick-top a{
+    font-family:"Bodoni Moda", "Bodoni 72", Didot, "Times New Roman", serif !important;
+    font-weight:600 !important;
+    min-height:42px !important;
+  }
+
+  /* Evita doppioni e ingombri: i contatti principali sono sotto la hero */
+  .access-card .actions,
+  .bottom-cta{display:none !important;}
+  .access-card{margin-bottom:12px !important;}
+
+  /* a Bottega come marchio modulare */
+  .ab-logo{
+    font-family:"Bodoni Moda", "Bodoni 72", Didot, "Times New Roman", serif !important;
+    font-size:clamp(24px,7vw,42px) !important;
+    letter-spacing:.18em !important;
+    font-weight:700 !important;
+    text-transform:none !important;
+    color:var(--burgundy-clean) !important;
+    -webkit-text-fill-color:var(--burgundy-clean) !important;
+  }
+  .ab-logo::first-letter{text-transform:lowercase !important;}
+
+  /* FAQ più leggibile e meno “muro” */
+  #faq .faq-a,
+  #faq .faq-a *{
+    color:var(--muted-clean) !important;
+    -webkit-text-fill-color:var(--muted-clean) !important;
+    font-weight:600 !important;
+  }
+  #faq .faq-q{
+    color:var(--burgundy-clean) !important;
+    -webkit-text-fill-color:var(--burgundy-clean) !important;
+    font-weight:600 !important;
+  }
+
+
+/* A BOTTEGA 000H — leggibilità definitiva: bianco + nero, immagini cliccabili */
+:root{
+  --bg:#ffffff !important;
+  --panel:#ffffff !important;
+  --panel2:#ffffff !important;
+  --line:#b9b9b9 !important;
+  --line-soft:#d5d5d5 !important;
+  --text:#000000 !important;
+  --muted:#000000 !important;
+  --gold:#000000 !important;
+}
+html, body, .page, main, section,
+.access-card, .collection-card, .ab-section, .ab-hub, .ab-gate,
+.ab-note, .ombra-section, .ombra-index, .ombra-article,
+.quick-top a, .btn, .ab-cta, .ab-cta.secondary{
+  background:#ffffff !important;
+  background-image:none !important;
+}
+body, body *,
+h1,h2,h3,h4,h5,h6,p,span,div,a,strong,em,li,small,
+.brand-main,.brand-sub,.eyebrow,.open-big,.access-lines,.contact-note,.contact-small,
+.ab-kicker,.ab-logo,.ab-title,.ab-subtitle,.ab-eyebrow,.ab-note,.ab-note strong,
+.ab-num,.ombra-section h2,.ombra-section h3,.ombra-index a,
+.collection-card h2,.collection-card p{
+  color:#000000 !important;
+  -webkit-text-fill-color:#000000 !important;
+  text-shadow:none !important;
+}
+.hero-text{display:none !important;}
+.hero{background:#ffffff !important; border:1px solid #999 !important; border-radius:0 !important; box-shadow:none !important;}
+.hero::after{display:none !important;}
+.hero img{filter:contrast(1.08) brightness(1.08) saturate(1.08) !important; transform:none !important;}
+.quick-top{
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:10px !important;
+  margin:10px 0 12px !important;
+}
+.quick-top a,
+.btn,.ab-cta,.ab-cta.secondary{
+  border:1.5px solid #777 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+  color:#000 !important;
+  -webkit-text-fill-color:#000 !important;
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+}
+.quick-top a:first-child{border-color:#8d1d2c !important;}
+.access-card,.collection-card,.ab-section,.ombra-section{
+  border:1px solid #c8c8c8 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+header{border-bottom:1px solid #c8c8c8 !important;}
+.brand-main,.brand-sub{font-family:Arial, Helvetica, sans-serif !important; letter-spacing:.12em !important; font-weight:700 !important;}
+.lang-switch{border:1px solid #777 !important; border-radius:0 !important; background:#fff !important; position:static !important; color:#000 !important; -webkit-text-fill-color:#000 !important;}
+.ab-title,.open-big,section h3,.ombra-section h2,.ombra-section h3{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:0 !important;
+}
+.ab-kicker,.eyebrow,.collection-card h2{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:.18em !important;
+}
+.ab-logo{
+  font-size:clamp(28px,8vw,54px) !important;
+  letter-spacing:.18em !important;
+  font-weight:700 !important;
+}
+.ab-rule span,.ab-rule:before,.ab-rule:after{color:#000 !important; background:#999 !important; -webkit-text-fill-color:#000 !important;}
+.zoomable-img{display:block; text-decoration:none !important;}
+.zoomable-img img{display:block; width:100%; height:auto;}
+.ab-tiles .zoomable-img img,
+.ab-poster-stack .zoomable-img img,
+.ab-poster.zoomed-img{
+  cursor:zoom-in;
+}
+.ab-tiles .zoomable-img{min-width:0;}
+.ab-poster-stack .zoomable-img{margin:0 0 12px;}
+.ombra-card .thumb:first-of-type{grid-column:auto;}
+.ombra-card .thumb img{object-fit:cover;}
+/* nessun oro/giallo CSS su fondo bianco */
+*[style*="color:#"], *[style*="color: #"]{color:#000000 !important; -webkit-text-fill-color:#000000 !important;}
+
+</style>
+<style id="abottega-000E-arial-black-final">
+  /* A BOTTEGA 000H — leggibilità secca: Arial / Arial Bold, tutto nero, fondo bianco */
+  :root{
+    --paper-clean:#ffffff !important;
+    --paper-card:#ffffff !important;
+    --ink-clean:#111111 !important;
+    --muted-clean:#111111 !important;
+    --gold-clean:#111111 !important;
+    --burgundy-clean:#111111 !important;
+    --line-clean:rgba(0,0,0,.24) !important;
+    --line-strong:rgba(0,0,0,.52) !important;
+  }
+
+  html, body, .page, main,
+  .access-card, .collection-card, .ab-section, #faq, .ab-gate,
+  .ab-method-strip, .ombra-card, .ombra-index, .quick-top a,
+  .bottom-cta a, .top-float, details, summary{
+    background:#ffffff !important;
+    background-image:none !important;
+    color:#111111 !important;
+    -webkit-text-fill-color:#111111 !important;
+  }
+
+  body, body *,
+  h1,h2,h3,h4,h5,h6,p,span,strong,em,small,li,summary,details,
+  .brand-main,.brand-sub,.lang-switch,.btn,.quick-top a,.bottom-cta a,
+  .eyebrow,.ab-kicker,.ab-eyebrow,.ab-logo,.ab-title,.ab-subtitle,
+  .open-big,.access-lines,.contact-note,.contact-small,
+  .faq-q,.faq-a,#faq summary,#faq p,
+  .ab-section p,.ab-step p,.ab-note,.placeholder-text,
+  .collection-card h2,.collection-card p,section h3,.ab-gate h3{
+    font-family:Arial, Helvetica, sans-serif !important;
+    color:#111111 !important;
+    -webkit-text-fill-color:#111111 !important;
+    text-shadow:none !important;
+    -webkit-text-stroke:0 !important;
+  }
+
+  h1,h2,h3,h4,h5,h6,
+  .brand-main,.brand-sub,.lang-switch,.btn,.quick-top a,.bottom-cta a,
+  .eyebrow,.ab-kicker,.ab-eyebrow,.ab-logo,.ab-title,.open-big,
+  .faq-q,#faq summary,section h3,.ab-gate h3{
+    font-weight:700 !important;
+  }
+
+  p,li,small,.ab-subtitle,.ab-section p,.ab-step p,.ab-note,
+  .access-lines,.contact-note,.contact-small,.placeholder-text,#faq p,.faq-a{
+    font-weight:400 !important;
+  }
+  strong,b{font-weight:700 !important;}
+
+  /* Niente scritte sovraimpresse alla hero: la hero è immagine, pulita e cliccabile */
+  .hero-text{display:none !important;}
+  .hero, a.hero{
+    background:#ffffff !important;
+    border:1px solid rgba(0,0,0,.45) !important;
+    box-shadow:none !important;
+  }
+  .hero::after{display:none !important;}
+  .hero img{
+    filter:brightness(1.26) contrast(1.08) saturate(1.15) !important;
+  }
+
+  /* Header leggibile e non tagliato */
+  header{
+    padding:10px 4px 8px !important;
+    align-items:center !important;
+    overflow:visible !important;
+  }
+  .brand{overflow:visible !important; line-height:1.1 !important;}
+  .brand-main{
+    font-size:clamp(14px,4.15vw,28px) !important;
+    line-height:1.1 !important;
+    letter-spacing:.09em !important;
+    white-space:nowrap !important;
+  }
+  .brand-main::after{content:" MARCOAURELIO" !important;}
+  .brand-sub{display:none !important;}
+  .lang-switch{
+    background:#ffffff !important;
+    border:1px solid rgba(0,0,0,.55) !important;
+  }
+
+  /* Bottoni e moduli puliti */
+  .quick-top a,.btn,.bottom-cta a{
+    background:#ffffff !important;
+    border:1px solid rgba(0,0,0,.50) !important;
+    box-shadow:none !important;
+  }
+  .quick-top a:first-child{border-color:rgba(0,0,0,.50) !important;}
+
+  .ab-rule:before,.ab-rule:after{background:rgba(0,0,0,.35) !important;}
+  .ab-rule span{color:#111111 !important; -webkit-text-fill-color:#111111 !important;}
+  .page:before{border-color:rgba(0,0,0,.20) !important;}
+
+  blockquote,.ab-quote,.quote,.ab-note{
+    border-color:rgba(0,0,0,.40) !important;
+  }
+
+
+/* A BOTTEGA 000H — leggibilità definitiva: bianco + nero, immagini cliccabili */
+:root{
+  --bg:#ffffff !important;
+  --panel:#ffffff !important;
+  --panel2:#ffffff !important;
+  --line:#b9b9b9 !important;
+  --line-soft:#d5d5d5 !important;
+  --text:#000000 !important;
+  --muted:#000000 !important;
+  --gold:#000000 !important;
+}
+html, body, .page, main, section,
+.access-card, .collection-card, .ab-section, .ab-hub, .ab-gate,
+.ab-note, .ombra-section, .ombra-index, .ombra-article,
+.quick-top a, .btn, .ab-cta, .ab-cta.secondary{
+  background:#ffffff !important;
+  background-image:none !important;
+}
+body, body *,
+h1,h2,h3,h4,h5,h6,p,span,div,a,strong,em,li,small,
+.brand-main,.brand-sub,.eyebrow,.open-big,.access-lines,.contact-note,.contact-small,
+.ab-kicker,.ab-logo,.ab-title,.ab-subtitle,.ab-eyebrow,.ab-note,.ab-note strong,
+.ab-num,.ombra-section h2,.ombra-section h3,.ombra-index a,
+.collection-card h2,.collection-card p{
+  color:#000000 !important;
+  -webkit-text-fill-color:#000000 !important;
+  text-shadow:none !important;
+}
+.hero-text{display:none !important;}
+.hero{background:#ffffff !important; border:1px solid #999 !important; border-radius:0 !important; box-shadow:none !important;}
+.hero::after{display:none !important;}
+.hero img{filter:contrast(1.08) brightness(1.08) saturate(1.08) !important; transform:none !important;}
+.quick-top{
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:10px !important;
+  margin:10px 0 12px !important;
+}
+.quick-top a,
+.btn,.ab-cta,.ab-cta.secondary{
+  border:1.5px solid #777 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+  color:#000 !important;
+  -webkit-text-fill-color:#000 !important;
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+}
+.quick-top a:first-child{border-color:#8d1d2c !important;}
+.access-card,.collection-card,.ab-section,.ombra-section{
+  border:1px solid #c8c8c8 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+header{border-bottom:1px solid #c8c8c8 !important;}
+.brand-main,.brand-sub{font-family:Arial, Helvetica, sans-serif !important; letter-spacing:.12em !important; font-weight:700 !important;}
+.lang-switch{border:1px solid #777 !important; border-radius:0 !important; background:#fff !important; position:static !important; color:#000 !important; -webkit-text-fill-color:#000 !important;}
+.ab-title,.open-big,section h3,.ombra-section h2,.ombra-section h3{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:0 !important;
+}
+.ab-kicker,.eyebrow,.collection-card h2{
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+  letter-spacing:.18em !important;
+}
+.ab-logo{
+  font-size:clamp(28px,8vw,54px) !important;
+  letter-spacing:.18em !important;
+  font-weight:700 !important;
+}
+.ab-rule span,.ab-rule:before,.ab-rule:after{color:#000 !important; background:#999 !important; -webkit-text-fill-color:#000 !important;}
+.zoomable-img{display:block; text-decoration:none !important;}
+.zoomable-img img{display:block; width:100%; height:auto;}
+.ab-tiles .zoomable-img img,
+.ab-poster-stack .zoomable-img img,
+.ab-poster.zoomed-img{
+  cursor:zoom-in;
+}
+.ab-tiles .zoomable-img{min-width:0;}
+.ab-poster-stack .zoomable-img{margin:0 0 12px;}
+.ombra-card .thumb:first-of-type{grid-column:auto;}
+.ombra-card .thumb img{object-fit:cover;}
+/* nessun oro/giallo CSS su fondo bianco */
+*[style*="color:#"], *[style*="color: #"]{color:#000000 !important; -webkit-text-fill-color:#000000 !important;}
+
+</style>
+<style id="abottega-000G-micro-readability">
+  /* 000G: intervento minimo. Nessun cambio di impianto: solo le scritte piccole del blocco accesso più leggibili. */
+  .access-lines,
+  .access-lines *,
+  .contact-note,
+  .contact-note *,
+  .contact-small,
+  .contact-small *{
+    font-weight:700 !important;
+  }
+  .contact-note{
+    font-size:clamp(17px,4.15vw,23px) !important;
+    line-height:1.08 !important;
+  }
+  .contact-small{
+    font-size:clamp(13px,3.35vw,19px) !important;
+    line-height:1.08 !important;
+  }
+  @media (max-width:420px){
+    .contact-note{font-size:clamp(16px,4.05vw,22px) !important;}
+    .contact-small{font-size:clamp(12px,3.15vw,18px) !important;}
+  }
+</style>
+<style id="abottega-000H-kill-last-yellow">
+  /* 000H: uccisione dell’ultima scritta gialla/slavata nella sezione Arabesco. */
+  #arabesco-nero,
+  #arabesco-nero .ab-title,
+  #arabesco-nero .ab-title.medium,
+  #arabesco-nero .force-black-title,
+  #arabesco-nero h1,
+  #arabesco-nero h2,
+  #arabesco-nero h3,
+  #arabesco-nero p,
+  #arabesco-nero span,
+  #arabesco-nero strong,
+  #arabesco-nero em,
+  #arabesco-nero .ab-subtitle,
+  #arabesco-nero .ab-note,
+  #arabesco-nero .ab-note strong {
+    color:#000000 !important;
+    -webkit-text-fill-color:#000000 !important;
+    text-shadow:none !important;
+    -webkit-text-stroke:0 !important;
+    opacity:1 !important;
+    mix-blend-mode:normal !important;
+  }
+  #arabesco-nero .ab-title,
+  #arabesco-nero .ab-title.medium,
+  #arabesco-nero .force-black-title {
+    font-family:Arial, Helvetica, sans-serif !important;
+    font-weight:800 !important;
+    color:#000000 !important;
+    -webkit-text-fill-color:#000000 !important;
+  }
+  #arabesco-nero .ab-note,
+  #arabesco-nero .ab-note strong {
+    background:#ffffff !important;
+    border-color:rgba(0,0,0,.35) !important;
+  }
+</style>
 </head>
 <body>
-  <div class="page">
-    <header>
-      <div class="brand"><span class="brand-main">BOTTEGA</span><span class="brand-sub">Marcoaurelio</span></div>
-      <a class="lang-switch" href="index.html" aria-label="Italian version">IT</a>
-    </header>
-    <div class="hero" id="home">
-      <img src="assets/banner.jpg" alt="Inside Bottega Marco Aurelio">
-      <div class="hero-text">
-        <h1>Unique pieces.<br></h1>
-        <p>Independent goldsmith · <a class="map-link map-nowrap" href="https://www.google.com/maps/search/?api=1&query=Campo%20de%27%20Fiori%20Roma" target="_blank" rel="noopener"><span class="map-pin">●</span> Campo de’ Fiori</a></p>
-      </div>
-    </div>
-    <div class="access-card" id="orari">
-      <div>
-        <div class="eyebrow">Hours / Access</div>
-        <p class="open-big">Open 7 days a week</p>
-        <div class="access-lines">
-          <span style="color:#ffffff; font-weight:600;">By appointment only</span><br>
-          <strong><span style="color:#9aa0a6;">Same-day availability · flexible hours, evenings included</span></strong>
-        </div>
-      </div>
-      <div>
-        <div class="eyebrow">Message, don’t call</div>
-        <div class="contact-note">I reply to messages within the day.<br>Calls are scheduled after.</div>
-        <div class="actions">
-          <a class="btn whatsapp" href="https://wa.me/393482762842">WhatsApp</a>
-          <a class="btn sms" href="sms:+393482762842">SMS</a>
-        </div>
-        <div class="contact-small">348 276 2842 · <a href="mailto:info.marcoaurelio@gmail.com">info.marcoaurelio@gmail.com</a></div>
-      </div>
-    </div>
-    <a class="ombra-teaser" href="#ombra-bottega" aria-label="Enter L'Ombra della Bottega">
-      <img src="assets/ombra_bottega_banner.jpg" alt="L'Ombra della Bottega · Il Vento dei Gesti Dimenticati">
-    </a>
-    <nav class="collections" aria-label="Collezioni">
-      <a class="collection-card" href="#kintsugi">
-        <div><h2>KINTSUGI</h2><p>Fracture · gold · continuity</p></div>
-        <div class="thumb"><img src="assets/kintsugi_1.jpg" alt="Kintsugi portrait"></div>
-        <div class="thumb"><img src="assets/kintsugi_2.jpg" alt="Kintsugi ring"></div>
-        <div class="thumb"><img src="assets/kintsugi_3.jpg" alt="Kintsugi macro detail"></div>
-      </a>
-      <a class="collection-card" href="#aria">
-        <div><h2>ARIA</h2><p>Light · lightness · structure</p></div>
-        <div class="thumb"><img src="assets/aria_1.jpg" alt="Aria portrait"></div>
-        <div class="thumb"><img src="assets/aria_2.jpg" alt="Aria ring"></div>
-        <div class="thumb"><img src="assets/aria_3.jpg" alt="Aria detail"></div>
-      </a>
-      <a class="collection-card" href="#fedi">
-        <div><h2>FEDI</h2><p>Custom made · not mass-produced</p></div>
-        <div class="thumb"><img src="assets/fedi_1.jpg" alt="Wedding bands pair"></div>
-        <div class="thumb"><img src="assets/fedi_2.jpg" alt="Wedding bands work in progress"></div>
-        <div class="thumb"><img src="assets/fedi_3.jpg" alt="Wedding bands worn"></div>
-      </a>
-      <a class="collection-card" href="#astrolabio">
-        <div><h2>ASTROLABIO</h2><p>Routes · symbols · matter</p></div>
-        <div class="thumb"><img src="assets/astrolabio_1.jpg" alt="Astrolabe staged image"></div>
-        <div class="thumb"><img src="assets/astrolabio_2.jpg" alt="Astrolabe worn"></div>
-        <div class="thumb"><img src="assets/astrolabio_3.jpg" alt="Astrolabe detail"></div>
-      </a>
-    </nav>
-    <main>
-      <section id="kintsugi">
-        <h3>KINTSUGI</h3>
-        <div class="gallery">
-          <img src="assets/kintsugi_1.jpg" alt="">
-          <img src="assets/kintsugi_2.jpg" alt="">
-          <img src="assets/kintsugi_3.jpg" alt="">
-        </div>
-        <p class="placeholder-text">The fracture does not break continuity. It makes it visible.</p>
-      </section>
-      <section id="aria">
-        <h3>ARIA</h3>
-        <div class="gallery">
-          <img src="assets/aria_1.jpg" alt="">
-          <img src="assets/aria_2.jpg" alt="">
-          <img src="assets/aria_3.jpg" alt="">
-        </div>
-        <p class="placeholder-text">Lightness does not mean fragility. It means removing everything unnecessary.</p>
-      </section>
-      <section id="fedi">
-        <h3>FEDI</h3>
-        <div class="gallery">
-          <img src="assets/fedi_1.jpg" alt="">
-          <img src="assets/fedi_2.jpg" alt="">
-          <img src="assets/fedi_3.jpg" alt="">
-        </div>
-        <p class="placeholder-text">Wedding bands made to measure, one at a time. Not mass-produced.</p>
-      </section>
-      <section id="astrolabio">
-        <h3>ASTROLABE / ARRAKIS</h3>
-        <div class="gallery">
-          <img src="assets/astrolabio_1.jpg" alt="">
-          <img src="assets/astrolabio_2.jpg" alt="">
-          <img src="assets/astrolabio_3.jpg" alt="">
-        </div>
-        <p class="placeholder-text">Finding your way does not mean owning a map.</p>
-      </section>
-    
-
-      <section id="ombra-bottega" class="ombra-section" aria-label="L'Ombra della Bottega">
-        <p class="ombra-kicker">New section</p>
-        <h2>L'Ombra della Bottega</h2>
-        <p class="ombra-subtitle">Il Vento dei Gesti Dimenticati</p>
-        <div class="ombra-section-banner" aria-label="L’Ombra della Bottega">
-          <img src="assets/ombra_bottega_banner.jpg" alt="L’Ombra della Bottega · Il Vento dei Gesti Dimenticati">
-        </div>
-        <p class="ombra-intro">A collection of techniques, tools and small workshop gestures that risk being forgotten.</p>
-        <div class="ombra-index" aria-label="Saved gestures">
-          <p class="ombra-index-title">Saved gestures</p>
-          <a href="#gesture-001-soldering"><strong>001</strong> · How is soldering done?</a>
-          <a href="#gesture-002-pressed-bezel"><strong>002</strong> · How is a pressed bezel made?</a>
-          <a href="#gesture-003-annealed-iron-wire"><strong>003</strong> · Why is annealed iron wire used?</a>
-        </div>
-        <article class="ombra-card" id="gesture-001-soldering">
-          <h3>How is soldering done?</h3>
-          <p class="lead"><em>An illustrated guide to understand, step by step, one of the oldest gestures in goldsmithing.</em></p>
-          <a class="ombra-plate-link" href="assets/ombra_saldatura_tavola.jpg" target="_blank" rel="noopener" title="Open the plate full size"><img class="ombra-plate" src="assets/ombra_saldatura_tavola.jpg" alt="Illustrated plate: how soldering is done with a jeweller's torch"></a>
-          <div class="ombra-text">
-            <p>There are many ways to solder metals, and every craftsperson develops personal preferences, tools and working habits over time.</p>
-            <p>In the workshop we often use a traditional tool called a <strong>chalumeau</strong>: a small jeweller's torch that allows very precise control of heat.</p>
-            <p>The fascinating part is that flame control is almost immediate. After years of practice, the movement becomes natural, almost instinctive.</p>
-            <p>Contrary to what one might imagine, soldering does not always mean pointing the flame directly at the exact joint. In most cases the whole piece is heated in a controlled and even way, allowing the heat to reach the joint.</p>
-            <p>When the temperature is right, the solder melts and flows into the desired point by capillary action.</p>
-            <p>The final result depends on many factors: temperature, clean surfaces, the choice of soldering alloy and, above all, the experience of the craftsperson.</p>
-            <p>It is one of those jobs that look simple when done well, but take years of practice to truly master.</p>
-          </div>
-          <div class="ombra-note">
-            <h4>Workshop note</h4>
-            <p>There are many types of torch, and almost every goldsmith has a favourite one.</p>
-            <p>Shapes, controls and construction details may change, but the principle remains the same: controlling heat with precision.</p>
-            <p>The flame shown in the illustration is only one example. Each job may require a different adjustment.</p>
-          </div>
-        </article>
-        <article class="ombra-card" id="gesture-002-pressed-bezel">
-          <h3>How is a pressed bezel made?</h3>
-          <p class="lead"><em>An illustrated guide to understand, step by step, how a bezel can be closed without striking the object.</em></p>
-          <a class="ombra-plate-link" href="assets/ombra_castone_tavola.jpg" target="_blank" rel="noopener" title="Open the plate full size"><img class="ombra-plate" src="assets/ombra_castone_tavola.jpg" alt="Illustrated plate: how a pressed bezel is made"></a>
-          <div class="ombra-text">
-            <p>A pressed bezel is used when the object being set is too delicate to withstand blows or violent pressure.</p>
-            <p>The bezel is a simple strip of metal wrapped around the object. It is thinned first on the inside, to receive the coin or stone, and then on the outside, leaving a very thin edge.</p>
-            <p>Instead of striking the metal with a hammer, a <strong>pusher</strong> is used: a short tool guided by the fingers and held firmly in the palm.</p>
-            <p>The pusher does not work on the coin. It works only on the outer edge of the bezel, gently moving the metal inward through a series of small pressures.</p>
-            <p>The marks left on the edge are often not removed. They look like ornamentation, but they are also the sign of a choice: preserving what is fragile.</p>
-          </div>
-          <div class="ombra-note">
-            <h4>Workshop Note</h4>
-            <p>Not everything must be won by force.</p>
-            <p>Some things are preserved by accompanying them.</p>
-            <p>The plate shows the principle of the gesture. The real hand skill — the fingers, the pressure, the control — can only be learned by doing it.</p>
-          </div>
-        </article>
-        <article class="ombra-card" id="gesture-003-annealed-iron-wire">
-          <h3>Why is annealed iron wire used?</h3>
-          <p class="lead"><em>An illustrated guide to understand, step by step, how a temporary wire can hold a piece together during soldering.</em></p>
-          <a class="ombra-plate-link" href="assets/ombra_ferro_cotto_tavola.jpg" target="_blank" rel="noopener" title="Open the plate full size"><img class="ombra-plate" src="assets/ombra_ferro_cotto_tavola.jpg" alt="Illustrated plate: why annealed iron wire is used"></a>
-          <div class="ombra-text">
-            <p>Annealed iron wire is soft, easy to bend and free from the spring memory of ordinary wire. For this reason it can be shaped around an object and will retain the form it is given.</p>
-            <p>Before use, it is often turned into a small braid. A length of wire is folded in half, twisted with the fingers, folded again and twisted once more, repeating the process until the binding is strong and stable enough for the job.</p>
-            <p>The braid is then wrapped around the piece to be soldered and tightened along its entire circumference. It does not merely secure the joint: it holds the whole object together and prevents the parts from opening or shifting while they are heated.</p>
-            <p>The pliers simply grip the two ends of the binding. The wire, not the pliers, supports the piece. This means the pliers do not need to clamp the metal directly and do not draw unnecessary heat away from the flame.</p>
-            <p>Because the iron has already been annealed, it does not try to straighten itself. It also withstands temperatures far higher than those required for soldering silver and is unlikely to adhere to the piece.</p>
-            <p>Once the soldering is complete, the binding is easily removed. Like many workshop tools, it has done its job by holding everything still at the necessary moment, then disappearing almost without a trace.</p>
-          </div>
-          <div class="ombra-note">
-            <h4>Workshop Note</h4>
-            <p>Annealed iron wire is not used to solder. It is used to keep everything else still.</p>
-            <p>Ordinary wire tends to spring back, may shift or loosen, and is harder to keep in the required shape. Annealed wire, by contrast, grips the piece continuously and retains the form it has been given.</p>
-            <p>The best tools are often the ones that, once the work is finished, seem never to have existed.</p>
-          </div>
-        </article>
-        <div class="ombra-note">
-          <h4>Note</h4>
-          <p>The techniques illustrated in this collection describe the way I work in my own workshop and are the result of my personal experience.</p>
-          <p>Goldsmithing includes different schools, tools and procedures. Other craftspeople may achieve the same results by following different methods.</p>
-          <p>These pages are not intended to replace a manual or a professional course. They are simply the testimony of a craft, told through the gestures that have accompanied my work.</p>
-          <p>Anyone who chooses to put the processes described into practice does so at their own responsibility.</p>
-        </div>
-      </section>
+<div class="page">
+<header>
+<div class="brand"><span class="brand-main">BOTTEGA</span><span class="brand-sub">Marcoaurelio</span></div>
+<a aria-label="Versione italiana" class="lang-switch" href="index.html">IT</a>
+</header>
+<a aria-label="Vai alla sezione Arabesco Nero" class="hero hero-link" href="#arabesco-nero" id="home">
+<img alt="Arabesco Nero · Collezione Aria · Bottega MarcoAurelio" src="assets/ab_arabesco_01.jpg"/>
+<div class="hero-text">
+<h1>A Bottega.<br/></h1>
+<p>Unique pieces · wedding bands made by you ·<a class="map-link map-nowrap" href="https://www.google.com/maps/search/?api=1&amp;query=Campo%20de%27%20Fiori%20Roma" rel="noopener" target="_blank"><span class="map-pin">●</span>Campo de’ Fiori</a></p>
+</div>
+</a>
+<nav aria-label="Azioni rapide" class="quick-top">
+<a href="https://wa.me/393482762842">WhatsApp</a>
+<a href="sms:+393482762842">SMS</a>
+<a href="https://www.instagram.com/bottegamarcoaurelio/" rel="noopener" target="_blank">Instagram Gallery</a>
+<a href="#faq">FAQ</a>
+</nav>
+<div class="access-card" id="orari">
+<div>
+<div class="eyebrow">Hours / Access</div>
+<p class="open-big">Open 7 days a week</p>
+<div class="access-lines">
+<span style="color:#ffffff; font-weight:600;">By appointment only</span><br/>
+<strong><span class="v47a-access-note" style="color:#9aa0a6;">Same-day availability · flexible hours, evenings included</span></strong>
+</div>
+</div>
+<div>
+<div class="eyebrow">Message, don’t call</div>
+<div class="contact-note">I reply to messages within the day.<br/>Calls are scheduled after.</div>
+<div class="contact-small">348 276 2842 · <a href="mailto:info.marcoaurelio@gmail.com">info.marcoaurelio@gmail.com</a></div>
+</div>
+</div>
+<section aria-label="A Bottega" class="ab-section ab-hub" id="a-bottega">
+<div class="ab-center">
+<p class="ab-kicker ab-logo">a Bottega</p>
+<h2 class="ab-title medium">Real work at the Old Bench.</h2>
+<div class="ab-rule"><span>⌁</span></div>
+<p class="ab-subtitle">Not a classroom. Not a demonstration. A real workshop, in operation. Here you are not just buying an object: you are entering a method.</p>
+</div>
+<div class="ab-gates">
+<a class="ab-gate" href="#fedi-a-bottega">
+<div class="copy">
+<p class="ab-eyebrow">For couples</p>
+<h3>Fedi a Bottega</h3>
+<p>Your wedding bands, made by you. From the idea to the finished ring, guided at the Old Bench.</p>
+<p class="mini">No previous experience needed</p>
+</div>
+<img alt="Le vostre fedi, fatte da voi" src="assets/ab_fedi_cover.png"/>
+</a>
+<a class="ab-gate" href="#crea-a-bottega">
+<div class="copy">
+<p class="ab-eyebrow">Personal path</p>
+<h3>Crea a Bottega</h3>
+<p>A personal jewel, conceived and made by you here in the workshop, guided by me.</p>
+<p class="mini">I do not call it a course</p>
+</div>
+<img alt="Crea a Bottega · il primo anello" src="assets/ab_crea_gabriele_02.png"/>
+</a>
+</div>
+</section>
+<nav aria-label="Collezioni" class="collections">
+<a class="collection-card" href="#kintsugi">
+<div><h2>KINTSUGI</h2><p>Fracture · gold · continuity</p></div>
+<div class="thumb"><img alt="Kintsugi ritratto" src="assets/kintsugi_1.jpg"/></div>
+<div class="thumb"><img alt="Kintsugi anello" src="assets/kintsugi_2.jpg"/></div>
+<div class="thumb"><img alt="Kintsugi macro" src="assets/kintsugi_3.jpg"/></div>
+</a>
+<a class="collection-card" href="#aria">
+<div><h2>ARIA</h2><p>Light · lightness · structure</p></div>
+<div class="thumb"><img alt="Aria ritratto" src="assets/aria_1.jpg"/></div>
+<div class="thumb"><img alt="Aria anello" src="assets/aria_2.jpg"/></div>
+<div class="thumb"><img alt="Aria dettaglio" src="assets/aria_3.jpg"/></div>
+</a>
+<a class="collection-card" href="#fedi">
+<div><h2>WEDDING BANDS</h2><p>Made to measure · commission</p></div>
+<div class="thumb"><img alt="Fedi coppia" src="assets/fedi_1.jpg"/></div>
+<div class="thumb"><img alt="Fedi lavorazione" src="assets/fedi_2.jpg"/></div>
+<div class="thumb"><img alt="Fedi indossate" src="assets/fedi_3.jpg"/></div>
+</a>
+<a class="collection-card" href="#astrolabio">
+<div><h2>ASTROLABE</h2><p>Routes · symbols · matter</p></div>
+<div class="thumb"><img alt="Astrolabio ambientato" src="assets/astrolabio_1.jpg"/></div>
+<div class="thumb"><img alt="Astrolabio indossato" src="assets/astrolabio_2.jpg"/></div>
+<div class="thumb"><img alt="Astrolabio dettaglio" src="assets/astrolabio_3.jpg"/></div>
+</a>
+<a class="collection-card ombra-card" href="#ombra-bottega"><div><h2>THE SHADOW</h2><p>Techniques · tools · saved gestures</p></div><div class="thumb"><img alt="L’Ombra della Bottega" src="assets/ombra_bottega_banner.jpg"/></div><div class="thumb"><img alt="Come si fa una saldatura" src="assets/ombra_saldatura_tavola.jpg"/></div><div class="thumb"><img alt="Come si realizza un castone premuto" src="assets/ombra_castone_tavola.jpg"/></div></a></nav>
+<main>
+<section aria-label="Fedi a Bottega" class="ab-section" id="fedi-a-bottega">
+<p class="ab-kicker">Fedi a Bottega</p>
+<h2 class="ab-title">Your wedding bands, made by you.</h2>
+<p class="ab-subtitle">In the workshop, you design and shape your wedding bands with me. Each couple creates unique, personal, unrepeatable rings.</p>
+<a class="zoomable-img" href="assets/ab_fedi_manifesto.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Manifesto Fedi a Bottega" class="ab-poster" src="assets/ab_fedi_manifesto.png"/></a>
+<div class="ab-steps">
+<div class="ab-step"><div class="ab-num">01</div><div><h4>No previous experience needed.</h4><p>You can come in with no experience. You leave with your wedding bands, made by you.</p></div></div>
+<div class="ab-step"><div class="ab-num">02</div><div><h4>Every couple has its own bench.</h4><p>Not a classroom. A real workshop, in operation. Two benches. Your hands.</p></div></div>
+<div class="ab-step"><div class="ab-num">03</div><div><h4>From the idea to the finished wedding band.</h4><p>You can start from a precise idea, or discover it together in the workshop.</p></div></div>
+</div>
+<div class="ab-tiles">
+<a class="zoomable-img" href="assets/ab_fedi_idea.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Dall’idea alla fede finita" src="assets/ab_fedi_idea.png"/></a>
+<a class="zoomable-img" href="assets/ab_fedi_due_banchi.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Una Bottega vera. Due banchi. Le vostre mani." src="assets/ab_fedi_due_banchi.png"/></a>
+<a class="zoomable-img" href="assets/ab_fedi_gesto.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Ogni coppia. Ogni gesto. Ogni anello è diverso." src="assets/ab_fedi_gesto.png"/></a>
+<a class="zoomable-img" href="assets/ab_fedi_classica.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Forme classiche, incisioni, texture organiche" src="assets/ab_fedi_classica.png"/></a>
+<a class="zoomable-img" href="assets/ab_fedi_classica_oro.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Anche la fede classica" src="assets/ab_fedi_classica_oro.png"/></a>
+<a class="zoomable-img" href="assets/ab_fedi_cover.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Entrate anche senza esperienza" src="assets/ab_fedi_cover.png"/></a>
+</div>
+<p class="ab-note"><strong>The promise is simple:</strong>you are not choosing two wedding bands from a catalogue. You enter a real workshop and take part in the birth of your rings.</p>
+<div class="ab-cta-row">
+<a class="ab-cta" href="https://wa.me/393482762842">Ask on WhatsApp</a>
+<a class="ab-cta secondary" href="#faq">Read the FAQ</a>
+</div>
+</section>
+<section aria-label="Crea a Bottega" class="ab-section" id="crea-a-bottega">
+<p class="ab-kicker">Crea a Bottega</p>
+<h2 class="ab-title">Your jewel, made by you.</h2>
+<p class="ab-subtitle">I do not call it a course. Every jewel has different needs. I call it Crea a Bottega: guided, made-to-measure work to arrive at a personal jewel, conceived and made by you here in the workshop, guided by me.</p>
+<a class="zoomable-img" href="assets/ab_crea_gabriele_01.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Gente a Bottega · Gabriele · Il mio primo anello" class="ab-poster" src="assets/ab_crea_gabriele_01.png"/></a>
+<div class="ab-steps">
+<div class="ab-step"><div class="ab-num">01</div><div><h4>We start from an idea.</h4><p>It can be yours, it can start from zero, or it can take inspiration from one of my jewels.</p></div></div>
+<div class="ab-step"><div class="ab-num">02</div><div><h4>You work at the Old Bench.</h4><p>I guide you through the possible steps, with the technical safeguards needed for a real jewel.</p></div></div>
+<div class="ab-step"><div class="ab-num">03</div><div><h4>It is not an exercise.</h4><p>The goal is to arrive at a personal, solid, beautiful jewel, born from a real process.</p></div></div>
+</div>
+<div class="ab-tiles">
+<a class="zoomable-img" href="assets/ab_crea_gabriele_02.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Gabriele al banco" src="assets/ab_crea_gabriele_02.png"/></a>
+<a class="zoomable-img" href="assets/ab_crea_banco_01.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Un banco per uno" src="assets/ab_crea_banco_01.png"/></a>
+<a class="zoomable-img" href="assets/ab_crea_lavorazione_01.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Seghetto da orafo al banco" src="assets/ab_crea_lavorazione_01.png"/></a>
+<a class="zoomable-img" href="assets/ab_crea_lavorazione_02.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Lavorazione anello" src="assets/ab_crea_lavorazione_02.png"/></a>
+<a class="zoomable-img" href="assets/ab_crea_anello_01.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Il primo anello" src="assets/ab_crea_anello_01.png"/></a>
+<a class="zoomable-img" href="assets/ab_crea_anello_03.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Dettaglio anello finito" src="assets/ab_crea_anello_03.png"/></a>
+</div>
+<p class="ab-note"><strong>This is the right answer for someone who writes: “I’d like to create a custom ring”.</strong>First we understand whether it is truly Crea a Bottega, or whether a made-to-measure piece made by me is more suitable.</p>
+<div class="ab-cta-row">
+<a class="ab-cta" href="https://wa.me/393482762842">Let’s talk on WhatsApp</a>
+<a class="ab-cta secondary" href="#faq">How it works</a>
+</div>
+</section>
+<section aria-label="Arabesco Nero" class="ab-section ab-arabesco" id="arabesco-nero">
+<p class="ab-kicker">Collection Aria — Arabesco Nero</p>
+<h2 class="ab-title medium force-black-title">A proprietary technique. A manifesto piece.</h2>
+<p class="ab-subtitle">Bronze and black diamonds. A slender arabesque, built wire by wire. A mosaic of minute elements: light to the eye, complex to build.</p>
+<div aria-label="Schede Arabesco Nero" class="ab-poster-stack arabesco-stack">
+<a class="zoomable-img" href="assets/ab_arabesco_01.jpg" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Arabesco Nero · bronzo e diamanti neri" class="ab-poster" src="assets/ab_arabesco_01.jpg"/></a>
+<a class="zoomable-img" href="assets/ab_arabesco_02.jpg" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Arabesco Nero · costruito in aria" class="ab-poster" src="assets/ab_arabesco_02.jpg"/></a>
+<a class="zoomable-img" href="assets/ab_arabesco_03.jpg" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Arabesco Nero · leggero solo in apparenza" class="ab-poster" src="assets/ab_arabesco_03.jpg"/></a>
+</div>
+<p class="ab-note"><strong>Arabesco Nero is a workshop manifesto:</strong>it shows the technical level, taste and complexity behind Fedi a Bottega and Crea a Bottega too. It is not decoration: it is proof of method.</p>
+</section>
+<section aria-label="Metodo a Bottega" class="ab-section" id="metodo-a-bottega">
+<p class="ab-kicker">Workshop method</p>
+<h2 class="ab-title medium">Care begins before creation.</h2>
+<p class="ab-subtitle">In the workshop there is not only the finished piece. There are adapted tools, gestures, tests and technical choices. The right tool does not always exist. Sometimes it has to be made.</p>
+<div class="ab-method-strip">
+<h3>Modified tools in the workshop</h3>
+<div class="ab-method-grid">
+<img alt="Il ferro giusto" src="assets/ab_attrezzi_ferro.png"/>
+<img alt="La modifica" src="assets/ab_attrezzi_modifica.png"/>
+<img alt="Pietra fuori. Tutto intatto" src="assets/ab_attrezzi_pietra.png"/>
+</div>
+</div>
+<p class="ab-note">This section does not directly sell a service. It does something more important: it explains why the paths and jewels of Bottega MarcoAurelio are not entertainment, but method.</p>
+</section>
+<section id="kintsugi">
+<h3>KINTSUGI</h3>
+<div class="gallery">
+<img alt="" src="assets/kintsugi_1.jpg"/>
+<img alt="" src="assets/kintsugi_2.jpg"/>
+<img alt="" src="assets/kintsugi_3.jpg"/>
+</div>
+<p class="placeholder-text">The fracture does not interrupt continuity. It makes it visible.</p>
+</section>
+<section id="aria">
+<h3>ARIA</h3>
+<div class="gallery">
+<img alt="" src="assets/aria_1.jpg"/>
+<img alt="" src="assets/aria_2.jpg"/>
+<img alt="" src="assets/aria_3.jpg"/>
+</div>
+<p class="placeholder-text">Lightness does not mean fragility. It means removing everything unnecessary.</p>
+</section>
+<section id="fedi">
+<h3>MADE-TO-MEASURE WEDDING BANDS</h3>
+<div class="gallery">
+<img alt="" src="assets/fedi_1.jpg"/>
+<img alt="" src="assets/fedi_2.jpg"/>
+<img alt="" src="assets/fedi_3.jpg"/>
+</div>
+<p class="placeholder-text">Made-to-measure wedding bands by commission, built one at a time. For the hands-on path, see Fedi a Bottega.</p>
+</section>
+<section id="astrolabio">
+<h3>ASTROLABE / ARRAKIS</h3>
+<div class="gallery">
+<img alt="" src="assets/astrolabio_1.jpg"/>
+<img alt="" src="assets/astrolabio_2.jpg"/>
+<img alt="" src="assets/astrolabio_3.jpg"/>
+</div>
+<p class="placeholder-text">Finding your way does not mean owning a map.</p>
+</section>
+<section aria-label="L'Ombra della Bottega" class="ombra-section" id="ombra-bottega">
+<p class="ombra-kicker">New section</p>
+<h2>L’Ombra della Bottega</h2>
+<p class="ombra-subtitle">The Wind of Forgotten Gestures</p>
+<div aria-label="L’Ombra della Bottega" class="ombra-section-banner">
+<img alt="L’Ombra della Bottega · Il Vento dei Gesti Dimenticati" src="assets/ombra_bottega_banner.jpg"/>
+</div>
+<p class="ombra-intro">A collection of techniques, tools and small workshop gestures that risk being forgotten.</p>
+<div aria-label="Gesti salvati" class="ombra-index">
+<p class="ombra-index-title">Saved gestures</p>
+<a href="#gesto-001-saldatura"><strong>001</strong>· How is soldering done?</a>
+<a href="#gesto-002-castone-premuto"><strong>002</strong>· How is a pressed bezel made?</a>
+<a href="#gesto-003-ferro-cotto"><strong>003</strong>· Why is annealed iron wire used?</a>
+</div>
+<article class="ombra-card" id="gesto-001-saldatura">
+<h3>How is soldering done?</h3>
+<p class="lead"><em>An illustrated guide to understand, step by step, one of the oldest gestures in goldsmithing.</em></p>
+<a class="ombra-plate-link" href="assets/ombra_saldatura_tavola.jpg" rel="noopener" target="_blank" title="Apri la tavola a schermo intero"><img alt="Tavola illustrata: come si fa una saldatura con cannello da orafo" class="ombra-plate" src="assets/ombra_saldatura_tavola.jpg"/></a>
+<div class="ombra-text">
+<p>There are many ways to solder metals, and every craftsperson develops personal preferences, tools and working habits over time.</p>
+<p>In the workshop we often use a traditional tool called a<strong>chalumeau</strong>: a small jeweller’s torch that allows very precise control of heat.</p>
+<p>The fascinating part is that flame control is almost immediate. After years of practice, the movement becomes natural, almost instinctive.</p>
+<p>Contrary to what one might imagine, soldering does not always mean pointing the flame directly at the exact joint. In most cases the whole piece is heated in a controlled and even way, allowing the heat to reach the joint.</p>
+<p>When the temperature is right, the solder melts and flows into the desired point by capillary action.</p>
+<p>The final result depends on many factors: temperature, clean surfaces, the choice of soldering alloy and, above all, the experience of the craftsperson.</p>
+<p>It is one of those jobs that look simple when done well, but take years of practice to truly master.</p>
+</div>
+<div class="ombra-note">
+<h4>Workshop note</h4>
+<p>There are many types of torch, and almost every goldsmith has a favourite one.</p>
+<p>Shapes, controls and construction details may change, but the principle remains the same: controlling heat with precision.</p>
+<p>The flame shown in the illustration is only one example. Each job may require a different adjustment.</p>
+</div>
+</article>
+<article class="ombra-card" id="gesto-002-castone-premuto">
+<h3>How is a pressed bezel made?</h3>
+<p class="lead"><em>An illustrated guide to understand, step by step, how a bezel can be closed without striking the object.</em></p>
+<a class="ombra-plate-link" href="assets/ombra_castone_tavola.jpg" rel="noopener" target="_blank" title="Apri la tavola a schermo intero"><img alt="Tavola illustrata: come si realizza un castone premuto" class="ombra-plate" src="assets/ombra_castone_tavola.jpg"/></a>
+<div class="ombra-text">
+<p>A pressed bezel is used when the object being set is too delicate to withstand blows or violent pressure.</p>
+<p>The bezel is a simple strip of metal wrapped around the object. It is thinned first on the inside, to receive the coin or stone, and then on the outside, leaving a very thin edge.</p>
+<p>Instead of striking the metal with a hammer, a<strong>spingitore</strong>is used: a short tool guided by the fingers and held firmly in the palm.</p>
+<p>The pusher does not work on the coin. It works only on the outer edge of the bezel, gently moving the metal inward through a series of small pressures.</p>
+<p>The marks left on the edge are often not removed. They look like ornamentation, but they are also the sign of a choice: preserving what is fragile.</p>
+</div>
+<div class="ombra-note">
+<h4>Workshop note</h4>
+<p>Not everything must be won by force.</p>
+<p>Some things are preserved by accompanying them.</p>
+<p>The plate shows the principle of the gesture. The real hand skill — the fingers, the pressure, the control — can only be learned by doing it.</p>
+</div>
+</article>
+<article class="ombra-card" id="gesto-003-ferro-cotto">
+<h3>Why is annealed iron wire used?</h3>
+<p class="lead"><em>An illustrated guide to understand, step by step, how a temporary wire can hold a piece together during soldering.</em></p>
+<a class="ombra-plate-link" href="assets/ombra_ferro_cotto_tavola.jpg" rel="noopener" target="_blank" title="Apri la tavola a schermo intero"><img alt="Tavola illustrata: perché si usa il filo di ferro cotto" class="ombra-plate" src="assets/ombra_ferro_cotto_tavola.jpg"/></a>
+<div class="ombra-text">
+<p>Annealed iron wire is soft, easy to bend and free from the spring memory of ordinary wire. For this reason it can be shaped around an object and will retain the form it is given.</p>
+<p>Before use, it is often turned into a small braid. A length of wire is folded in half, twisted with the fingers, folded again and twisted once more, continuing until the binding is strong and stable enough.</p>
+<p>La treccia viene poi avvolta intorno al pezzo da saldare e stretta lungo tutta la sua circonferenza. Non serve a bloccare soltanto il punto della giunzione: tiene insieme l'intero oggetto e impedisce che le parti si aprano o si spostino durante il riscaldamento.</p>
+<p>The pliers simply grip the two ends of the binding. The wire, not the pliers, supports the piece. This means the pliers do not need to clamp the metal directly and do not draw unnecessary heat away from the flame.</p>
+<p>Because the iron has already been annealed, it does not try to straighten itself. It also withstands temperatures far higher than those required for soldering silver and is unlikely to stick to the piece.</p>
+<p>Once the soldering is complete, the binding is easily removed. Like many workshop tools, it has done its job by holding everything still at the necessary moment, then disappearing almost without a trace.</p>
+</div>
+<div class="ombra-note">
+<h4>Workshop note</h4>
+<p>Annealed iron wire is not used to solder. It is used to keep everything else still.</p>
+<p>Ordinary wire tends to spring back, may shift or loosen, and is harder to keep in the required shape. Annealed wire, by contrast, grips the piece continuously and retains the form it is given.</p>
+<p>The best tools are often the ones that, once the work is finished, seem never to have existed.</p>
+</div>
+</article>
+<div class="ombra-note">
+<h4>Note</h4>
+<p>The techniques illustrated in this collection describe the way I work in my own workshop and are the result of my personal experience.</p>
+<p>Goldsmithing includes different schools, tools and procedures. Other craftspeople may achieve the same results by following different methods.</p>
+<p>These pages are not intended to replace a manual or a professional course. They are simply the testimony of a craft, told through the gestures that have accompanied my work.</p>
+<p>Anyone who chooses to put the processes described into practice does so at their own responsibility.</p>
+</div>
+</section>
 <section id="faq" style="padding:40px 16px;">
-  <h2 style="font-size:24px; margin-bottom:22px;">FREQUENTLY ASKED QUESTIONS</h2>
-
-  <div class="faq-item">
-    <span class="faq-q">You do not know where to start? That is normal.</span>
-    <div class="faq-a">
-      Most clients arrive with an idea, not with a fully defined project.
-      <br><br>
-      To prepare an estimate or understand what can be made, a few details are useful:
-      <ul>
-        <li>What kind of object would you like? Ring, pendant, bracelet, earrings, or something else.</li>
-        <li>Which metal? Silver, yellow gold, white gold, rose gold, or “I do not know”.</li>
-        <li>Will there be stones? Diamonds, coloured stones, no stones, or “I do not know”.</li>
-        <li>Do you have reference images? Screenshots, online photos or hand drawings are fine.</li>
-        <li>Are there symbols or personal meanings? Dates, initials, animals, constellations, personal themes.</li>
-        <li>When would you need it? No rush, within a month, or for a specific date.</li>
-        <li>Do you have an approximate budget? It is not mandatory, but it helps suggest sensible solutions.</li>
-      </ul>
-      You do not need to know technical terms. Even a simple description such as “I would like a silver ring inspired by the sea, without stones” is more than enough to begin.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <span class="faq-q">Can I order a custom gold ring before arriving in Rome and collect it during my trip?</span>
-    <div class="faq-a">
-      No.
-      <br><br>
-      A custom jewel is not a stock product and cannot be properly designed, estimated and made only through messages, photographs or drawings sent from a distance.
-      <br><br>
-      To begin a made-to-measure piece, an appointment in the workshop is necessary.
-      <br><br>
-      The finger size must be taken in person, because the final fit also depends on the width, thickness, section and proportions of the ring. A simple numerical size is not enough.
-      <br><br>
-      The weight of the gold also cannot be determined before the project has been defined. Small variations in shape and proportions can significantly change the amount of metal required.
-      <br><br>
-      The same applies to emeralds, diamonds and other stones, which vary by size, cut, quality, colour, availability and price.
-      <br><br>
-      For this reason, custom work is considered only under these conditions:
-      <ul>
-        <li>appointment in the workshop;</li>
-        <li>size taken in person;</li>
-        <li>choice or definition of the model in person;</li>
-        <li>real evaluation of the stones;</li>
-        <li>initial deposit equal to the estimated value of the metal plus 50% of the estimated workmanship;</li>
-        <li>full balance before delivery or shipment;</li>
-        <li>final calculation based on the metal actually used, including the normal loss of handmade work, conventionally considered as 25% of the metal used;</li>
-        <li>any project changes, stone variations or different amount of gold required are calculated in the final balance.</li>
-      </ul>
-      Delivery during a short stay in Rome is not guaranteed.
-      <br><br>
-      Once completed, the piece can be shipped to the client's address with documented shipping.
-      <br><br>
-      <strong>A custom jewel is not a stock product.</strong>
-      <br><br>
-      <strong>It is a work that begins with a meeting and ends when the piece is ready, not when the travel calendar demands it.</strong>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <span class="faq-q">How much does a custom jewel cost?</span>
-    <div class="faq-a">
-      It is one of the questions we receive most often.
-      <br><br>
-      The most honest answer is: it depends on what we are making.
-      <br><br>
-      A handmade jewel is not made only of metal.
-      <br><br>
-      The final cost can depend on many factors:
-      <ul>
-        <li>quantity and type of metal (silver, gold, etc.);</li>
-        <li>presence of stones and their characteristics;</li>
-        <li>complexity of the project;</li>
-        <li>hours of work required.</li>
-      </ul>
-      For example:
-      <br><br>
-      a very simple ring may require little material and few hours of work.
-      <br><br>
-      On the other hand, a jewel with complex engraving, handmade details or many stones may require dozens of hours of work, regardless of the weight of the metal.
-      <br><br>
-      For this reason, the cost of materials and the cost of workmanship are two separate items.
-      <br><br>
-      As an indication, the workmanship for a custom handmade jewel starts from about 200 euros, plus any materials and stones.
-      <br><br>
-      If you would like an estimate, even a simple description or a reference image is enough to begin.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <span class="faq-q">How long does it take? Can I buy immediately?</span>
-    <div class="faq-a">
-      <span class="faq-yes">Yes.</span> If you find something in the window, you can buy it immediately. In most cases, however, the size will not be perfect.
-      <br><br>
-      That is not a problem: I can adjust it to your size or recreate it as faithfully as possible, with no additional cost after purchase.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <span class="faq-q">What if I need it today, as an urgent gift?</span>
-    <div class="faq-a">
-      If the right piece is not ready, I can prepare a certificate addressed to the person receiving the gift.
-      <br><br>
-      The certificate states that the jewel is being created especially for them: you do not show up empty-handed, and they can later come to the workshop to complete the piece together.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <span class="faq-q">If I want something made from scratch, how long does it take?</span>
-    <div class="faq-a">
-      It depends on the project. It can take about a week, or several months.
-      <br><br>
-      Every piece is unique: it is not chosen from a catalogue, it is built together.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <span class="faq-q">Do I need an appointment to visit?</span>
-    <div class="faq-a">
-      <span class="faq-yes">Yes.</span> Visits are by appointment only, so every person receives proper time and attention.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <span class="faq-q">When I request an appointment, do I need to explain what I need?</span>
-    <div class="faq-a">
-      <span class="faq-yes">Yes.</span> When requesting an appointment, please always clearly explain the reason for your visit and, whenever possible, include photographs or reference images.
-      <br><br>
-      This is necessary because different requests require different amounts of time, preparation and different arrangements. You may wish to discuss a custom-made piece, show me stones or jewellery you already own, ask about an item displayed in the window, or request a service that the workshop does not provide.
-      <br><br>
-      <strong>I do not provide jewellery repair services.</strong>
-      <br><br>
-      <strong>I do not buy gold, precious metals, jewellery or gemstones.</strong>
-      <br><br>
-      If you are interested in a specific piece displayed in the window, you can simply send me a photograph of it. In many cases, I can give you the price and the relevant information directly, without requiring you to come to the workshop unnecessarily.
-      <br><br>
-      Once I understand what you need, I can confirm whether your request is compatible with the work of the workshop, whether an appointment is necessary, how much time should be reserved, and when I may be available to see you.
-      <br><br>
-      <strong>Same-day appointments may be available, but they are not guaranteed and must always be arranged in advance.</strong>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <span class="faq-q">How do I book?</span>
-    <div class="faq-a">
-      Message me on WhatsApp or SMS. I reply during the day.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <span class="faq-q">Do you make custom jewellery?</span>
-    <div class="faq-a">
-      Yes. Every piece is designed and made according to the request.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <span class="faq-q">Can I transform a jewel I already own?</span>
-    <div class="faq-a">
-      Yes. It is an important part of the work: recovery, transformation and new life.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <span class="faq-q">Can I ask for an estimate?</span>
-    <div class="faq-a">
-      Yes. Write to me and we can understand together what makes sense.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <span class="faq-q">Can I see the jewels even when the workshop is closed?</span>
-    <div class="faq-a">
-      Yes. The windows are lit and visible 7 days a week, 24 hours a day.
-      <br><br>
-      If something interests you, message me on WhatsApp or SMS and we can arrange an appointment.
-    </div>
-  </div>
+<h2 style="font-size:24px; margin-bottom:22px;">FREQUENTLY ASKED QUESTIONS</h2>
+<div class="faq-new">
+<div class="faq-item">
+<span class="faq-q">What is A Bottega?</span>
+<div class="faq-a">It is the name for the experiences and guided paths that take place at the Old Bench of Bottega MarcoAurelio.<br/><br/>It is not a classroom and it is not a demonstration: it is a real workshop, in operation. Depending on the project, you can take part in the making of your wedding bands, create a personal jewel, or discuss a made-to-measure piece.</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">What is the difference between Fedi a Bottega and Crea a Bottega?</span>
+<div class="faq-a">
+<strong>Fedi a Bottega</strong>is the path dedicated to couples: you design and shape your wedding bands with me.<br/><br/>
+<strong>Crea a Bottega</strong>is the path for a personal jewel: a ring, a pendant or another object to build together, when the project allows it.</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">Is it a course?</span>
+<div class="faq-a">I prefer not to call it a course.<br/><br/>A course suggests a standard programme, the same for everyone. Here, every jewel has different needs. That is why I call it<strong>Crea a Bottega</strong>: a made-to-measure path, built around the object you want to create.</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">Do I need experience to take part?</span>
+<div class="faq-a">No. For Fedi a Bottega and Crea a Bottega, no previous experience is needed.<br/><br/>The path is designed to be guided step by step at the Old Bench.</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">Can I create a custom ring?</span>
+<div class="faq-a">Yes, if the project is compatible with a workshop path.<br/><br/>You can start from your own idea, from a jewel you have seen, from a material or a stone, or even take inspiration from one of my works. From there we understand whether the right path is<strong>Crea a Bottega</strong>or a made-to-measure jewel made by me.</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">How do I book Fedi a Bottega or Crea a Bottega?</span>
+<div class="faq-a">Write to me on WhatsApp or by email, indicating the path that interests you, the period, the starting idea and, if you have them, reference images.<br/><br/>The first consultation, by phone or in the workshop, is without obligation.</div>
+</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">You do not know where to start? That is normal.</span>
+<div class="faq-a">Most clients arrive with an idea, not with a fully defined project.<br/><br/>To prepare an estimate or understand what can be made, a few details are useful:<ul>
+<li>What kind of object would you like? Ring, pendant, bracelet, earrings, or something else.</li>
+<li>Which metal? Silver, yellow gold, white gold, rose gold, or “I do not know”.</li>
+<li>Will there be stones? Diamonds, coloured stones, no stones, or “I do not know”.</li>
+<li>Do you have reference images? Screenshots, online photos or hand drawings are fine.</li>
+<li>Are there symbols or personal meanings? Dates, initials, animals, constellations, personal themes.</li>
+<li>When would you need it? No rush, within a month, or for a specific date.</li>
+<li>Do you have an approximate budget? It is not mandatory, but it helps suggest sensible solutions.</li>
+</ul>You do not need to know technical terms. Even a simple description such as “I would like a silver ring inspired by the sea, without stones” is more than enough to begin.</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">Can I order a custom gold ring before arriving in Rome and collect it during my trip?</span>
+<div class="faq-a">No.<br/><br/>A custom jewel is not a stock product and cannot be properly designed, estimated and made only through messages, photographs or drawings sent from a distance.<br/><br/>To begin a made-to-measure piece, an appointment in the workshop is necessary.<br/><br/>The finger size must be taken in person, because the final fit also depends on the width, thickness, section and proportions of the ring. A simple numerical size is not enough.<br/><br/>The weight of the gold also cannot be determined before the project has been defined. Small variations in shape and proportions can significantly change the amount of metal required.<br/><br/>The same applies to emeralds, diamonds and other stones, which vary by size, cut, quality, colour, availability and price.<br/><br/>For this reason, custom work is considered only under these conditions:<ul>
+<li>appointment in the workshop;</li>
+<li>size taken in person;</li>
+<li>choice or definition of the model in person;</li>
+<li>real evaluation of the stones;</li>
+<li>initial deposit equal to the estimated value of the metal plus 50% of the estimated workmanship;</li>
+<li>full balance before delivery or shipment;</li>
+<li>final calculation based on the metal actually used, including the normal loss of handmade work, conventionally considered as 25% of the metal used;</li>
+<li>any project changes, stone variations or different amount of gold required are calculated in the final balance.</li>
+</ul>Delivery during a short stay in Rome is not guaranteed.<br/><br/>Once completed, the piece can be shipped to the client’s address with documented shipping.<br/><br/>
+<strong>A custom jewel is not a stock product.</strong>
+<br/><br/>
+<strong>It is work that begins with a meeting and ends when the piece is ready, not when the travel calendar demands it.</strong>
+</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">How much does a custom jewel cost?</span>
+<div class="faq-a">It is one of the questions we receive most often.<br/><br/>The most honest answer is: it depends on what we are making.<br/><br/>A handmade jewel is not made only of metal.<br/><br/>The final cost can depend on many factors:<ul>
+<li>quantity and type of metal (silver, gold, etc.);</li>
+<li>presence of stones and their characteristics;</li>
+<li>complexity of the project;</li>
+<li>hours of work required.</li>
+</ul>For example:<br/><br/>a very simple ring may require little material and few hours of work.<br/><br/>On the other hand, a jewel with complex engraving, handmade details or many stones may require dozens of hours of work, regardless of the weight of the metal.<br/><br/>For this reason, the cost of materials and the cost of workmanship are two separate items.<br/><br/>As an indication, the workmanship for a custom handmade jewel starts from about 200 euros.<br/><br/>Any metals, stones and special processes are then added to this amount.<br/><br/>If you would like an estimate, even a simple description or a reference image is enough to begin.</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">How long does it take? Can I buy immediately?</span>
+<div class="faq-a">
+<span class="faq-yes">Yes.</span>If you find something in the window, you can buy it immediately. In most cases, however, the size will not be perfect.<br/><br/>That is not a problem: I can adjust it to your size or recreate it as faithfully as possible, with no additional cost after purchase.</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">What if I need it today, as an urgent gift?</span>
+<div class="faq-a">If the right piece is not ready, I can prepare a certificate addressed to the person receiving the gift.<br/><br/>The certificate states that the jewel is being created especially for them: you do not show up empty-handed, and the person can later come to the workshop to complete the piece together.</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">If I want something made from scratch, how long does it take?</span>
+<div class="faq-a">It depends on the project. It can take about a week, or several months.<br/><br/>Every piece is unique: it is not chosen from a catalogue, it is built together.</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">Do I need an appointment to visit?</span>
+<div class="faq-a">
+<span class="faq-yes">Yes.</span>Access is by appointment only, so every person receives proper time and attention.</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">When I request an appointment, do I need to explain what I need?</span>
+<div class="faq-a">
+<span class="faq-yes">Yes.</span>When requesting an appointment, please always clearly explain the reason for your visit and, whenever possible, include photographs or reference images.<br/><br/>
+      This is necessary because different requests require different amounts of time, preparation and arrangements. You may wish to discuss a made-to-measure piece, show me stones or jewels you already own, ask about a piece displayed in the window, or request a service the workshop does not provide.
+      <br/><br/>
+<strong>I do not provide jewellery repair services.</strong>
+<br/><br/>
+<strong>I do not buy gold, precious metals, jewellery or gemstones.</strong>
+<br/><br/>If you are interested in a piece displayed in the window, you can simply send me a photograph of it. In many cases I can give you the price and the relevant information directly, without asking you to come to the workshop unnecessarily.<br/><br/>Once I understand what you need, I can confirm whether your request is compatible with the work of the workshop, whether an appointment is necessary, how much time should be reserved and when I can receive you.<br/><br/>
+<strong>Same-day appointments may be available, but they are not guaranteed and must always be arranged in advance.</strong>
+</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">How do I book?</span>
+<div class="faq-a">Message me on WhatsApp or SMS. I reply during the day.</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">Do you make custom jewellery?</span>
+<div class="faq-a">Yes. Every piece is designed and made according to the request.</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">Can I transform a jewel I already own?</span>
+<div class="faq-a">Yes. It is an important part of the work: recovery, transformation and new life.</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">Can I ask for an estimate?</span>
+<div class="faq-a">Yes. Write to me and we can understand together what makes sense.</div>
+</div>
+<div class="faq-item">
+<span class="faq-q">Can I see the jewels even when the workshop is closed?</span>
+<div class="faq-a">Yes. The windows are lit and visible 7 days a week, 24 hours a day.<br/><br/>If something interests you, message me on WhatsApp or SMS and we can arrange an appointment.</div>
+</div>
 </section>
-
-<section id="closing" class="closing-module" aria-label="Bottega Marco Aurelio">
-  <div class="closing-images">
-    <img src="assets/chiusura_laboratorio.jpg" alt="Inside Bottega Marco Aurelio">
-    <img src="assets/chiusura_vetrina.jpg" alt="Bottega Marco Aurelio window display">
-  </div>
+<section aria-label="Bottega Marco Aurelio" class="closing-module" id="chiusura">
+<div class="closing-images">
+<img alt="Interno della Bottega Marco Aurelio" src="assets/chiusura_laboratorio.jpg"/>
+<img alt="Vetrina della Bottega Marco Aurelio" src="assets/chiusura_vetrina.jpg"/>
+</div>
+<p style="margin:14px 0 0; color:#000; font-size:12px; text-align:center;"><strong>A BOTTEGA 000H · EN</strong> · 16/08/2026</p>
 </section>
-<div class="final-spacer" aria-hidden="true"></div>
-
-
+<div aria-hidden="true" class="final-spacer"></div>
 </main>
-  </div>
-  <button class="top-float" type="button" aria-label="Torna in alto">↑</button>
-  <div class="bottom-cta">
-    <a class="w" href="https://wa.me/393482762842">Message on<br>WhatsApp</a>
-    <a class="faq" href="#faq">FAQ</a>
-    <a class="i" href="https://www.instagram.com/bottegamarcoaurelio/" target="_blank" rel="noopener">Instagram</a>
-  </div>
+</div>
+<button aria-label="Torna in alto" class="top-float" type="button">↑</button>
+<div class="bottom-cta">
+<a class="w" href="https://wa.me/393482762842">Message on<br/>WhatsApp</a>
+<a class="faq" href="#faq">FAQ<br/></a>
+<a class="i" href="https://www.instagram.com/bottegamarcoaurelio/" rel="noopener" target="_blank">Instagram</a>
+</div>
 <script>
   const cta = document.querySelector('.bottom-cta');
   const topFloat = document.querySelector('.top-float');
@@ -1807,10 +4322,6 @@ section h3{letter-spacing:-.035em !important;text-transform:none !important;}
   toggleFloatingButtons();
   window.addEventListener('scroll', toggleFloatingButtons, {passive:true});
 </script>
-
-
-
-
 <script>
 (function(){
   let userInteracted = false;
@@ -1854,14 +4365,11 @@ section h3{letter-spacing:-.035em !important;text-transform:none !important;}
   });
 })();
 </script>
-
 <!-- Analytics privacy-friendly — GoatCounter
      ATTENZIONE: per attivarlo davvero devi creare il sito/account con codice: bottegamarcoaurelio
      Dashboard: https://bottegamarcoaurelio.goatcounter.com/
      Finché l'account non esiste, il sito continua a funzionare: semplicemente non registra visite.
 -->
-<script data-goatcounter="https://bottegamarcoaurelio.goatcounter.com/count"
-        async src="https://gc.zgo.at/count.js"></script>
-
+<script async="" data-goatcounter="https://bottegamarcoaurelio.goatcounter.com/count" src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
