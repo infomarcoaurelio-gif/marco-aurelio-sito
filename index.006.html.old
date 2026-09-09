@@ -511,8 +511,7 @@ header{padding:10px 0}.lang-switch{padding:10px 4px}.ab-hub{padding-top:12px}.ab
 <li>Hai immagini di riferimento? Vanno bene screenshot, foto online o disegni a mano.</li>
 <li>Ci sono simboli o significati particolari? Date, iniziali, animali, costellazioni, temi personali.</li>
 <li>Per quando ti servirebbe? Nessuna fretta, entro un mese, oppure per una data precisa.</li>
-<li><strong>Quale budget indicativo hai previsto?</strong> Basta una fascia di spesa: è necessaria per valutare la fattibilità della richiesta prima di concordare un incontro.</li>
-<li><strong>Come hai conosciuto la Bottega?</strong> Google, sito, Instagram, Facebook, vetrina o passaparola? Segnala anche eventuali immagini o gioielli di riferimento.</li>
+<li>Hai un budget indicativo? Non è obbligatorio, ma aiuta a proporre soluzioni sensate.</li>
 </ul>
       Non serve conoscere termini tecnici. Anche una descrizione semplice come “vorrei un anello ispirato al mare, in argento, senza pietre” è più che sufficiente per iniziare.
     </div>
@@ -614,12 +613,7 @@ header{padding:10px 0}.lang-switch{padding:10px 4px}.ab-hub{padding-top:12px}.ab
 <div class="faq-item" id="faq-15">
 <h3 class="faq-q">15 · Quando richiedo un appuntamento, devo spiegare cosa mi serve?</h3>
 <div class="faq-a">
-<p><strong>Sì. Prima di concordare un incontro, scrivimi cosa vorresti realizzare, quale budget indicativo hai previsto e come hai conosciuto la Bottega.</strong></p>
-<p><strong>Il budget serve già per capire se ha senso incontrarci.</strong> Non occorre una cifra precisa: basta una fascia di spesa nella quale desideri restare. Mi permette di valutare se il progetto è compatibile con materiali, lavorazioni e tempo necessari, oppure se posso proporti un’alternativa.</p>
-<p>Se non hai idea dei costi, dimmelo, ma indicami comunque quanto prenderesti in considerazione di spendere. Senza questo riferimento non riesco a dirti se un incontro per il preventivo possa essere utile.</p>
-<p><strong>Come hai conosciuto la Bottega?</strong> Tramite Google, il sito, Instagram, Facebook, passando davanti alla vetrina oppure su consiglio di qualcuno? Se hai visto un gioiello, una fotografia o una pagina che ti ha interessato, mandami il riferimento.</p>
-<p>Questo mi aiuta a capire cosa conosci già del mio lavoro e quali informazioni ti servono prima dell’appuntamento.</p>
-Quando richiedi un appuntamento, indicami sempre con chiarezza il motivo della visita e, quando possibile, allega fotografie o immagini di riferimento.
+<span class="faq-yes">Sì.</span> Quando richiedi un appuntamento, indicami sempre con chiarezza il motivo della visita e, quando possibile, allega fotografie o immagini di riferimento.
       <br/><br/>
       È necessario perché richieste diverse richiedono tempi, preparazione e modalità differenti. Potresti voler discutere un progetto su misura, mostrarmi pietre o gioielli che già possiedi, chiedere informazioni su un oggetto esposto in vetrina oppure richiedere un servizio che la bottega non effettua.
       <br/><br/>
@@ -672,7 +666,7 @@ Quando richiedi un appuntamento, indicami sempre con chiarezza il motivo della v
 <img alt="Interno della Bottega Marco Aurelio" src="assets/chiusura_laboratorio.jpg"/>
 <img alt="Vetrina della Bottega Marco Aurelio" src="assets/chiusura_vetrina.jpg"/>
 </div>
-<p style="font-size:12px;text-align:center;color:#625b55">A BOTTEGA 007 · 09/09/2026 · 17:13 (Roma) · FAQB1 · ORIG1</p>
+<p style="font-size:12px;text-align:center;color:#625b55">A BOTTEGA 006 · 09/09/2026 · 02:30 (Roma) · NAV1 · HERO1 · DOC1</p>
 </section>
 <div aria-hidden="true" class="final-spacer"></div>
 </main>

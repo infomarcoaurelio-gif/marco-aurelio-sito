@@ -487,8 +487,7 @@ header{padding:10px 0}.lang-switch{padding:10px 4px}.ab-hub{padding-top:12px}.ab
 <li>Do you have reference images? Screenshots, online photos or hand drawings are fine.</li>
 <li>Are there symbols or personal meanings? Dates, initials, animals, constellations, personal themes.</li>
 <li>When would you need it? No rush, within a month, or for a specific date.</li>
-<li><strong>What approximate budget do you have in mind?</strong> A spending range is enough: it is needed to assess the feasibility of your request before arranging a meeting.</li>
-<li><strong>How did you discover the workshop?</strong> Google, the website, Instagram, Facebook, the shop window or word of mouth? Please also mention any reference images or jewels.</li>
+<li>Do you have an approximate budget? It is not mandatory, but it helps suggest sensible solutions.</li>
 </ul>You do not need to know technical terms. Even a simple description such as “I would like a silver ring inspired by the sea, without stones” is more than enough to begin.</div>
 </div>
 <div class="faq-item" id="faq-09">
@@ -538,12 +537,7 @@ header{padding:10px 0}.lang-switch{padding:10px 4px}.ab-hub{padding-top:12px}.ab
 <div class="faq-item" id="faq-15">
 <h3 class="faq-q">15 · When I request an appointment, do I need to explain what I need?</h3>
 <div class="faq-a">
-<p><strong>Yes. Before we arrange a meeting, tell me what you would like to have made, the approximate budget you have in mind, and how you discovered the workshop.</strong></p>
-<p><strong>Your budget helps me assess whether it makes sense for us to meet in the first place.</strong> You do not need an exact figure: a spending range you would like to stay within is enough. It allows me to assess whether the project is compatible with the materials, work and time required, or whether I can suggest an alternative.</p>
-<p>If you have no idea what it might cost, tell me, but please still indicate how much you would consider spending. Without this reference, I cannot tell you whether a meeting to discuss an estimate would be useful.</p>
-<p><strong>How did you discover the workshop?</strong> Through Google, the website, Instagram, Facebook, walking past the shop window, or a recommendation? If a particular jewel, photograph or page caught your interest, send me the reference.</p>
-<p>This helps me understand what you already know about my work and what information you need before an appointment.</p>
-When requesting an appointment, please always clearly explain the reason for your visit and, whenever possible, include photographs or reference images.<br/><br/>
+<span class="faq-yes">Yes.</span>When requesting an appointment, please always clearly explain the reason for your visit and, whenever possible, include photographs or reference images.<br/><br/>
       This is necessary because different requests require different amounts of time, preparation and arrangements. You may wish to discuss a made-to-measure piece, show me stones or jewels you already own, ask about a piece displayed in the window, or request a service the workshop does not provide.
       <br/><br/>
 <strong>I do not provide jewellery repair services.</strong>
@@ -579,7 +573,7 @@ When requesting an appointment, please always clearly explain the reason for you
 <img alt="Interno della Bottega Marco Aurelio" src="assets/chiusura_laboratorio.jpg"/>
 <img alt="Vetrina della Bottega Marco Aurelio" src="assets/chiusura_vetrina.jpg"/>
 </div>
-<p style="font-size:12px;text-align:center;color:#625b55">A BOTTEGA 007 · 09/09/2026 · 17:13 (Roma) · FAQB1 · ORIG1</p>
+<p style="font-size:12px;text-align:center;color:#625b55">A BOTTEGA 006 · 09/09/2026 · 02:30 (Roma) · NAV1 · HERO1 · DOC1</p>
 </section>
 <div aria-hidden="true" class="final-spacer"></div>
 </main>
