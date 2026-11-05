@@ -175,11 +175,35 @@ header{align-items:flex-start}
 .collections .collection-card{grid-template-columns:minmax(0,1fr) 100px!important;gap:12px!important}
 .bottom-cta a{font-size:22px!important}
 }
+</style><style id="ma3-viewport-fit">
+/* 05-11-2026 — Correzione larghezza su smartphone: mai ridurre il font. */
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+.page{width:100%;max-width:960px;min-width:0;box-sizing:border-box}
+.page>*,main,section,nav,article{min-width:0;max-width:100%;box-sizing:border-box}
+header{min-width:0;max-width:100%}
+header .brand{min-width:0;max-width:100%;overflow-wrap:anywhere}
+header .lang-switch{flex-shrink:0;white-space:nowrap}
+.ma3-info-left,.ma3-info-right,.ma3-card-copy,.ab-gate .copy,.faq-item{min-width:0;overflow-wrap:anywhere}
+.ab-step{grid-template-columns:38px minmax(0,1fr)}
+@media(max-width:700px){
+ html,body{overflow-x:clip}
+ header{display:grid!important;grid-template-columns:minmax(0,1fr) max-content!important;gap:7px!important;align-items:start!important}
+ header .brand{min-width:0!important;max-width:100%!important}
+ header .ab-brand-mainline{display:flex!important;flex-wrap:wrap!important;align-items:baseline;gap:0 .28em!important;min-width:0}
+ header .ab-brand-regular{margin-left:0!important}
+ header .ab-brand-dot{padding:0!important}
+ header .lang-switch{justify-self:end!important;align-self:start!important;min-width:36px!important;padding:3px 0!important}
+ header .ab-brand-location{overflow-wrap:anywhere!important}
+ .quick-top,.ma3-cards,.ma3-info,.faq-access-card,.collections{width:100%;min-width:0!important}
+ .quick-top>a,.ma3-card,.ma3-card-copy{min-width:0!important;max-width:100%}
+ .ma3-info-left,.ma3-info-right{min-width:0!important;max-width:100%!important}
+ .ab-step{grid-template-columns:38px minmax(0,1fr)!important}
+}
 </style></head>
 <body>
 <div class="page">
 <header>
-<div class="brand ab-brand-line" aria-label="Bottega MarcoAurelio · Goldsmith"><span class="ab-brand-strong">Bottega</span><span class="ab-brand-regular">MarcoAurelio</span><span class="ab-brand-dot">·</span><span class="ab-brand-strong">Goldsmith</span><div class="ab-brand-location">in <a href="https://www.google.com/maps/search/?api=1&amp;query=Campo%20de%27%20Fiori%20Roma" target="_blank" rel="noopener">Campo de’ Fiori</a> · in the heart of Rome</div></div>
+<div class="brand ab-brand-line" aria-label="Bottega MarcoAurelio · Goldsmith"><div class="ab-brand-mainline"><span class="ab-brand-strong">Bottega</span><span class="ab-brand-regular">MarcoAurelio</span><span class="ab-brand-dot">·</span><span class="ab-brand-strong">Goldsmith</span></div><div class="ab-brand-location">in <a href="https://www.google.com/maps/search/?api=1&amp;query=Campo%20de%27%20Fiori%20Roma" target="_blank" rel="noopener">Campo de’ Fiori</a> · in the heart of Rome</div></div>
 <a aria-label="Versione italiana" class="lang-switch" href="index.html">IT</a>
 </header>
 <a aria-label="Vai alla sezione Arabesco Nero" class="hero hero-link" href="#arabesco-nero" id="home">
