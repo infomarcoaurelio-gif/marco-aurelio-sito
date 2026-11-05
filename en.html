@@ -199,6 +199,37 @@ header .lang-switch{flex-shrink:0;white-space:nowrap}
  .ma3-info-left,.ma3-info-right{min-width:0!important;max-width:100%!important}
  .ab-step{grid-template-columns:38px minmax(0,1fr)!important}
 }
+</style><style id="ma3-home-refinement-012">
+/* Revisione 012: testata compatta, nav senza orari duplicati, fedi ritagliate. */
+.quick-top{grid-template-columns:repeat(4,minmax(0,1fr))}
+.ma3-card[href="#fedi-a-bottega"] .ma3-card-media{overflow:hidden!important}
+.ma3-card[href="#fedi-a-bottega"] .ma3-card-media img{
+ width:100%!important;height:100%!important;max-width:none!important;
+ object-fit:cover!important;object-position:center 55%!important;
+ transform:scale(1.16);transform-origin:center 55%;
+}
+@media(max-width:700px){
+ header .ab-brand-mainline{display:flex!important;flex-wrap:nowrap!important;gap:0 .12em!important;min-width:0!important;white-space:nowrap!important;
+ font-size:clamp(16px,4.2vw,20px)!important;letter-spacing:-.025em!important}
+ header .ab-brand-mainline>span{font-size:inherit!important;line-height:1.25!important;white-space:nowrap!important}
+ header .ab-brand-dot{padding:0!important}
+ header .ab-brand-regular{margin:0!important}
+ header .ab-brand-location,header .ab-brand-location a{font-size:19px!important;line-height:1.25!important}
+ header .ab-brand-location{margin-top:1px!important}
+ .quick-top{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .quick-top a:last-child{grid-column:auto!important}
+ .ma3-card[href="#fedi-a-bottega"] .ma3-card-media{height:190px!important}
+ .ma3-card[href="#fedi-a-bottega"] .ma3-card-media img{object-fit:cover!important;object-position:center 55%!important}
+}
+@media(max-width:390px){
+ header .ab-brand-mainline{font-size:16px!important;letter-spacing:-.04em!important}
+ header .ab-brand-mainline>span{font-size:16px!important}
+ header .ab-brand-location,header .ab-brand-location a{font-size:18px!important}
+}
+@media(max-width:350px){
+ header .ab-brand-mainline{font-size:14px!important}
+ header .ab-brand-mainline>span{font-size:14px!important}
+}
 </style></head>
 <body>
 <div class="page">
@@ -215,7 +246,6 @@ header .lang-switch{flex-shrink:0;white-space:nowrap}
 <a href="sms:+393482762842">SMS</a>
 <a href="https://www.instagram.com/bottegamarcoaurelio/" rel="noopener" target="_blank">Instagram Gallery</a>
 <a href="#faq">FAQ</a>
-<a href="#orari">Hours / access</a>
 </nav>
 <section class="ma3-info" aria-label="Essential visit information">
  <div class="ma3-info-left"><span class="ma3-info-label">HOURS / ACCESS</span><strong>6:00–9:00 PM · By appointment only</strong><span class="ma3-info-micro">Three hours of receiving visitors is a substantial amount of time for a working workshop: the rest of the day is devoted to designing and making jewellery.</span></div>
