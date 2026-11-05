@@ -10,3 +10,5 @@ INTERVENTI IN index.html E en.html
 5. Immutati tutti gli altri caratteri grandi, testo, link, contenuti, prezzo 400 € (metallo escluso) e ordine dei moduli.
 
 Verifica tecnica: entrambi i file aggiornati tramite GitHub. La resa fotografica specifica del ritaglio dovrà essere convalidata visivamente sul Redmi.
+
+Verifica tecnica accesso GitHub, 06-11-2026: operazione di scrittura eseguita per diagnosticare il blocco della revisione 014.
