@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Bottega MarcoAurelio · A Bottega · Roma</title>
+<meta content="Bottega MarcoAurelio · A Bottega. Fate le vostre fedi e imparate come si fanno al Vecchio Banco, in una Bottega vera a Campo de’ Fiori, nel centro del centro di Roma." name="description"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+:root{--paper:#faf8f4;--ink:#211f1e;--wine:#772638;--line:#d9d1c8;--muted:#625b55;--white:#fff; font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper)}
+*{box-sizing:border-box}body{margin:0;font-size:17px;line-height:1.55}img{display:block;max-width:100%;height:auto}a{color:inherit;text-underline-offset:4px}a:hover{color:var(--wine)}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--wine);outline-offset:4px}p{margin:0 0 1em}strong{font-weight:700}h1,h2,h3,h4{line-height:1.12;margin:0 0 .6em;overflow-wrap:break-word}h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:400}h2{font-size:clamp(30px,5vw,48px)}h3{font-size:30px}h4{font-size:20px}button{font:inherit}section,article,[id]{scroll-margin-top:20px}.page{max-width:960px;margin:auto;padding:0 24px}header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0 14px}.brand{font-size:19px;font-weight:700;line-height:1.3}.ab-brand-regular{margin-left:4px}.ab-brand-dot{padding:0 6px;font-weight:400}.ab-brand-location{font-size:14px;font-weight:400;margin-top:5px}.lang-switch{font-size:14px;text-decoration:none;border-bottom:1px solid var(--line);padding:12px 6px}.hero{display:block;position:relative;height:190px;overflow:hidden;background:#211f1e}.hero>img{width:100%;height:100%;object-fit:cover;object-position:center 52%}.hero-text{display:none}.quick-top{display:grid;grid-template-columns:1.1fr .6fr 1fr 1fr 1fr;gap:6px;padding:12px 0}.quick-top a{display:flex;align-items:center;justify-content:center;min-height:48px;text-align:center;font-size:14px;line-height:1.2;text-decoration:none;font-weight:700;border-bottom:1px solid var(--line);padding:8px 3px}.quick-top a:first-child{background:var(--wine);color:white;border:0;border-radius:3px}
+.opening-index{padding:4px 0 15px;border-bottom:1px solid var(--line)}.opening-paths{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.opening-paths a{padding:8px 0;text-decoration:none;font-size:17px;font-weight:700;line-height:1.2}.opening-paths small{display:block;font-size:14px;font-weight:400;color:var(--muted);margin-top:5px}.opening-more{display:flex;flex-wrap:wrap;gap:5px 18px;margin-top:10px}.opening-more a{font-size:14px;padding:5px 0}
+section{padding:48px 0;border-bottom:1px solid var(--line)}.ab-hub{padding-top:25px}.ab-logo-proof-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.ab-kicker,.ab-eyebrow,.ombra-kicker,.eyebrow{color:var(--wine);font-size:14px;letter-spacing:.1em;font-weight:700;text-transform:uppercase;margin-bottom:12px}.ab-logo{margin:0;text-transform:none;letter-spacing:.07em;font-size:19px}.ab-google-badge{font-size:14px;color:var(--muted);text-decoration:none}.ab-method-title{font-size:clamp(31px,5vw,48px);letter-spacing:-.035em}.ab-method-entry{font-size:.78em}.ab-subtitle{font-size:18px;line-height:1.55;max-width:720px}.ab-subtitle strong{font-weight:400}.ab-gates{display:grid;gap:0;margin-top:30px}.ab-gate{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:30px;padding:30px 0;border-top:1px solid var(--line);text-decoration:none;align-items:center}.ab-gate h3{font-size:36px}.ab-gate p{font-size:17px;line-height:1.5}.ab-gate .ab-eyebrow,.ab-gate .mini{font-size:14px}.ab-gate .mini{color:var(--wine);margin-bottom:0}.ab-gate>img{width:100%;height:auto;object-fit:contain}.gate-title-break{display:none}.gate-title-break:after{content:' '}.gate-course-question{font-family:Arial,sans-serif;font-size:18px;white-space:nowrap}.collections{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:35px 0}.collection-card{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;text-decoration:none}.collection-card>div:first-child{grid-column:1/-1}.collection-card h2{font-size:24px;letter-spacing:.04em;margin-bottom:5px}.collection-card p{font-size:14px;margin-bottom:8px;color:var(--muted)}.thumb img{width:100%;aspect-ratio:1;object-fit:cover}.ab-cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}.ab-cta{display:inline-block;background:var(--wine);color:white;padding:13px 18px;text-decoration:none;font-size:16px;font-weight:700;border-radius:3px}.ab-cta:hover{color:white;background:#51202b}.ab-cta.secondary{background:transparent;color:var(--wine);border:1px solid var(--line)}.zoomable-img,.ombra-plate-link{display:block}.ab-poster,.ombra-plate{width:100%;max-width:580px;margin:24px auto;height:auto;object-fit:contain}.ab-steps{margin:32px 0}.ab-step{display:grid;grid-template-columns:38px 1fr;gap:14px;padding:22px 0;border-top:1px solid var(--line)}.ab-num{font-family:Georgia,serif;font-size:26px;color:var(--wine)}.ab-step p{margin:0}.ab-tiles,.ab-method-grid,.ab-poster-stack,.gallery,.closing-images{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:24px 0;align-items:start}.ab-tiles img,.ab-method-grid img,.ab-poster-stack img,.gallery img,.closing-images img{width:100%;height:auto;object-fit:contain;margin:0}.ab-note,.ombra-note{padding:20px 0 20px 20px;border-left:2px solid var(--wine);margin:28px 0;font-size:17px}.ab-method-strip>h3{margin-top:30px}.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}.placeholder-text{color:var(--muted);font-size:17px}.ombra-section-banner img{width:100%;height:auto}.ombra-subtitle{font-size:21px;font-family:Georgia,serif}.ombra-index{padding:20px 0}.ombra-index a,.faq-index a{display:block;padding:12px 0;border-bottom:1px solid var(--line);font-size:16px;text-decoration:none}.ombra-card{padding:35px 0}.ombra-note p:last-child{margin:0}.faq-access-card{display:grid;grid-template-columns:1fr 1fr;gap:25px;background:#eee9e2;padding:24px;margin:25px 0}.open-big{font-family:Georgia,serif;font-size:38px;line-height:1.2;margin:5px 0 12px}.contact-small{font-size:14px;overflow-wrap:anywhere}.contact-note{margin-bottom:12px}.v47a-access-note{color:var(--muted)!important;font-weight:400;font-size:14px}.faq-index{margin-bottom:32px}.faq-item{padding:22px 0;border-bottom:1px solid var(--line)}.faq-q{display:block;font-size:21px;font-weight:700;line-height:1.35;margin-bottom:16px}.faq-a{font-size:17px;line-height:1.65;max-width:740px}.faq-a strong{font-weight:600}.faq-a p:last-child{margin-bottom:0}summary.faq-q{cursor:pointer;display:list-item;margin:0;padding-right:18px}details[open] summary.faq-q{margin-bottom:18px}.faq-new h3{font-size:26px}.closing-module{border:0}.final-spacer{height:90px}.bottom-cta{position:fixed;bottom:0;left:50%;transform:translateX(-50%) translateY(110%);display:flex;background:var(--paper);width:min(100%,960px);border-top:1px solid var(--line);padding:8px 15px calc(8px + env(safe-area-inset-bottom));gap:8px;z-index:10}.bottom-cta.visible{transform:translateX(-50%)}.bottom-cta a{flex:1;text-align:center;font-size:14px;text-decoration:none;padding:6px;line-height:1.2}.bottom-cta .w{background:var(--wine);color:#fff;border-radius:3px}.top-float{position:fixed;bottom:85px;right:16px;z-index:11;border:1px solid var(--line);background:var(--paper);color:var(--wine);width:44px;height:44px;border-radius:50%;visibility:hidden;cursor:pointer}.top-float.visible{visibility:visible}
+@media(max-width:600px){.page{padding:0 18px}header{padding:13px 0 10px}.brand{font-size:16px}.ab-brand-location{font-size:13px}.hero{height:125px}.quick-top{gap:5px;padding:10px 0}.quick-top a{font-size:14px;min-height:51px}.opening-paths{gap:10px}.opening-paths a{font-size:16px}.opening-paths small{font-size:14px}.opening-more{gap:3px 14px;margin-top:5px}.ab-hub{padding-top:23px}.ab-method-title{font-size:34px}.ab-subtitle{font-size:17px}.ab-gate{grid-template-columns:1fr;gap:18px;padding:27px 0}.ab-gate h3{font-size:33px}.ab-gate>img{width:100%;max-width:420px;justify-self:center}.ab-gate .copy>p:not(.ab-eyebrow):not(.mini){font-size:18px}.collections{gap:25px 16px}.collection-card h2{font-size:21px}.collection-card p{line-height:1.35}.ab-tiles,.ab-method-grid,.ab-poster-stack,.gallery,.closing-images{grid-template-columns:1fr;gap:22px}.faq-access-card{grid-template-columns:1fr;padding:20px}.ab-title{font-size:34px}.faq-q{font-size:20px}section{padding:36px 0}.ab-gate .gate-title-break{display:inline}.gate-title-break{display:none}.ab-google-badge{font-size:13px}.ab-logo{font-size:17px}}
+@media(max-width:360px){.page{padding:0 12px}.quick-top{grid-template-columns:repeat(6,1fr)}.quick-top a{grid-column:span 2}.quick-top a:nth-child(n+4){grid-column:span 3}.opening-paths a{font-size:15px}.ab-brand-dot{padding:0 3px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+/* 004: restore visible information density while retaining the approved visual style. */
+header{padding:10px 0}.lang-switch{padding:10px 4px}.ab-hub{padding-top:12px}.ab-logo-proof-row{margin-bottom:6px}.ab-method-title{margin-bottom:10px;line-height:1.04}.ab-center{text-align:center}.ab-center .ab-subtitle{margin:0 auto;line-height:1.35}.ab-gates{margin-top:15px}.ab-gate{padding:20px 0;gap:20px}.ab-gate>img{height:auto;max-height:none;object-fit:contain;align-self:start}.faq-q{font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:700;line-height:1.35;margin-bottom:14px}.faq-a{line-height:1.5}.faq-item{padding:22px 0}.access-lines,.access-lines span,.access-lines strong{color:var(--ink)!important}.access-lines>span{font-weight:700!important}.faq-index a{padding:8px 0}.ab-step{padding:16px 0}.ab-steps{margin:24px 0}
+@media(max-width:600px){
+.page{padding:0 12px}header{gap:8px;padding:8px 0}.brand{font-size:16px;line-height:1.2}.ab-brand-location{margin-top:3px;font-size:13px}.lang-switch{min-width:36px;min-height:44px;text-align:center;display:flex;align-items:center;justify-content:center}.hero{height:110px}.quick-top{grid-template-columns:1.05fr .65fr 1.1fr 1.1fr 1fr;gap:4px;padding:8px 0}.quick-top a,.quick-top a:nth-child(n+4){grid-column:auto;font-size:14px;min-height:48px;padding:6px 2px;line-height:1.1}.ab-hub{padding-top:10px}.ab-logo{font-size:17px}.ab-google-badge{font-size:13px}.ab-method-title{font-size:32px;line-height:1.02;letter-spacing:-.035em;margin-bottom:9px}.ab-method-entry{font-size:.87em}.ab-center .ab-subtitle{font-size:16px;line-height:1.3}.ab-gates{margin-top:12px}.ab-gate{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:start;gap:14px;padding:16px 0}.ab-gate h3{font-family:Arial,Helvetica,sans-serif;font-size:26px;line-height:1.04;font-weight:700;margin-bottom:9px}.ab-gate .ab-eyebrow{font-size:14px;letter-spacing:.06em;line-height:1.15;margin-bottom:6px}.ab-gate .copy>p:not(.ab-eyebrow):not(.mini){font-size:17px;line-height:1.28;margin-bottom:12px}.ab-gate .mini{font-size:14px;line-height:1.25}.ab-gate>img{width:100%;max-width:none;height:auto;object-fit:contain;align-self:start}.gate-course-question{font-size:17px}.collections{padding:23px 0}.faq-access-card{padding:20px}.faq-q{font-size:20px}.faq-a{font-size:17px;line-height:1.5}
+}
+@media(max-width:330px){.quick-top a{font-size:13px}.ab-gate{gap:10px}.ab-gate h3{font-size:24px}}
+
+/* 005: emphasis within the existing opening layout; a readable collection index. */
+.ab-google-badge{color:var(--wine);font-weight:700}
+.lang-switch{color:var(--wine);font-weight:700}
+.ab-brand-location a{font-weight:700}
+.collections{display:grid;grid-template-columns:minmax(0,1fr);gap:0;padding:22px 0}
+.collections .collection-card{display:grid;grid-template-columns:minmax(0,1fr) 120px;align-items:center;gap:20px;padding:14px 0;border-bottom:1px solid var(--line)}
+.collections .collection-card>div:first-child{grid-column:auto}
+.collections .collection-card h2{margin:0 0 6px;font-size:26px;letter-spacing:.035em}
+.collections .collection-card p{margin:0;font-size:16px;line-height:1.35}
+.collections .thumb img{width:120px;height:100px;aspect-ratio:auto;object-fit:contain}
+.collections .collection-card.ombra-card{grid-template-columns:minmax(0,1fr);margin:14px 0 0;padding:20px;background:#eee9e2;border:0}
+.collections .ombra-card h2{color:var(--wine)}
+.top-float{width:88px;height:88px;font-size:38px;line-height:1;border:1px solid rgba(119,38,56,.28);background:rgba(250,248,244,.66);color:var(--wine);bottom:85px;right:12px;box-shadow:0 2px 12px rgba(33,31,30,.08)}
+.top-float:hover,.top-float:focus-visible{background:rgba(250,248,244,.94)}
+@media(max-width:600px){.collections{padding:18px 0}.collections .collection-card{grid-template-columns:minmax(0,1fr) 104px;gap:16px;padding:12px 0}.collections .collection-card h2{font-size:24px}.collections .collection-card p{font-size:16px}.collections .thumb img{width:104px;height:92px}.collections .collection-card.ombra-card{grid-template-columns:minmax(0,1fr);padding:18px;margin-top:14px}}
+
+/* 006: move the picture down 6px within the unchanged hero. */
+.hero>img{object-position:center calc(52% + 6px)}
+</style></head>
+<body>
+<div class="page">
+<header>
+<div class="brand ab-brand-line" aria-label="Bottega MarcoAurelio · Orafo · Campo de’ Fiori, centro del centro di Roma"><div class="ab-brand-mainline"><span class="ab-brand-strong">Bottega</span><span class="ab-brand-regular">MarcoAurelio</span><span class="ab-brand-dot">·</span><span class="ab-brand-strong">Orafo</span></div><div class="ab-brand-location">a <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Campo%20de%27%20Fiori%20Roma" rel="noopener" target="_blank">Campo de’ Fiori</a> · centro del centro di Roma</div></div>
+<a aria-label="English version" class="lang-switch" href="en.html">ENG</a>
+</header>
+<a aria-label="Vai alla sezione Arabesco Nero" class="hero hero-link" href="#arabesco-nero" id="home">
+<img alt="Arabesco Nero · Collezione Aria · Bottega MarcoAurelio" src="assets/ab_arabesco_01.jpg"/>
+
+</a>
+<nav aria-label="Azioni rapide" class="quick-top">
+<a href="https://wa.me/393482762842">WhatsApp</a>
+<a href="sms:+393482762842">SMS</a>
+<a href="https://www.instagram.com/bottegamarcoaurelio/" rel="noopener" target="_blank">Galleria Instagram</a>
+<a href="#faq">Domande frequenti</a>
+<a href="#orari">Orari / accesso</a>
+</nav>
+<section aria-label="A Bottega" class="ab-section ab-hub" id="a-bottega">
+<div class="ab-center">
+<div class="ab-logo-proof-row">
+<p class="ab-kicker ab-logo">a Bottega</p>
+<a class="ab-google-badge" href="https://search.google.com/local/reviews?placeid=ChIJd8YUsEVgLxMRPG4uiRRCVw4" rel="noopener" target="_blank" aria-label="Leggi le recensioni di Bottega MarcoAurelio su Google">4,9/5 su Google ↗</a>
+</div>
+<h2 class="ab-title medium ab-method-title"><span class="ab-method-choice">Acquisti.&nbsp;&nbsp;O crei.</span><br/><span class="ab-method-entry">Entri in un metodo.</span></h2>
+
+<p class="ab-subtitle">Una Bottega vera, in funzione. Il Vecchio Banco, a vista dalla strada.<br/><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Campo%20de%27%20Fiori%20Roma" rel="noopener" target="_blank"><strong>Nel centro del centro di Roma.</strong></a></p>
+</div>
+<div class="ab-gates">
+<a class="ab-gate" href="#fedi-a-bottega">
+<div class="copy">
+<p class="ab-eyebrow">Metodo per sposi</p>
+<h3>Fedi a Bottega</h3>
+<p>Fate le vostre fedi e imparate come si fanno. Guidati al Vecchio Banco, nel centro del centro di Roma.</p>
+<p class="mini">Nessuna esperienza necessaria</p>
+</div>
+<img alt="Le vostre fedi, fatte da voi" src="assets/ab_fedi_cover.png"/>
+</a>
+<a class="ab-gate crea-gate" href="#crea-a-bottega">
+<div class="copy">
+<p class="ab-eyebrow">Metodo personale</p>
+<h3>Crea a Bottega. <span class="gate-course-question">Corso?</span></h3>
+<p>Un gioiello personale, pensato da te oppure suggerito da me, e realizzato da te qui in Bottega.</p>
+<p class="mini">Non lo chiamo corso</p>
+</div>
+<img alt="Crea a Bottega · il primo anello" src="assets/ab_crea_gabriele_02.png"/>
+</a>
+<a class="ab-gate" href="#scegli-a-bottega">
+<div class="copy">
+<p class="ab-eyebrow">Gioielli / commissioni</p>
+<h3>Scegli a Bottega</h3>
+<p>Pezzi unici, collezioni, opere pronte e lavori su misura realizzati da me.</p>
+<p class="mini">Acquista o commissiona</p>
+</div>
+<img alt="Scegli a Bottega · Arabesco Nero" src="assets/ab_arabesco_01.jpg"/>
+</a></div>
+</section>
+<nav aria-label="Collezioni" class="collections" id="collezioni">
+<a class="collection-card" href="#kintsugi">
+<div><h2>KINTSUGI</h2><p>Frattura · oro · continuità</p></div>
+
+<div class="thumb"><img alt="Kintsugi anello" src="assets/kintsugi_2.jpg"/></div>
+
+</a>
+<a class="collection-card" href="#aria">
+<div><h2>ARIA</h2><p>Luce · leggerezza · struttura</p></div>
+
+<div class="thumb"><img alt="Aria anello" src="assets/aria_2.jpg"/></div>
+
+</a>
+<a class="collection-card" href="#fedi">
+<div><h2>FEDI</h2><p>Su misura · commissione</p></div>
+
+<div class="thumb"><img alt="Fedi lavorazione" src="assets/fedi_2.jpg"/></div>
+
+</a>
+<a class="collection-card" href="#astrolabio">
+<div><h2>ASTROLABIO</h2><p>Rotte · simboli · materia</p></div>
+<div class="thumb"><img alt="Astrolabio ambientato" src="assets/astrolabio_1.jpg"/></div>
+
+
+</a>
+<a class="collection-card ombra-card" href="#ombra-bottega"><div><h2>L’OMBRA</h2><p>Tecniche · strumenti · gesti salvati</p></div></a></nav>
+<main>
+<section aria-label="Fedi a Bottega" class="ab-section" id="fedi-a-bottega">
+<p class="ab-kicker">Fedi a Bottega</p>
+<h2 class="ab-title">Fate le vostre fedi e imparate come si fanno.</h2>
+<p class="ab-subtitle">Lavorate voi al Vecchio Banco, dentro una Bottega vera e in funzione. Io vi guido passo dopo passo: non portate via soltanto gli anelli, ma anche il procedimento.</p>
+<div class="ab-cta-row" style="margin-top:12px; margin-bottom:12px;">
+<a class="ab-cta secondary" href="#faq-fedi">FAQ Fedi a Bottega · costi, tempi, come funziona</a>
+</div>
+<a class="zoomable-img" href="assets/ab_fedi_manifesto.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Manifesto Fedi a Bottega" class="ab-poster" src="assets/ab_fedi_manifesto.png"/></a>
+<div class="ab-steps">
+<div class="ab-step"><div class="ab-num">01</div><div><h4>Nessuna esperienza necessaria.</h4><p>Entrate senza saperlo fare. Uscite con le vostre fedi e con il procedimento che avete imparato.</p></div></div>
+<div class="ab-step"><div class="ab-num">02</div><div><h4>Un banco. Un solo posto.</h4><p>Un ospite lavora al banco, l’altro gli è accanto e guarda. Poi vi scambiate. Io seguo costantemente ogni passaggio.</p></div></div>
+<div class="ab-step"><div class="ab-num">03</div><div><h4>Le fedi restano. La tecnica anche.</h4><p>Il procedimento resta vostro: potete riutilizzarlo per creare altri anelli dello stesso tipo e infinite variazioni.</p></div></div>
+</div>
+<a class="zoomable-img" href="assets/ab_fedi_metodo.jpg" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Fedi a Bottega · un banco, un solo posto, lavoro e guida" class="ab-poster" src="assets/ab_fedi_metodo.jpg"/></a>
+<div class="ab-tiles">
+<a class="zoomable-img" href="assets/ab_fedi_idea.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Dall’idea alla fede finita" src="assets/ab_fedi_idea.png"/></a>
+<a class="zoomable-img" href="assets/ab_fedi_un_banco.jpg" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Una persona al Vecchio Banco, seguita passo dopo passo" src="assets/ab_fedi_un_banco.jpg"/></a>
+<a class="zoomable-img" href="assets/ab_fedi_gesto.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Ogni coppia. Ogni gesto. Ogni anello è diverso." src="assets/ab_fedi_gesto.png"/></a>
+<a class="zoomable-img" href="assets/ab_fedi_classica.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Forme classiche, incisioni, texture organiche" src="assets/ab_fedi_classica.png"/></a>
+<a class="zoomable-img" href="assets/ab_fedi_classica_oro.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Anche la fede classica" src="assets/ab_fedi_classica_oro.png"/></a>
+<a class="zoomable-img" href="assets/ab_fedi_cover.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Entrate anche senza esperienza" src="assets/ab_fedi_cover.png"/></a>
+</div>
+<p class="ab-note"><strong>La promessa è semplice:</strong> fate le vostre fedi e imparate come si fanno.</p>
+<div class="ab-cta-row">
+<a class="ab-cta" href="https://wa.me/393482762842">Chiedi informazioni su WhatsApp</a>
+</div>
+</section>
+<div class="faq-new" id="faq-fedi" style="scroll-margin-top:84px; margin:26px 0 30px;">
+<h3 style="font-size:22px; margin:0 0 14px;">FEDI A BOTTEGA · FAQ</h3>
+<div class="faq-item">
+<h3 class="faq-q">F1 · Perché i posti sono così limitati?</h3>
+<div class="faq-a"><strong>Non dobbiamo riempire un’aula.<br/>Non abbiamo un’aula.<br/>Abbiamo un banco. Un solo posto, a Campo de’ Fiori, nel centro del centro di Roma: difficile da replicare altrove.</strong><br/><br/><strong>Un ospite lavora al banco, l’altro gli è accanto e guarda. Poi si scambiano. Io seguo ogni gesto, dall’inizio alla fine.</strong><br/><br/><strong>Per questo possiamo accogliere necessariamente solo un numero limitato di coppie ogni anno.</strong><br/><br/><strong>Tutta l’attenzione, ogni volta, su una sola persona.</strong></div>
+</div>
+<div class="faq-item">
+<h3 class="faq-q">F2 · È costoso? Sì. È caro? No.</h3>
+<div class="faq-a"><strong>Sì. Fedi a Bottega costa più di una coppia di fedi realizzata direttamente da me.</strong><br/><br/><strong>E deve costare di più: insegnare un mestiere richiede più tempo che farlo.</strong><br/><br/>Se volete semplicemente una coppia di fedi al prezzo più basso possibile, non scegliete Fedi a Bottega: <strong>ve le realizzo io.</strong> È più semplice, più rapido e costa meno.<br/><br/>Qui avete a disposizione una Bottega vera e in funzione, il Vecchio Banco, gli strumenti e il mio tempo. Al banco lavora una persona per volta: ogni passaggio viene spiegato, mostrato, fatto eseguire, controllato e, quando serve, fatto rifare.<br/><br/><strong>Il costo non è uguale per tutte le coppie.</strong> Prima di definirlo dobbiamo capire che tipo di fedi volete realizzare, quale metallo useremo, quali lavorazioni saranno necessarie e quanto tempo richiederà il metodo. Per questo progetto e costo vengono definiti durante un incontro di persona in Bottega. Un’eventuale telefonata precedente serve soltanto a un primo orientamento.<br/><br/>Come riferimento, per una coppia di fedi semplici <strong>il costo si colloca generalmente intorno ai 900 euro la coppia, materiale escluso.</strong><br/><br/>Pagate il tempo di Bottega necessario perché possiate imparare a farle voi, davvero. Alla fine avrete <strong>le fedi, il metodo e la pratica.</strong><br/><br/><strong>Quindi sì, costa di più. Ma no: non è caro.</strong></div>
+</div>
+<div class="faq-item">
+<h3 class="faq-q">F3 · È romantico? Molto.<br/>È un aperitivo? No!</h3>
+<div class="faq-a"><strong>Non è un’aula. Non è un aperitivo. Non è un party. Non è una dimostrazione.</strong><br/><br/><strong>Si viene a lavorare.</strong><br/><br/>Al Vecchio Banco siete voi a realizzare le vostre fedi. Io vi insegno il procedimento, vi mostro i gesti, vi seguo e intervengo quando serve.<br/><br/><strong>Non venite a guardarmi fare le vostre fedi: venite a farle voi.</strong></div>
+</div>
+<div class="faq-item">
+<h3 class="faq-q">F4 · Serve esperienza? No. Serve voler imparare.</h3>
+<div class="faq-a">Non serve alcuna esperienza precedente. Questo non è un esame.<br/><br/><strong>Ma non è nemmeno un’attività passiva.</strong><br/><br/>Il progetto viene definito insieme prima di iniziare e vi guido passo dopo passo al Vecchio Banco. Se volete soltanto assistere, <strong>Fedi a Bottega non è il metodo giusto.</strong></div>
+</div>
+<div class="faq-item">
+<h3 class="faq-q">F5 · Cosa resta oltre alle fedi?</h3>
+<div class="faq-a"><strong>Le vostre fedi sono il primo progetto.<br/>Le fedi restano. La tecnica anche.</strong><br/><br/>Le fate voi e portate via con voi non soltanto gli anelli, ma il procedimento base che avete imparato. Cambiando sezione, larghezza, spessore, proporzioni, finitura o texture potete usarlo per concepire e realizzare una famiglia praticamente infinita di variazioni dello stesso anello.<br/><br/><strong>È questa la differenza tra comprare due fedi e fare Fedi a Bottega.</strong></div>
+</div>
+<div class="faq-item">
+<h3 class="faq-q">F6 · Non è un’attività last minute.</h3>
+<div class="faq-a"><strong>Le vostre fedi richiedono tempo perché le fate davvero voi.</strong><br/><br/>Fedi a Bottega può richiedere più incontri e, a seconda del progetto, settimane o mesi tra lavorazione, eventuali fusioni, correzioni e finiture.<br/><br/><strong>Al Vecchio Banco lavora una persona per volta. Siete in due e vi alternate: mentre uno lavora, l’altro è accanto e guarda. Poi vi scambiate. Io seguo costantemente ogni passaggio.</strong><br/><br/><strong>Se cercate qualcosa da organizzare all’ultimo momento, è meglio che le fedi le faccia io.</strong></div>
+</div>
+<div class="faq-item">
+<h3 class="faq-q">F7 · Come definiamo progetto e costo preciso?</h3>
+<div class="faq-a">Prima di iniziare, <a class="faq-wa-link" href="https://wa.me/393482762842">prenotate un incontro in Bottega</a>: definiamo di persona modello, metallo, difficoltà, tempi e costo. Potete scrivermi su WhatsApp per concordare l’appuntamento o una telefonata di primo orientamento. La telefonata non sostituisce l’incontro per definire progetto e preventivo.<br/><br/>Se il progetto non è adatto a essere realizzato da voi, <strong>ve lo dico.</strong> Se è più sensato che lo faccia io, <strong>ve lo dico ugualmente.</strong></div>
+</div>
+</div>
+
+<section aria-label="Crea a Bottega" class="ab-section" id="crea-a-bottega">
+<p class="ab-kicker">Crea a Bottega</p>
+<div class="crea-title-wrap"><h2 class="ab-title">Il tuo gioiello, fatto<br class="ab-title-break"/>da te. <span class="course-question">È un corso?</span></h2></div>
+<p class="ab-subtitle">Non lo chiamo corso. Ogni gioiello ha esigenze diverse. Lo chiamo Crea a Bottega: un lavoro guidato, su misura, per arrivare a un gioiello personale, pensato da te oppure suggerito da me, spiegato passo dopo passo e realizzato da te qui in Bottega.</p>
+<a class="zoomable-img" href="assets/ab_crea_gabriele_01.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Gente a Bottega · Gabriele · Il mio primo anello" class="ab-poster" src="assets/ab_crea_gabriele_01.png"/></a>
+<div class="ab-steps">
+<div class="ab-step"><div class="ab-num">01</div><div><h4>Partiamo da un’idea.</h4><p>Può essere tua, può nascere da zero, può prendere spunto da un mio gioiello oppure da un progetto che ti propongo e ti guido a realizzare.</p></div></div>
+<div class="ab-step"><div class="ab-num">02</div><div><h4>Si lavora al Vecchio Banco.</h4><p>Ti guido nei passaggi.</p></div></div>
+<div class="ab-step"><div class="ab-num">03</div><div><h4>Non è un esercizio.</h4><p>L’obiettivo è arrivare a un gioiello personale, solido, bello, nato da un lavoro vero.</p></div></div>
+</div>
+<div class="ab-tiles">
+<a class="zoomable-img" href="assets/ab_crea_gabriele_02.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Gabriele al banco" src="assets/ab_crea_gabriele_02.png"/></a>
+<a class="zoomable-img" href="assets/ab_crea_banco_01.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Un banco per uno" src="assets/ab_crea_banco_01.png"/></a>
+<a class="zoomable-img" href="assets/ab_crea_lavorazione_01.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Seghetto da orafo al banco" src="assets/ab_crea_lavorazione_01.png"/></a>
+<a class="zoomable-img" href="assets/ab_crea_lavorazione_02.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Lavorazione anello" src="assets/ab_crea_lavorazione_02.png"/></a>
+<a class="zoomable-img" href="assets/ab_crea_anello_01.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Il primo anello" src="assets/ab_crea_anello_01.png"/></a>
+<a class="zoomable-img" href="assets/ab_crea_anello_03.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Dettaglio anello finito" src="assets/ab_crea_anello_03.png"/></a>
+</div>
+<p class="ab-note"><strong>È la risposta giusta per chi scrive “vorrei creare con le mie mani”.</strong></p>
+<div class="ab-cta-row">
+<a class="ab-cta" href="https://wa.me/393482762842">Parliamone su WhatsApp</a>
+<a class="ab-cta secondary" href="#faq">Come funziona</a>
+</div>
+</section><section aria-label="Scegli a Bottega" class="ab-section" id="scegli-a-bottega">
+<p class="ab-kicker">Scegli a Bottega</p>
+<h2 class="ab-title">Pezzi unici, opere pronte, lavori su misura.</h2>
+<p class="ab-subtitle">Non tutti vengono in Bottega per lavorare al banco. Puoi anche scegliere un gioiello esistente, partire da una collezione o chiedere un pezzo pensato per te, realizzato da me.</p>
+<div class="ab-steps">
+<div class="ab-step"><div class="ab-num">01</div><div><h4>Scegli un’opera.</h4><p>Se un gioiello è disponibile, puoi acquistarlo così com’è oppure possiamo adattarlo alla tua misura.</p></div></div>
+<div class="ab-step"><div class="ab-num">02</div><div><h4>Parti da una collezione.</h4><p>Kintsugi, Aria, Fedi, Astrolabio: sono famiglie di linguaggio, non cataloghi chiusi.</p></div></div>
+<div class="ab-step"><div class="ab-num">03</div><div><h4>Commissiona un pezzo.</h4><p>Se hai un’idea, una pietra o un riferimento, ragioniamo su un lavoro su misura realizzato da me.</p></div></div>
+</div>
+<div class="ab-tiles">
+<a class="zoomable-img" href="#arabesco-nero" title="Scopri Arabesco Nero: tecnica e opera manifesto" aria-label="Scopri Arabesco Nero: tecnica e opera manifesto"><img alt="Arabesco Nero" src="assets/ab_arabesco_01.jpg"/></a>
+<a class="zoomable-img" href="assets/kintsugi_2.jpg" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Kintsugi" src="assets/kintsugi_2.jpg"/></a>
+<a class="zoomable-img" href="assets/astrolabio_1.jpg" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Astrolabio" src="assets/astrolabio_1.jpg"/></a>
+<a class="zoomable-img" href="assets/fedi_1.jpg" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Fedi su misura" src="assets/fedi_1.jpg"/></a>
+</div>
+<p class="ab-note"><strong>Scegli a Bottega</strong> è la strada per chi vuole un gioiello di Bottega MarcoAurelio senza partecipare al lavoro al banco: opere disponibili, collezioni, commissioni e lavori su misura.</p>
+<div class="ab-cta-row">
+<a class="ab-cta" href="https://wa.me/393482762842">Chiedi informazioni su WhatsApp</a>
+<a class="ab-cta secondary" href="https://www.instagram.com/bottegamarcoaurelio/" rel="noopener" target="_blank">Guarda la galleria</a>
+</div>
+</section>
+<section aria-label="Arabesco Nero" class="ab-section ab-arabesco" id="arabesco-nero">
+<p class="ab-kicker">Collezione Aria — Arabesco Nero</p>
+<h2 class="ab-title medium force-black-title">Una tecnica proprietaria, il manifesto.</h2>
+<p class="ab-subtitle">Un arabesco sottile, costruito filo per filo. Un mosaico di elementi minuti: leggero allo sguardo, complesso da costruire.</p>
+<div aria-label="Schede Arabesco Nero" class="ab-poster-stack arabesco-stack">
+<a class="zoomable-img" href="assets/ab_arabesco_01.jpg" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Arabesco Nero · bronzo e diamanti neri" class="ab-poster" src="assets/ab_arabesco_01.jpg"/></a>
+<a class="zoomable-img" href="assets/ab_arabesco_02.jpg" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Arabesco Nero · costruito in aria" class="ab-poster" src="assets/ab_arabesco_02.jpg"/></a>
+<a class="zoomable-img" href="assets/ab_arabesco_03.jpg" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Arabesco Nero · leggero solo in apparenza" class="ab-poster" src="assets/ab_arabesco_03.jpg"/></a>
+</div>
+<p class="ab-note"><strong>Arabesco Nero serve da manifesto della Bottega:</strong> mostra il livello tecnico, il gusto e la complessità che stanno dietro anche a Fedi a Bottega e Crea a Bottega. Non è decorazione: è prova di metodo.</p>
+</section>
+<section aria-label="Metodo a Bottega" class="ab-section" id="metodo-a-bottega">
+<p class="ab-kicker">Metodo a Bottega</p>
+<h2 class="ab-title medium">La cura comincia prima della creazione.</h2>
+<p class="ab-subtitle">A Bottega non c’è solo il pezzo finito. Ci sono strumenti adattati, gesti, prove, scelte tecniche. L’attrezzo giusto non sempre esiste. A volte va fatto.</p>
+<div class="ab-method-strip">
+<h3>Attrezzi modificati a Bottega</h3>
+<div class="ab-method-grid">
+
+
+
+<a class="zoomable-img" href="assets/ab_attrezzi_ferro.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Il ferro giusto" src="assets/ab_attrezzi_ferro.png"/></a><a class="zoomable-img" href="assets/ab_attrezzi_modifica.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="La modifica" src="assets/ab_attrezzi_modifica.png"/></a><a class="zoomable-img" href="assets/ab_attrezzi_pietra.png" rel="noopener" target="_blank" title="Apri immagine a schermo intero"><img alt="Pietra fuori. Tutto intatto" src="assets/ab_attrezzi_pietra.png"/></a></div>
+</div>
+<p class="ab-note">Questo blocco non vende direttamente un servizio. Fa una cosa più importante: spiega perché il lavoro al banco e i gioielli di Bottega MarcoAurelio non sono intrattenimento, ma metodo.</p>
+</section>
+<section id="kintsugi">
+<h3>KINTSUGI</h3>
+<div class="gallery">
+<img alt="" src="assets/kintsugi_1.jpg"/>
+<img alt="" src="assets/kintsugi_2.jpg"/>
+<img alt="" src="assets/kintsugi_3.jpg"/>
+</div>
+<p class="placeholder-text">La frattura non interrompe la continuità. La rende visibile.</p>
+</section>
+<section id="aria">
+<h3>ARIA</h3>
+<div class="gallery">
+<img alt="" src="assets/aria_1.jpg"/>
+<img alt="" src="assets/aria_2.jpg"/>
+<img alt="" src="assets/aria_3.jpg"/>
+</div>
+<p class="placeholder-text">Leggerezza non significa fragilità. Significa togliere tutto il superfluo.</p>
+</section>
+<section id="fedi">
+<h3>FEDI SU MISURA</h3>
+<div class="gallery">
+<img alt="" src="assets/fedi_1.jpg"/>
+<img alt="" src="assets/fedi_2.jpg"/>
+<img alt="" src="assets/fedi_3.jpg"/>
+</div>
+<p class="placeholder-text">Fedi su misura commissionate, costruite una alla volta. Per l’esperienza con le vostre mani vedi Fedi a Bottega.</p>
+</section>
+<section id="astrolabio">
+<h3>ASTROLABIO / ARRAKIS</h3>
+<div class="gallery">
+<img alt="" src="assets/astrolabio_1.jpg"/>
+<img alt="" src="assets/astrolabio_2.jpg"/>
+<img alt="" src="assets/astrolabio_3.jpg"/>
+</div>
+<p class="placeholder-text">Orientarsi non significa possedere una mappa.</p>
+</section>
+<section aria-label="L'Ombra della Bottega" class="ombra-section" id="ombra-bottega">
+<p class="ombra-kicker">Nuova rubrica</p>
+<h2>L'Ombra della Bottega</h2>
+<p class="ombra-subtitle">Il Vento dei Gesti Dimenticati</p>
+<div aria-label="L’Ombra della Bottega" class="ombra-section-banner">
+<img alt="L’Ombra della Bottega · Il Vento dei Gesti Dimenticati" src="assets/ombra_bottega_banner.jpg"/>
+</div>
+<p class="ombra-intro">Una raccolta di tecniche, strumenti e piccoli gesti che rischiano di essere dimenticati.</p>
+<div aria-label="Gesti salvati" class="ombra-index">
+<p class="ombra-index-title">Gesti salvati</p>
+<a href="#gesto-001-saldatura"><strong>001</strong> · Come si fa una saldatura?</a>
+<a href="#gesto-002-castone-premuto"><strong>002</strong> · Come si realizza un castone premuto?</a>
+<a href="#gesto-003-ferro-cotto"><strong>003</strong> · Perché si usa il filo di ferro cotto?</a>
+</div>
+<article class="ombra-card" id="gesto-001-saldatura">
+<h3>Come si fa una saldatura?</h3>
+<p class="lead"><em>Guida illustrata per capire, passo dopo passo, uno dei gesti più antichi dell'oreficeria.</em></p>
+<a class="ombra-plate-link" href="assets/ombra_saldatura_tavola.jpg" rel="noopener" target="_blank" title="Apri la tavola a schermo intero"><img alt="Tavola illustrata: come si fa una saldatura con cannello da orafo" class="ombra-plate" src="assets/ombra_saldatura_tavola.jpg"/></a>
+<div class="ombra-text">
+<p>Esistono molti modi per saldare i metalli e ogni artigiano sviluppa nel tempo le proprie preferenze, i propri strumenti e il proprio modo di lavorare.</p>
+<p>In bottega utilizziamo spesso uno strumento tradizionale chiamato <strong>chalumeau</strong>. Si tratta di un piccolo cannello da orafo che permette di controllare il calore con grande precisione.</p>
+<p>La parte affascinante è che il controllo della fiamma è quasi immediato. Dopo anni di esperienza il movimento diventa naturale, quasi istintivo.</p>
+<p>Contrariamente a quanto si potrebbe immaginare, durante una saldatura non si punta sempre la fiamma direttamente sul punto da unire. Nella maggior parte dei casi si scalda l'intero pezzo in modo controllato e uniforme, lasciando che il calore raggiunga la giunzione.</p>
+<p>Quando la temperatura è corretta, la saldatura fonde e scorre nel punto desiderato per capillarità.</p>
+<p>Il risultato finale dipende da molti fattori: temperatura, pulizia delle superfici, scelta della lega saldante e soprattutto esperienza dell'artigiano.</p>
+<p>È uno di quei lavori che sembrano semplici quando vengono eseguiti bene, ma che richiedono anni di pratica per essere padroneggiati davvero.</p>
+</div>
+<div class="ombra-note">
+<h4>Nota di Bottega</h4>
+<p>Esistono molti tipi di cannello e quasi ogni orafo ha il proprio preferito.</p>
+<p>Cambiano forma, regolazioni e dettagli costruttivi, ma il principio rimane lo stesso: controllare il calore con precisione.</p>
+<p>Anche la fiamma illustrata è soltanto un esempio. Ogni lavorazione può richiedere una regolazione diversa.</p>
+</div>
+</article>
+<article class="ombra-card" id="gesto-002-castone-premuto">
+<h3>Come si realizza un castone premuto?</h3>
+<p class="lead"><em>Guida illustrata per capire, passo dopo passo, come si chiude un castone senza colpire l'oggetto.</em></p>
+<a class="ombra-plate-link" href="assets/ombra_castone_tavola.jpg" rel="noopener" target="_blank" title="Apri la tavola a schermo intero"><img alt="Tavola illustrata: come si realizza un castone premuto" class="ombra-plate" src="assets/ombra_castone_tavola.jpg"/></a>
+<div class="ombra-text">
+<p>Il castone premuto si usa quando ciò che deve essere incastonato è troppo delicato per sopportare colpi o pressioni violente.</p>
+<p>Il castone è una semplice fascetta di metallo avvolta intorno all'oggetto. Viene assottigliato prima all'interno, per accogliere la moneta o la pietra, e poi all'esterno, fino a lasciare un bordo sottile.</p>
+<p>Invece di battere il metallo con il martello, si usa uno <strong>spingitore</strong>: un utensile corto, guidato dalle dita e serrato nel palmo della mano.</p>
+<p>Lo spingitore non lavora sulla moneta. Lavora solo sul bordo esterno del castone, accompagnando il metallo verso l'interno con piccole pressioni successive.</p>
+<p>Le tracce lasciate sul bordo spesso non vengono eliminate. Sembrano un'ornamentazione, ma sono anche il segno di una scelta: preservare ciò che è fragile.</p>
+</div>
+<div class="ombra-note">
+<h4>Nota di Bottega</h4>
+<p>Non tutto deve essere vinto con la forza.</p>
+<p>Alcune cose si conservano accompagnandole.</p>
+<p>La scheda mostra il principio del gesto. La manualità vera, quella delle dita e della pressione, si impara solo facendola.</p>
+</div>
+</article>
+<article class="ombra-card" id="gesto-003-ferro-cotto">
+<h3>Perché si usa il filo di ferro cotto?</h3>
+<p class="lead"><em>Guida illustrata per capire, passo dopo passo, come un filo provvisorio può tenere insieme un pezzo durante la saldatura.</em></p>
+<a class="ombra-plate-link" href="assets/ombra_ferro_cotto_tavola.jpg" rel="noopener" target="_blank" title="Apri la tavola a schermo intero"><img alt="Tavola illustrata: perché si usa il filo di ferro cotto" class="ombra-plate" src="assets/ombra_ferro_cotto_tavola.jpg"/></a>
+<div class="ombra-text">
+<p>Il filo di ferro cotto è un filo morbido, facilmente piegabile e privo della memoria elastica tipica di un filo normale. Proprio per questo può essere modellato intorno a un oggetto e mantiene la forma che gli viene data.</p>
+<p>Prima dell'uso viene spesso trasformato in una piccola treccia. Si prende un tratto di filo, lo si piega in doppio, lo si attorciglia con le dita, lo si ripiega nuovamente e si continua fino a ottenere una legatura abbastanza resistente e stabile.</p>
+<p>La treccia viene poi avvolta intorno al pezzo da saldare e stretta lungo tutta la sua circonferenza. Non serve a bloccare soltanto il punto della giunzione: tiene insieme l'intero oggetto e impedisce che le parti si aprano o si spostino durante il riscaldamento.</p>
+<p>La pinza afferra semplicemente i due capi della legatura. È il filo, non la pinza, a sostenere il pezzo. In questo modo la pinza non deve stringere direttamente il metallo e non assorbe inutilmente il calore della fiamma.</p>
+<p>Poiché il ferro è già cotto, non cerca di raddrizzarsi. Resiste inoltre a temperature molto superiori a quelle necessarie per saldare l'argento e difficilmente aderisce al pezzo.</p>
+<p>Terminata la saldatura, la legatura viene rimossa con facilità. Ha svolto il proprio lavoro come molti strumenti di bottega: tenendo tutto fermo nel momento necessario e poi scomparendo senza lasciare quasi traccia.</p>
+</div>
+<div class="ombra-note">
+<h4>Nota di Bottega</h4>
+<p>Il filo di ferro cotto non serve a saldare. Serve a tenere fermo tutto il resto.</p>
+<p>Un filo normale tende a tornare diritto, può spostarsi o allentarsi ed è più difficile da mantenere nella forma desiderata. Il filo cotto, invece, stringe il pezzo con continuità e conserva la forma ricevuta.</p>
+<p>Spesso gli strumenti migliori sono quelli che, a lavoro finito, sembrano non essere mai esistiti.</p>
+</div>
+</article>
+<div class="ombra-note">
+<h4>Nota</h4>
+<p>Le tecniche illustrate in questa raccolta descrivono il modo in cui lavoro nella mia bottega e sono il risultato della mia esperienza personale.</p>
+<p>In oreficeria esistono scuole, strumenti e procedure differenti. Altri artigiani possono ottenere gli stessi risultati seguendo metodi diversi.</p>
+<p>Queste pagine non vogliono sostituire un manuale né un corso professionale. Sono semplicemente la testimonianza di un mestiere, raccontato attraverso i gesti che hanno accompagnato il mio lavoro.</p>
+<p>Chi decidesse di mettere in pratica le lavorazioni descritte lo fa sotto la propria responsabilità.</p>
+</div>
+</section>
+<section id="faq">
+<h2 style="font-size:24px; margin-bottom:22px;">DOMANDE FREQUENTI</h2>
+
+<div class="access-card faq-access-card" id="orari">
+<div>
+<div class="eyebrow">Orari / Accesso</div>
+<p class="open-big">18:00–21:00</p>
+<div class="access-lines">
+<span style="color:#211f1e; font-weight:700;">Solo su appuntamento</span><br/>
+<strong><span class="v47a-access-note" style="color:#9aa0a6;">Ricevimento in Bottega · solo su appuntamento</span></strong>
+</div>
+</div>
+<div>
+<div class="eyebrow">Scrivi, non telefonare</div>
+<div class="contact-note">Rispondo ai messaggi in giornata.<br/>Le telefonate le organizziamo dopo.</div>
+<div class="contact-small">348 276 2842 · <a href="mailto:info.marcoaurelio@gmail.com">info.marcoaurelio@gmail.com</a></div>
+</div>
+</div>
+
+<div aria-label="Indice domande frequenti" class="faq-index"><a href="#faq-01">01 · Che cos’è A Bottega?</a><a href="#faq-02">02 · Che differenza c’è tra Fedi a Bottega e Crea a Bottega?</a><a href="#faq-03">03 · È un corso?</a><a href="#faq-04">04 · Serve esperienza per partecipare?</a><a href="#faq-05">05 · Posso creare un anello personalizzato?</a><a href="#faq-06">06 · Come si prenota Fedi a Bottega o Crea a Bottega?</a><a href="#faq-07">07 · Posso acquistare un gioiello senza lavorare al banco?</a><a href="#faq-08">08 · Non sai da dove iniziare? È normale.</a><a href="#faq-09">09 · Posso ordinare un anello personalizzato in oro prima di arrivare a Roma e ritirarlo durante il viaggio?</a><a href="#faq-10">10 · Quanto costa un gioiello su misura?</a><a href="#faq-11">11 · Quanto tempo ci vuole? Posso comprare subito?</a><a href="#faq-12">12 · E se mi serve per oggi, come regalo urgente?</a><a href="#faq-13">13 · Se voglio qualcosa da zero, quanto tempo serve?</a><a href="#faq-14">14 · Devo prendere appuntamento per visitarvi?</a><a href="#faq-15">15 · Quando richiedo un appuntamento, devo spiegare cosa mi serve?</a><a href="#faq-16">16 · Come prenoto?</a><a href="#faq-17">17 · Fate gioielli su misura?</a><a href="#faq-18">18 · Posso trasformare un gioiello che ho già?</a><a href="#faq-19">19 · Posso chiedere un preventivo?</a><a href="#faq-20">20 · Posso passare a vedere i gioielli anche quando la bottega è chiusa?</a><a href="#faq-21">21 · Possiamo progettare il gioiello o definire un preventivo per telefono o in videochiamata?</a></div>
+<div class="faq-new">
+<div class="faq-item" id="faq-01">
+<h3 class="faq-q">01 · Che cos’è A Bottega?</h3>
+<div class="faq-a">
+        È il nome dei metodi e delle esperienze che si svolgono al Vecchio Banco di Bottega MarcoAurelio.
+        <br/><br/>
+        Non è un’aula e non è una dimostrazione: è una Bottega vera, in funzione. A seconda del progetto puoi partecipare alla nascita delle fedi, creare un gioiello personale, oppure ragionare su un lavoro su misura.
+      </div>
+</div>
+<div class="faq-item" id="faq-02">
+<h3 class="faq-q">02 · Che differenza c’è tra Fedi a Bottega e Crea a Bottega?</h3>
+<div class="faq-a">
+<strong>Fedi a Bottega</strong> è il metodo dedicato agli sposi: progettate e modellate le vostre fedi insieme a me.
+        <br/><br/>
+<strong>Crea a Bottega</strong> è il metodo per un gioiello personale: un anello, un ciondolo o un altro oggetto da costruire insieme, partendo da una tua idea, da zero o da un progetto che ti propongo.
+      </div>
+</div>
+<div class="faq-item" id="faq-03">
+<h3 class="faq-q">03 · È un corso?</h3>
+<div class="faq-a">
+        Preferisco non chiamarlo corso.
+        <br/><br/>
+        Un corso fa pensare a un programma standard, uguale per tutti. Qui invece ogni gioiello ha esigenze diverse. Per questo lo chiamo <strong>Crea a Bottega</strong>: un metodo su misura, costruito intorno all’oggetto da realizzare.
+      </div>
+</div>
+<div class="faq-item" id="faq-04">
+<h3 class="faq-q">04 · Serve esperienza per partecipare?</h3>
+<div class="faq-a">
+        No. Per Fedi a Bottega e Crea a Bottega non serve esperienza precedente.
+        <br/><br/>
+        Il metodo nasce proprio per essere guidato passo dopo passo, al Vecchio Banco.
+      </div>
+</div>
+<div class="faq-item" id="faq-05">
+<h3 class="faq-q">05 · Posso creare un anello personalizzato?</h3>
+<div class="faq-a">
+        Sì. Puoi partire da una tua idea, da un gioiello che hai visto, da un materiale o una pietra, oppure anche da un mio suggerimento. Da lì scegliamo se costruirlo insieme con <strong>Crea a Bottega</strong> o se realizzare un gioiello su misura fatto da me.
+      </div>
+</div>
+<div class="faq-item" id="faq-06">
+<h3 class="faq-q">06 · Come si prenota Fedi a Bottega o Crea a Bottega?</h3>
+<div class="faq-a">
+        Scrivimi su WhatsApp o via email indicando il metodo che ti interessa, il periodo, l’idea di partenza e, se le hai, immagini di riferimento.
+        <br/><br/>
+        Il primo orientamento telefonico e il primo incontro in Bottega sono senza impegno. La telefonata serve a chiarire la richiesta; progetto e preventivo vengono definiti di persona, in Bottega.
+      </div>
+</div><div class="faq-item" id="faq-07"><h3 class="faq-q">07 · Posso acquistare un gioiello senza lavorare al banco?</h3><div class="faq-a">Sì. Puoi scegliere un pezzo già pronto, partire da una collezione o chiedere un lavoro su misura realizzato da me. Questa è la parte Scegli a Bottega: non partecipi al banco, scegli o commissioni un gioiello di Bottega MarcoAurelio.</div></div>
+</div>
+<div class="faq-item" id="faq-08">
+<h3 class="faq-q">08 · Non sai da dove iniziare? È normale.</h3>
+<div class="faq-a">
+      La maggior parte dei clienti arriva con un’idea, non con un progetto già definito.
+      <br/><br/>
+      Per preparare un preventivo o capire cosa realizzare, sono utili alcune informazioni:
+      <ul>
+<li>Che oggetto vorresti? Anello, ciondolo, bracciale, orecchini o altro.</li>
+<li>In quale metallo? Argento, oro giallo, oro bianco, oro rosa, oppure “non lo so”.</li>
+<li>Ci sono pietre? Diamanti, pietre colorate, nessuna pietra, oppure “non lo so”.</li>
+<li>Hai immagini di riferimento? Vanno bene screenshot, foto online o disegni a mano.</li>
+<li>Ci sono simboli o significati particolari? Date, iniziali, animali, costellazioni, temi personali.</li>
+<li>Per quando ti servirebbe? Nessuna fretta, entro un mese, oppure per una data precisa.</li>
+<li><strong>Quale budget indicativo hai previsto?</strong> Basta una fascia di spesa: è necessaria per valutare la fattibilità della richiesta prima di concordare un incontro.</li>
+<li><strong>Come hai conosciuto la Bottega?</strong> Google, sito, Instagram, Facebook, vetrina o passaparola? Segnala anche eventuali immagini o gioielli di riferimento.</li>
+</ul>
+      Non serve conoscere termini tecnici. Anche una descrizione semplice come “vorrei un anello ispirato al mare, in argento, senza pietre” è più che sufficiente per iniziare.
+    </div>
+</div>
+<div class="faq-item" id="faq-09">
+<h3 class="faq-q">09 · Posso ordinare un anello personalizzato in oro prima di arrivare a Roma e ritirarlo durante il viaggio?</h3>
+<div class="faq-a">
+      No.
+      <br/><br/>
+      Un gioiello personalizzato non è un prodotto da magazzino e non può essere progettato, preventivato e realizzato correttamente soltanto tramite messaggi, fotografie o disegni inviati a distanza.
+      <br/><br/>
+      Per iniziare un lavoro su misura è necessario un appuntamento in bottega.
+      <br/><br/>
+      La misura del dito deve essere presa personalmente, perché la vestibilità finale dipende anche dalla larghezza, dallo spessore, dalla sezione e dalle proporzioni dell'anello. Una semplice misura numerica non è sufficiente.
+      <br/><br/>
+      Anche il peso dell'oro non può essere determinato prima di aver definito il progetto. Piccole variazioni di forma e proporzioni possono modificare sensibilmente la quantità di metallo necessaria.
+      <br/><br/>
+      Lo stesso vale per smeraldi, diamanti e altre pietre, che cambiano per dimensione, taglio, qualità, colore, disponibilità e prezzo.
+      <br/><br/>
+      Per questo motivo i lavori personalizzati vengono presi in considerazione solo con queste condizioni:
+      <ul>
+<li>appuntamento in bottega;</li>
+<li>misura presa personalmente;</li>
+<li>scelta o definizione del modello dal vivo;</li>
+<li>valutazione reale delle pietre;</li>
+<li>acconto iniziale pari al valore stimato del metallo più il 50% della manifattura stimata;</li>
+<li>saldo completo prima della consegna o della spedizione;</li>
+<li>conteggio finale basato sul metallo effettivamente utilizzato, comprensivo del normale calo di lavorazione artigianale, convenzionalmente considerato pari al 25% del metallo impiegato;</li>
+<li>eventuali modifiche del progetto, variazioni delle pietre o diversa quantità di oro necessaria vengono conteggiate nel saldo finale.</li>
+</ul>
+      La consegna durante un breve soggiorno a Roma non è garantita.
+      <br/><br/>
+      Una volta terminato, il pezzo può essere spedito all'indirizzo del cliente con spedizione documentata.
+      <br/><br/>
+<strong>Un gioiello personalizzato non è un prodotto da magazzino.</strong>
+<br/><br/>
+<strong>È un lavoro che inizia con un incontro e si conclude quando il pezzo è pronto, non quando lo impone il calendario del viaggio.</strong>
+</div>
+</div>
+<div class="faq-item" id="faq-10">
+<h3 class="faq-q">10 · Quanto costa un gioiello su misura?</h3>
+<div class="faq-a">
+      È una delle domande che riceviamo più spesso.
+      <br/><br/>
+      La risposta più onesta è: dipende da cosa stiamo realizzando.
+      <br/><br/>
+      Un gioiello artigianale non è composto solo dal metallo.
+      <br/><br/>
+      Il costo finale può dipendere da molti fattori:
+      <ul>
+<li>quantità e tipo di metallo (argento, oro, ecc.);</li>
+<li>presenza di pietre e loro caratteristiche;</li>
+<li>complessità del progetto;</li>
+<li>ore di lavorazione necessarie.</li>
+</ul>
+      Per fare un esempio:
+      <br/><br/>
+      un anello molto semplice può richiedere poco materiale e poche ore di lavoro.
+      <br/><br/>
+      Al contrario, un gioiello con incisioni complesse, dettagli realizzati a mano o numerose pietre può richiedere decine di ore di lavorazione, indipendentemente dal peso del metallo.
+      <br/><br/>
+      Per questo motivo il costo dei materiali e il costo della lavorazione sono due voci distinte.
+      <br/><br/>
+      Indicativamente, la manifattura di un gioiello artigianale su misura parte da circa 200 euro.<br/><br/>A questo importo vanno poi aggiunti eventuali metalli, pietre e lavorazioni particolari.
+      <br/><br/>
+      Se desideri un preventivo, anche una descrizione semplice o un'immagine di riferimento sono sufficienti per iniziare.
+    </div>
+</div>
+<div class="faq-item" id="faq-11">
+<h3 class="faq-q">11 · Quanto tempo ci vuole? Posso comprare subito?</h3>
+<div class="faq-a">
+<span class="faq-yes">Sì.</span> Se trovi qualcosa in vetrina, puoi acquistarlo subito. Nel 99% dei casi però la misura non sarà perfetta.
+      <br/><br/>
+      Non è un problema: lo adatto alla tua misura oppure lo ricreo su misura, il più fedele possibile, senza costi aggiuntivi dopo l’acquisto.
+    </div>
+</div>
+<div class="faq-item" id="faq-12">
+<h3 class="faq-q">12 · E se mi serve per oggi, come regalo urgente?</h3>
+<div class="faq-a">
+      Se non trovi il pezzo giusto già pronto, posso preparare un certificato intestato alla persona.
+      <br/><br/>
+      Il certificato indica che il gioiello è in creazione su misura: così non ti presenti a mani vuote e la persona verrà poi in laboratorio per completare il lavoro insieme.
+    </div>
+</div>
+<div class="faq-item" id="faq-13">
+<h3 class="faq-q">13 · Se voglio qualcosa da zero, quanto tempo serve?</h3>
+<div class="faq-a">
+      Dipende dal progetto. Può volerci circa una settimana, oppure diversi mesi.
+      <br/><br/>
+      Ogni pezzo è unico: non viene scelto da catalogo, viene costruito insieme.
+    </div>
+</div>
+<div class="faq-item" id="faq-14">
+<h3 class="faq-q">14 · Devo prendere appuntamento per visitarvi?</h3>
+<div class="faq-a">
+<span class="faq-yes">Sì.</span> L’accesso è solo su appuntamento, per garantire tempo e attenzione a ogni persona.
+    </div>
+</div>
+<div class="faq-item" id="faq-15">
+<h3 class="faq-q">15 · Quando richiedo un appuntamento, devo spiegare cosa mi serve?</h3>
+<div class="faq-a">
+<p><strong>Sì. Prima di concordare un incontro, scrivimi cosa vorresti realizzare, quale budget indicativo hai previsto e come hai conosciuto la Bottega.</strong></p>
+<p><strong>Il budget serve già per capire se ha senso incontrarci.</strong> Non occorre una cifra precisa: basta una fascia di spesa nella quale desideri restare. Mi permette di valutare se il progetto è compatibile con materiali, lavorazioni e tempo necessari, oppure se posso proporti un’alternativa.</p>
+<p>Se non hai idea dei costi, dimmelo, ma indicami comunque quanto prenderesti in considerazione di spendere. Senza questo riferimento non riesco a dirti se un incontro per il preventivo possa essere utile.</p>
+<p><strong>Come hai conosciuto la Bottega?</strong> Tramite Google, il sito, Instagram, Facebook, passando davanti alla vetrina oppure su consiglio di qualcuno? Se hai visto un gioiello, una fotografia o una pagina che ti ha interessato, mandami il riferimento.</p>
+<p>Questo mi aiuta a capire cosa conosci già del mio lavoro e quali informazioni ti servono prima dell’appuntamento.</p>
+Quando richiedi un appuntamento, indicami sempre con chiarezza il motivo della visita e, quando possibile, allega fotografie o immagini di riferimento.
+      <br/><br/>
+      È necessario perché richieste diverse richiedono tempi, preparazione e modalità differenti. Potresti voler discutere un progetto su misura, mostrarmi pietre o gioielli che già possiedi, chiedere informazioni su un oggetto esposto in vetrina oppure richiedere un servizio che la bottega non effettua.
+      <br/><br/>
+<strong>Non effettuo riparazioni.</strong>
+<br/><br/>
+<strong>Non compro oro, metalli preziosi, gioielli o pietre.</strong>
+<br/><br/>
+      Se ti interessa un oggetto esposto in vetrina, puoi inviarmi direttamente una fotografia: spesso posso comunicarti subito il prezzo e le informazioni necessarie, senza richiederti di venire inutilmente in bottega.
+      <br/><br/>
+      Dopo aver compreso la richiesta, ti indico il modo migliore per procedere: appuntamento, tempi, preparazione necessaria e prima disponibilità.
+      <br/><br/>
+<strong>Gli appuntamenti in giornata possono essere disponibili, ma non sono garantiti e devono sempre essere concordati in anticipo.</strong>
+</div>
+</div>
+<div class="faq-item" id="faq-16">
+<h3 class="faq-q">16 · Come prenoto?</h3>
+<div class="faq-a">
+      Scrivimi su WhatsApp o SMS. Ti rispondo in giornata.
+    </div>
+</div>
+<div class="faq-item" id="faq-17">
+<h3 class="faq-q">17 · Fate gioielli su misura?</h3>
+<div class="faq-a">
+      Sì. Ogni pezzo è progettato e realizzato in base alla richiesta.
+    </div>
+</div>
+<div class="faq-item" id="faq-18">
+<h3 class="faq-q">18 · Posso trasformare un gioiello che ho già?</h3>
+<div class="faq-a">
+      Sì. È una parte importante del lavoro: recupero, trasformazione e nuova vita.
+    </div>
+</div>
+<div class="faq-item" id="faq-19">
+<h3 class="faq-q">19 · Posso chiedere un preventivo?</h3>
+<div class="faq-a">
+      Sì. Scrivimi e vediamo insieme cosa ha senso fare.
+    </div>
+</div>
+<div class="faq-item" id="faq-20">
+<h3 class="faq-q">20 · Posso passare a vedere i gioielli anche quando la bottega è chiusa?</h3>
+<div class="faq-a">
+      Sì. Le vetrine sono accese e visibili 7 giorni su 7, 24 ore su 24.
+      <br/><br/>
+      Se qualcosa ti interessa, scrivimi su WhatsApp o SMS e organizziamo l’appuntamento.
+    </div>
+</div>
+<div class="faq-item" id="faq-21">
+<h3 class="faq-q">21 · Possiamo progettare il gioiello o definire un preventivo per telefono o in videochiamata?</h3>
+<div class="faq-a"><p>No. La progettazione del gioiello, la valutazione dei materiali e delle pietre e la definizione del preventivo si svolgono esclusivamente di persona, in Bottega.</p><p>Una telefonata concordata può servire per un primo orientamento: capire cosa vorresti fare, se la richiesta rientra nelle lavorazioni che eseguo e cosa portare all’appuntamento.</p><p>La telefonata non sostituisce l’incontro. Non svolgo sessioni di progettazione o preventivazione a distanza, né per telefono né in videochiamata.</p><p>Quando puoi venire, scrivimi con un po’ di anticipo: concordiamo l’appuntamento e riservo il tempo necessario alla tua richiesta.</p></div>
+</div>
+</section>
+<section aria-label="Bottega Marco Aurelio" class="closing-module" id="chiusura">
+<div class="closing-images">
+<img alt="Interno della Bottega Marco Aurelio" src="assets/chiusura_laboratorio.jpg"/>
+<img alt="Vetrina della Bottega Marco Aurelio" src="assets/chiusura_vetrina.jpg"/>
+</div>
+<p style="font-size:12px;text-align:center;color:#625b55">A BOTTEGA 008 · 09/09/2026 · 17:51 (Roma) · FAQ21 · TEL1</p>
+</section>
+<div aria-hidden="true" class="final-spacer"></div>
+</main>
+</div>
+<button aria-label="Torna in alto" class="top-float" type="button">↑</button>
+<div class="bottom-cta">
+<a class="w" href="https://wa.me/393482762842">Scrivi su<br/>WhatsApp</a>
+<a class="faq" href="#faq">Domande<br/>frequenti</a>
+<a class="i" href="https://www.instagram.com/bottegamarcoaurelio/" rel="noopener" target="_blank">Instagram</a>
+</div>
+<script>
+  const cta = document.querySelector('.bottom-cta');
+  const topFloat = document.querySelector('.top-float');
+  function toggleFloatingButtons(){
+    const show = window.scrollY > 8;
+    if (cta) cta.classList.toggle('visible', show);
+    if (topFloat) topFloat.classList.toggle('visible', show);
+  }
+  if (topFloat) {
+    topFloat.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+  }
+  toggleFloatingButtons();
+  window.addEventListener('scroll', toggleFloatingButtons, {passive:true});
+</script>
+<script>
+(function(){
+  let userInteracted = false;
+  let autoTimer = null;
+
+  function stopAutoScroll(){
+    userInteracted = true;
+    if (autoTimer) {
+      clearInterval(autoTimer);
+      autoTimer = null;
+    }
+  }
+
+  ["touchstart", "wheel", "mousedown", "keydown", "pointerdown"].forEach(function(eventName){
+    window.addEventListener(eventName, stopAutoScroll, { passive: true, once: true });
+  });
+
+  function startAutoScroll(){
+    if (userInteracted || window.scrollY > 20 || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    let autoPosition = window.scrollY;
+    autoTimer = setInterval(function(){
+      if (userInteracted) {
+        clearInterval(autoTimer);
+        autoTimer = null;
+        return;
+      }
+
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      if (window.scrollY >= maxScroll - 2) {
+        clearInterval(autoTimer);
+        autoTimer = null;
+        return;
+      }
+
+      autoPosition += 0.45;
+      window.scrollTo(0, autoPosition);
+    }, 16);
+  }
+
+  window.addEventListener("load", function(){
+    setTimeout(startAutoScroll, 5000);
+  });
+})();
+</script>
+<!-- Analytics privacy-friendly — GoatCounter
+     ATTENZIONE: per attivarlo davvero devi creare il sito/account con codice: bottegamarcoaurelio
+     Dashboard: https://bottegamarcoaurelio.goatcounter.com/
+     Finché l'account non esiste, il sito continua a funzionare: semplicemente non registra visite.
+-->
+<script async="" data-goatcounter="https://bottegamarcoaurelio.goatcounter.com/count" src="https://gc.zgo.at/count.js"></script>
+<!-- Rev 001Q · 29/08/2026 18:44 · WAF1 · JVS -->
+<!-- Rev 002 · 01/09/2026 18:02 · MTH2 · JVS -->
+<!-- Rev 002A · 08/09/2026 18:24 · FAQP1 · READ1 -->
+<!-- Rev 002A1 · 08/09/2026 · FAQP1 · READ2 -->
+<!-- Rev 002A2 · 08/09/2026 · FAQP1 · READ2 · FAQH1 -->
+</body>
+</html>
