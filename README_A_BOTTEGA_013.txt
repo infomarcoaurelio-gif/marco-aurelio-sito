@@ -1,0 +1,1 @@
+REVISIONE 013: CAD parametrico e fotografie autentiche — aggiornamento in preparazione.
