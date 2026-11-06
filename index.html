@@ -248,6 +248,49 @@ header .lang-switch{flex-shrink:0;white-space:nowrap}
 .cad-gallery figure{width:100%!important;max-width:100%!important}
 .cad-gallery figure img{width:100%!important;height:auto!important;aspect-ratio:16/9!important;object-fit:cover!important}
 </style>
+
+<style id="ma3-refinement-015">
+/* Revisione 015: navigazione compatta, CTA WhatsApp e fotografie originali. */
+.quick-top{
+  display:grid!important;
+  grid-template-columns:minmax(0,1.2fr) minmax(0,.6fr) minmax(0,.93fr) minmax(0,1fr)!important;
+  gap:5px!important;padding:10px 0!important;
+}
+.quick-top a,.quick-top a:nth-child(n+4),.quick-top a:last-child{
+  grid-column:auto!important;min-width:0!important;
+  font-size:clamp(14px,3.9vw,20px)!important;
+  letter-spacing:-.02em!important;white-space:nowrap!important;
+  min-height:50px!important;padding:9px 2px!important;line-height:1.15!important;
+}
+.ma3-info-right .ma3-write-cta{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:#772638;color:#fff!important;text-decoration:none;
+  border-radius:5px;padding:8px 13px;min-height:44px;font-weight:800;
+  margin:5px 4px 2px 2px;
+}
+.ma3-info-right .ma3-write-cta:focus-visible{outline:3px solid #211f1e;outline-offset:2px}
+.ma3-card[href="#fedi-a-bottega"] .ma3-card-media img{
+  transform:none!important;object-fit:cover!important;object-position:center 56%!important;
+}
+.ma3-card[href="#impara-cad"] .ma3-card-media img{
+  transform:none!important;object-fit:cover!important;object-position:30% center!important;
+}
+.ma3-photo-disclaimer{display:block;font-size:17px;line-height:1.35;color:#625b55;margin:8px 0 0}
+.ma3-etrusche,.ma3-cad-scene{max-width:830px;margin:18px auto 23px}
+.ma3-etrusche img,.ma3-cad-scene img{
+  width:100%;height:auto;display:block;border-radius:7px;object-fit:cover
+}
+.ma3-etrusche figcaption,.ma3-cad-scene figcaption{
+  margin-top:9px;color:#5e5550;line-height:1.4;font-size:18px
+}
+@media(max-width:420px){
+  .quick-top a,.quick-top a:nth-child(n+4),.quick-top a:last-child{
+     font-size:clamp(13px,3.9vw,16px)!important;padding:7px 1px!important;
+  }
+  .quick-top{gap:3px!important}
+  .ma3-info-right .ma3-write-cta{margin-left:0}
+}
+</style>
 </head>
 <body>
 <div class="page">
@@ -262,22 +305,22 @@ header .lang-switch{flex-shrink:0;white-space:nowrap}
 <nav aria-label="Azioni rapide" class="quick-top">
 <a href="https://wa.me/393482762842">WhatsApp</a>
 <a href="sms:+393482762842">SMS</a>
-<a href="https://www.instagram.com/bottegamarcoaurelio/" rel="noopener" target="_blank">Galleria Instagram</a>
-<a href="#faq">Domande frequenti</a>
+<a href="https://www.instagram.com/bottegamarcoaurelio/" rel="noopener" target="_blank" aria-label="Galleria Instagram">Galleria</a>
+<a href="#faq" aria-label="Domande frequenti">Domande</a>
 </nav>
 <section class="ma3-info" aria-label="Informazioni immediate">
- <div class="ma3-info-left"><span class="ma3-info-label">ORARI / ACCESSO</span><strong>18:00–21:00 · Solo su appuntamento</strong><span class="ma3-info-micro">Tre ore di ricevimento sono tante per una Bottega che lavora: il resto della giornata è dedicato a progettazione e produzione.</span></div>
- <div class="ma3-info-right">Campo de’ Fiori, Roma <span aria-hidden="true">·</span> <strong>Scrivi, non telefonare</strong></div>
+ <div class="ma3-info-left"><span class="ma3-info-label">ORARI / ACCESSO</span><strong>18:00–21:00 · Solo su appuntamento</strong><span class="ma3-info-micro">Tre ore di apertura al pubblico sono tante per una Bottega che lavora: il resto della giornata è dedicato a progettazione e produzione.</span></div>
+ <div class="ma3-info-right">Campo de’ Fiori, Roma <span aria-hidden="true">·</span> <a class="ma3-write-cta" href="https://wa.me/393482762842">Scrivi</a><span class="ma3-no-call">non telefonare</span></div>
 </section>
 <section class="ma3-wrap" id="nuove-attivita" aria-label="Cosa puoi fare oggi in Bottega">
  <div class="ma3-kicker">BOTTEGA MARCOAURELIO OGGI</div>
- <h1>Non è più un negozio tradizionale.</h1>
+ <h1>Non è un negozio tradizionale.</h1>
  <p class="ma3-lead">È una <strong>Bottega artigiana</strong> dove puoi commissionare un gioiello, crearlo con noi, imparare un mestiere o dare una nuova vita a quello che possiedi.</p>
- <div class="ma3-cards"><a class="ma3-card" href="#fedi-a-bottega"><div class="ma3-card-media"><img src="assets/ab_fedi_cover.png" alt="Due fedi artigianali in oro realizzate in Bottega" fetchpriority="high"/></div><div class="ma3-card-copy"><h3>FEDI FATTE DA VOI</h3><p>Gli sposi realizzano personalmente le proprie fedi, guidati al Vecchio Banco. Il percorso è già attivo.</p><span class="ma3-price">Fede etrusca classica · da 400 € la coppia <small>per il percorso guidato · metallo escluso</small></span> <span class="ma3-card-more">Scopri il percorso →</span></div></a>
+ <div class="ma3-cards"><a class="ma3-card" href="#fedi-a-bottega"><div class="ma3-card-media"><img src="assets/NIDO.jpg" alt="Fedi NIDO, esempio di lavorazione artistica in oro" fetchpriority="high"/></div><div class="ma3-card-copy"><h3>FEDI FATTE DA VOI</h3><p>Gli sposi realizzano personalmente le proprie fedi, guidati al Vecchio Banco. Il percorso è già attivo.</p><span class="ma3-price">Fede etrusca classica · da 400 € la coppia <small>per il percorso guidato · metallo escluso</small></span> <span class="ma3-photo-disclaimer">In foto: NIDO, un modello artistico distinto dal modello base.</span><span class="ma3-card-more">Scopri il percorso →</span></div></a>
 <a class="ma3-card" href="#scegli-a-bottega"><div class="ma3-card-media"><img src="assets/aria_2.jpg" alt="" loading="lazy"/></div><div class="ma3-card-copy"><h3>OPERE E GIOIELLI</h3><p>Creiamo pezzi unici, collezioni limitate, lavori su misura, trasformazioni e riparazioni.</p> <span class="ma3-card-more">Scopri il percorso →</span></div></a>
 <a class="ma3-card" href="#crea-a-bottega"><div class="ma3-card-media"><img src="assets/ab_crea_gabriele_02.png" alt="" loading="lazy"/></div><div class="ma3-card-copy"><h3>CREA A BOTTEGA</h3><p>Puoi entrare in laboratorio e realizzare il tuo gioiello, con strumenti veri e guida personale.</p> <span class="ma3-card-more">Scopri il percorso →</span></div></a>
 <article class="ma3-card"><div class="ma3-card-media"><svg viewBox="0 0 132 120" role="img" aria-label="Illustrazione schematica" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M25 57l23-24h35l23 24-40 41z"/><path d="M25 57h81M48 33l18 24 17-24M66 57v41"/></svg></div><div class="ma3-card-copy"><h3>RECUPERO E PIETRE</h3><p>Smontiamo, recuperiamo e valorizziamo materiali e pietre. Le pietre vengono pulite e presentate in modo leggibile.</p></div></article>
-<a class="ma3-card" href="#impara-cad"><div class="ma3-card-media"><img src="assets/chiusura_laboratorio.jpg" alt="Fotografia reale del laboratorio con postazione computer e banco orafo" loading="lazy"/></div><div class="ma3-card-copy"><h3>IMPARA IL CAD PARAMETRICO</h3><p>Incontri individuali di Onshape, a offerta libera. Scopri il percorso.</p><span class="ma3-card-more">Scopri il percorso →</span></div></a>
+<a class="ma3-card" href="#impara-cad"><div class="ma3-card-media"><img src="assets/CAD.png" alt="Postazione CAD della Bottega in funzione, con Onshape sui monitor" loading="lazy"/></div><div class="ma3-card-copy"><h3>IMPARA IL CAD PARAMETRICO</h3><p>Lezioni individuali di Onshape. In questa fase, a offerta libera. Su appuntamento.</p><span class="ma3-card-more">Scopri il percorso →</span></div></a>
 </div>
  <div class="ma3-path">
   <div class="ma3-path-kicker">UN’IDEA PUÒ DIVENTARE UN GIOIELLO</div>
@@ -288,7 +331,7 @@ header .lang-switch{flex-shrink:0;white-space:nowrap}
 </section>
 
 
-<div id="impara-cad" class="ab-section"><div class="ab-center"><p class="ab-kicker">PROGETTARE IN BOTTEGA</p><h2 class="ab-title">Impara il CAD parametrico.</h2><p>Dall’idea al modello digitale: impari a costruire e modificare un gioiello usando Onshape, direttamente alla postazione CAD della Bottega.</p><p>Partiamo dalle tue competenze e lavoriamo su un progetto concreto, dalle misure alla preparazione per la stampa 3D.</p><p><strong>Incontri individuali, a offerta libera e su appuntamento.</strong></p><p><a class="ab-cta" href="https://wa.me/393482762842">Chiedi informazioni sul CAD</a></p></div></div>
+<div id="impara-cad" class="ab-section"><div class="ab-center"><p class="ab-kicker">PROGETTARE IN BOTTEGA</p><h2 class="ab-title">Impara il CAD parametrico.</h2><figure class="ma3-cad-scene"><img src="assets/CAD.png" alt="Vista completa della Bottega con postazione CAD Onshape in funzione" loading="lazy"/><figcaption>Il progetto prende forma qui, nella postazione CAD della Bottega.</figcaption></figure><p>Dall’idea al modello digitale: impari a costruire e modificare un gioiello usando Onshape, direttamente alla postazione CAD della Bottega.</p><p>Partiamo dalle tue competenze e lavoriamo su un progetto concreto, dalle misure alla preparazione per la stampa 3D.</p><p><strong>In questa fase, gli incontri individuali sono proposti a offerta libera.</strong></p><p><strong>Solo su appuntamento.</strong></p><p><a class="ab-cta" href="https://wa.me/393482762842">Chiedi informazioni sul CAD</a></p></div></div>
 <section aria-label="A Bottega" class="ab-section ab-hub" id="a-bottega">
 <div class="ab-center">
 <div class="ab-logo-proof-row">
@@ -307,7 +350,7 @@ header .lang-switch{flex-shrink:0;white-space:nowrap}
 <p>Fate le vostre fedi e imparate come si fanno. Guidati al Vecchio Banco, nel centro del centro di Roma.</p>
 <p class="mini">Nessuna esperienza necessaria</p>
 </div>
-<img alt="Le vostre fedi, fatte da voi" src="assets/ab_fedi_cover.png"/>
+<img alt="Fedi NIDO, esempio di lavorazione artistica" src="assets/NIDO.jpg"/>
 </a>
 <a class="ab-gate crea-gate" href="#crea-a-bottega">
 <div class="copy">
@@ -358,7 +401,8 @@ header .lang-switch{flex-shrink:0;white-space:nowrap}
 <section aria-label="Fedi a Bottega" class="ab-section" id="fedi-a-bottega">
 <p class="ab-kicker">Fedi a Bottega</p>
 <h2 class="ab-title">Fate le vostre fedi e imparate come si fanno.</h2>
-<p class="ab-subtitle">Lavorate voi al Vecchio Banco, dentro una Bottega vera e in funzione. Io vi guido passo dopo passo: non portate via soltanto gli anelli, ma anche il procedimento.</p><p class="ma3-fedi-note" style="border-left:3px solid #772638;padding:10px 13px;background:#f3ede8;font-size:16px;line-height:1.4;margin:15px 0;"><strong>Le fedi fatte da voi.</strong> Il percorso per una coppia di <strong>fedi etrusche classiche parte da 400 €</strong>, per l’esperienza guidata al banco. <strong>Metallo escluso.</strong> Per altri modelli, tempi e costi si definiscono insieme.</p>
+<p class="ab-subtitle">Lavorate voi al Vecchio Banco, dentro una Bottega vera e in funzione. Io vi guido passo dopo passo: non portate via soltanto gli anelli, ma anche il procedimento.</p><p class="ma3-fedi-note" style="border-left:3px solid #772638;padding:10px 13px;background:#f3ede8;font-size:16px;line-height:1.4;margin:15px 0;"><strong>Le fedi fatte da voi.</strong> Il percorso per una coppia di <strong>fedi etrusche classiche parte da 400 €</strong>, per l’esperienza guidata al banco. <strong>Metallo escluso.</strong> Per altri modelli, tempi e costi si definiscono insieme.</p><figure class="ma3-etrusche"><img src="assets/Etrusche.png" alt="Coppia di fedi etrusche classiche, modello del percorso guidato da 400 euro" loading="lazy"/><figcaption><strong>Fedi etrusche classiche:</strong> il modello del percorso da 400 € per la coppia, escluso il metallo. Il modello NIDO mostrato in apertura è una lavorazione artistica diversa.</figcaption></figure>
+
 <div class="ab-cta-row" style="margin-top:12px; margin-bottom:12px;">
 <a class="ab-cta secondary" href="#faq-fedi">FAQ Fedi a Bottega · costi, tempi, come funziona</a>
 </div>
@@ -607,7 +651,7 @@ header .lang-switch{flex-shrink:0;white-space:nowrap}
 <p class="open-big">18:00–21:00</p>
 <div class="access-lines">
 <span style="color:#211f1e; font-weight:700;">Solo su appuntamento</span><br/>
-<strong><span class="v47a-access-note" style="color:#9aa0a6;">Ricevimento in Bottega · solo su appuntamento</span></strong><p class="ma3-hours-note" style="margin:10px 0 0;font-size:14px;line-height:1.45;">Tre ore di ricevimento non sono poche: sono il tempo riservato agli incontri. Le altre ore sono dedicate alla produzione, alla progettazione e al lavoro al banco.</p>
+<strong><span class="v47a-access-note" style="color:#9aa0a6;">Apertura al pubblico · solo su appuntamento</span></strong><p class="ma3-hours-note" style="margin:10px 0 0;font-size:14px;line-height:1.45;">Tre ore di apertura al pubblico non sono poche: sono il tempo riservato agli appuntamenti. Le altre ore sono dedicate alla produzione, alla progettazione e al lavoro al banco.</p>
 </div>
 </div>
 <div>
