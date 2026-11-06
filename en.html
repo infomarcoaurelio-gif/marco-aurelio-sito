@@ -248,6 +248,49 @@ header .lang-switch{flex-shrink:0;white-space:nowrap}
 .cad-gallery figure{width:100%!important;max-width:100%!important}
 .cad-gallery figure img{width:100%!important;height:auto!important;aspect-ratio:16/9!important;object-fit:cover!important}
 </style>
+
+<style id="ma3-refinement-015">
+/* Revisione 015: navigazione compatta, CTA WhatsApp e fotografie originali. */
+.quick-top{
+  display:grid!important;
+  grid-template-columns:minmax(0,1.2fr) minmax(0,.6fr) minmax(0,.93fr) minmax(0,1fr)!important;
+  gap:5px!important;padding:10px 0!important;
+}
+.quick-top a,.quick-top a:nth-child(n+4),.quick-top a:last-child{
+  grid-column:auto!important;min-width:0!important;
+  font-size:clamp(14px,3.9vw,20px)!important;
+  letter-spacing:-.02em!important;white-space:nowrap!important;
+  min-height:50px!important;padding:9px 2px!important;line-height:1.15!important;
+}
+.ma3-info-right .ma3-write-cta{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:#772638;color:#fff!important;text-decoration:none;
+  border-radius:5px;padding:8px 13px;min-height:44px;font-weight:800;
+  margin:5px 4px 2px 2px;
+}
+.ma3-info-right .ma3-write-cta:focus-visible{outline:3px solid #211f1e;outline-offset:2px}
+.ma3-card[href="#fedi-a-bottega"] .ma3-card-media img{
+  transform:none!important;object-fit:cover!important;object-position:center 56%!important;
+}
+.ma3-card[href="#impara-cad"] .ma3-card-media img{
+  transform:none!important;object-fit:cover!important;object-position:30% center!important;
+}
+.ma3-photo-disclaimer{display:block;font-size:17px;line-height:1.35;color:#625b55;margin:8px 0 0}
+.ma3-etrusche,.ma3-cad-scene{max-width:830px;margin:18px auto 23px}
+.ma3-etrusche img,.ma3-cad-scene img{
+  width:100%;height:auto;display:block;border-radius:7px;object-fit:cover
+}
+.ma3-etrusche figcaption,.ma3-cad-scene figcaption{
+  margin-top:9px;color:#5e5550;line-height:1.4;font-size:18px
+}
+@media(max-width:420px){
+  .quick-top a,.quick-top a:nth-child(n+4),.quick-top a:last-child{
+     font-size:clamp(13px,3.9vw,16px)!important;padding:7px 1px!important;
+  }
+  .quick-top{gap:3px!important}
+  .ma3-info-right .ma3-write-cta{margin-left:0}
+}
+</style>
 </head>
 <body>
 <div class="page">
@@ -259,25 +302,25 @@ header .lang-switch{flex-shrink:0;white-space:nowrap}
 <img alt="Arabesco Nero · Collezione Aria · Bottega MarcoAurelio" src="assets/ab_arabesco_01.jpg"/>
 
 </a>
-<nav aria-label="Azioni rapide" class="quick-top">
+<nav aria-label="Quick links" class="quick-top">
 <a href="https://wa.me/393482762842">WhatsApp</a>
 <a href="sms:+393482762842">SMS</a>
-<a href="https://www.instagram.com/bottegamarcoaurelio/" rel="noopener" target="_blank">Instagram Gallery</a>
-<a href="#faq">FAQ</a>
+<a href="https://www.instagram.com/bottegamarcoaurelio/" rel="noopener" target="_blank" aria-label="Instagram Gallery">Gallery</a>
+<a href="#faq" aria-label="Frequently asked questions">FAQ</a>
 </nav>
 <section class="ma3-info" aria-label="Essential visit information">
- <div class="ma3-info-left"><span class="ma3-info-label">HOURS / ACCESS</span><strong>6:00–9:00 PM · By appointment only</strong><span class="ma3-info-micro">Three hours of receiving visitors is a substantial amount of time for a working workshop: the rest of the day is devoted to designing and making jewellery.</span></div>
- <div class="ma3-info-right">Campo de’ Fiori, Rome <span aria-hidden="true">·</span> <strong>Message, don’t call</strong></div>
+ <div class="ma3-info-left"><span class="ma3-info-label">HOURS / ACCESS</span><strong>6:00–9:00 PM · By appointment only</strong><span class="ma3-info-micro">Three hours of public opening time is substantial for a working goldsmith’s workshop: the rest of the day is devoted to design and production.</span></div>
+ <div class="ma3-info-right">Campo de’ Fiori, Rome <span aria-hidden="true">·</span> <a class="ma3-write-cta" href="https://wa.me/393482762842">Message</a><span class="ma3-no-call">don’t call</span></div>
 </section>
 <section class="ma3-wrap" id="nuove-attivita" aria-label="What you can do at the workshop today">
  <div class="ma3-kicker">BOTTEGA MARCOAURELIO TODAY</div>
- <h1>No longer a traditional jewellery shop.</h1>
+ <h1>Not a traditional jewellery shop.</h1>
  <p class="ma3-lead">This is a <strong>working artisan goldsmith’s workshop</strong>. You can commission a piece, make your own jewellery with us, learn craft skills or give new life to jewellery you already own.</p>
- <div class="ma3-cards"><a class="ma3-card" href="#fedi-a-bottega"><div class="ma3-card-media"><img src="assets/ab_fedi_cover.png" alt="Two handmade gold wedding bands from the workshop" fetchpriority="high"/></div><div class="ma3-card-copy"><h3>MAKE YOUR OWN WEDDING BANDS</h3><p>Make your own wedding bands, personally guided at the Old Bench. This experience is already available.</p><span class="ma3-price">Classic Etruscan wedding bands · from €400 per pair <small>for the guided experience · metal excluded</small></span> <span class="ma3-card-more">Explore the experience →</span></div></a>
+ <div class="ma3-cards"><a class="ma3-card" href="#fedi-a-bottega"><div class="ma3-card-media"><img src="assets/NIDO.jpg" alt="NIDO wedding rings, an artistic handmade design" fetchpriority="high"/></div><div class="ma3-card-copy"><h3>MAKE YOUR OWN WEDDING BANDS</h3><p>Make your own wedding bands, personally guided at the Old Bench. This experience is already available.</p><span class="ma3-price">Classic Etruscan wedding bands · from €400 per pair <small>for the guided experience · metal excluded</small></span> <span class="ma3-photo-disclaimer">Photo: NIDO, an artistic design distinct from the entry-level model.</span><span class="ma3-card-more">Explore the experience →</span></div></a>
 <a class="ma3-card" href="#scegli-a-bottega"><div class="ma3-card-media"><img src="assets/aria_2.jpg" alt="" loading="lazy"/></div><div class="ma3-card-copy"><h3>ONE-OF-A-KIND JEWELLERY</h3><p>Original pieces, limited collections, bespoke jewellery, transformations and repairs.</p> <span class="ma3-card-more">Explore the experience →</span></div></a>
 <a class="ma3-card" href="#crea-a-bottega"><div class="ma3-card-media"><img src="assets/ab_crea_gabriele_02.png" alt="" loading="lazy"/></div><div class="ma3-card-copy"><h3>CREATE AT THE WORKSHOP</h3><p>Come into a real workshop and make your own piece, using real tools with personal guidance.</p> <span class="ma3-card-more">Explore the experience →</span></div></a>
 <article class="ma3-card"><div class="ma3-card-media"><svg viewBox="0 0 132 120" role="img" aria-label="Simple illustration" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M25 57l23-24h35l23 24-40 41z"/><path d="M25 57h81M48 33l18 24 17-24M66 57v41"/></svg></div><div class="ma3-card-copy"><h3>RECLAIMING METAL AND STONES</h3><p>We dismantle, recover and reuse metal and gemstones. Stones are cleaned and arranged so you can really see and understand them.</p></div></article>
-<a class="ma3-card" href="#impara-cad"><div class="ma3-card-media"><img src="assets/chiusura_laboratorio.jpg" alt="Real workshop with computer workstation and goldsmith bench" loading="lazy"/></div><div class="ma3-card-copy"><h3>LEARN PARAMETRIC CAD</h3><p>One-to-one Onshape sessions, pay what you wish. Discover the sessions.</p><span class="ma3-card-more">Discover the sessions →</span></div></a>
+<a class="ma3-card" href="#impara-cad"><div class="ma3-card-media"><img src="assets/CAD.png" alt="Onshape CAD workstation in use inside the goldsmith workshop" loading="lazy"/></div><div class="ma3-card-copy"><h3>LEARN PARAMETRIC CAD</h3><p>Individual Onshape lessons. At this stage, the fee is at your discretion. By appointment.</p><span class="ma3-card-more">Discover the sessions →</span></div></a>
 </div>
  <div class="ma3-path">
   <div class="ma3-path-kicker">YOUR IDEA CAN BECOME A PIECE OF JEWELLERY</div>
@@ -288,7 +331,7 @@ header .lang-switch{flex-shrink:0;white-space:nowrap}
 </section>
 
 
-<div id="impara-cad" class="ab-section"><div class="ab-center"><p class="ab-kicker">DESIGN AT THE WORKSHOP</p><h2 class="ab-title">Learn parametric CAD.</h2><p>From an idea to a digital model: learn to build and refine jewellery designs using Onshape, at the workshop CAD station.</p><p>We start from your experience and work on a real project, from precise measurements to preparing a model for 3D printing.</p><p><strong>One-to-one sessions by appointment, on a pay-what-you-wish basis.</strong></p><p><a class="ab-cta" href="https://wa.me/393482762842">Ask about CAD sessions</a></p></div></div>
+<div id="impara-cad" class="ab-section"><div class="ab-center"><p class="ab-kicker">DESIGN AT THE WORKSHOP</p><h2 class="ab-title">Learn parametric CAD.</h2><figure class="ma3-cad-scene"><img src="assets/CAD.png" alt="Full view of the Bottega workshop with Onshape CAD workstation in use" loading="lazy"/><figcaption>From the idea to a digital model, here in the workshop.</figcaption></figure><p>From an idea to a digital model: learn to build and refine jewellery designs using Onshape, at the workshop CAD station.</p><p>We start from your experience and work on a real project, from precise measurements to preparing a model for 3D printing.</p><p><strong>At this stage, individual sessions are offered with a freely chosen fee.</strong></p><p><strong>By appointment only.</strong></p><p><a class="ab-cta" href="https://wa.me/393482762842">Ask about CAD sessions</a></p></div></div>
 <section aria-label="A Bottega" class="ab-section ab-hub" id="a-bottega">
 <div class="ab-center">
 <div class="ab-logo-proof-row">
@@ -307,7 +350,7 @@ header .lang-switch{flex-shrink:0;white-space:nowrap}
 <p>Make your wedding bands and learn how they are made. Guided at the Old Bench, in the very heart of Rome.</p>
 <p class="mini">No previous experience needed</p>
 </div>
-<img alt="Le vostre fedi, fatte da voi" src="assets/ab_fedi_cover.png"/>
+<img alt="NIDO, an artistic handmade wedding-band design" src="assets/NIDO.jpg"/>
 </a>
 <a class="ab-gate crea-gate" href="#crea-a-bottega">
 <div class="copy">
@@ -358,7 +401,8 @@ header .lang-switch{flex-shrink:0;white-space:nowrap}
 <section aria-label="Fedi a Bottega" class="ab-section" id="fedi-a-bottega">
 <p class="ab-kicker">Fedi a Bottega</p>
 <h2 class="ab-title">Make your wedding bands and learn how they are made.</h2>
-<p class="ab-subtitle">You work at the Old Bench yourselves, inside a real working goldsmith’s workshop. I guide you step by step: you take home not only the rings, but the process too.</p><p class="ma3-fedi-note"><strong>Make your wedding bands yourselves.</strong> The guided experience for a pair of <strong>classic Etruscan wedding bands starts at €400</strong>. <strong>Metal excluded.</strong> Other designs, time requirements and costs are agreed individually.</p>
+<p class="ab-subtitle">You work at the Old Bench yourselves, inside a real working goldsmith’s workshop. I guide you step by step: you take home not only the rings, but the process too.</p><p class="ma3-fedi-note"><strong>Make your wedding bands yourselves.</strong> The guided experience for a pair of <strong>classic Etruscan wedding bands starts at €400</strong>. <strong>Metal excluded.</strong> Other designs, time requirements and costs are agreed individually.</p><figure class="ma3-etrusche"><img src="assets/Etrusche.png" alt="Classic Etruscan wedding bands, model for the guided experience from 400 euros" loading="lazy"/><figcaption><strong>Classic Etruscan wedding bands:</strong> the model for the guided experience starting at €400 per pair, metal excluded. The NIDO design shown above is a different artistic piece.</figcaption></figure>
+
 <div class="ab-cta-row" style="margin-top:12px; margin-bottom:12px;">
 <a class="ab-cta secondary" href="#faq-fedi">Fedi a Bottega FAQ · price, time, how it works</a>
 </div>
@@ -607,7 +651,7 @@ header .lang-switch{flex-shrink:0;white-space:nowrap}
 <p class="open-big">6:00 PM–9:00 PM</p>
 <div class="access-lines">
 <span style="color:#211f1e; font-weight:700;">By appointment only</span><br/>
-<strong><span class="v47a-access-note" style="color:#9aa0a6;">Same-day availability · flexible hours, evenings included</span></strong><p class="ma3-hours-note">Three visiting hours are not too few: this is time set aside for visitors. The rest of the day is dedicated to designing, making jewellery and bench work.</p>
+<strong><span class="v47a-access-note" style="color:#9aa0a6;">Same-day availability · flexible hours, evenings included</span></strong><p class="ma3-hours-note">Three hours of public opening are not too few: this is time dedicated to appointments. The rest of the day is dedicated to designing, making jewellery and bench work.</p>
 </div>
 </div>
 <div>
